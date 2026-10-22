@@ -1,0 +1,15 @@
+{
+  "product": 49,
+  "side": 49,
+  "failed": 0,
+  "acked": 49,
+  "redelivered": 2,
+  "lostLoad": 0,
+  "lostSide": 0,
+  "name": "propagate_mixed_run2",
+  "elapsedSec": 180,
+  "remainingLag": 9951,
+  "restarts": 53,
+  "failedMetric": 0,
+  "warnLines": 0
+}

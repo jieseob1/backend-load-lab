@@ -1,0 +1,15 @@
+{
+  "product": 9880,
+  "side": 9890,
+  "failed": 0,
+  "acked": 10000,
+  "redelivered": 0,
+  "lostLoad": 120,
+  "lostSide": 110,
+  "name": "silent_mixed_run3",
+  "elapsedSec": 52,
+  "remainingLag": 0,
+  "restarts": 0,
+  "failedMetric": 0,
+  "warnLines": 110
+}

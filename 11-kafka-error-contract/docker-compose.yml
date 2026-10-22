@@ -1,0 +1,44 @@
+services:
+  redpanda:
+    image: docker.redpanda.com/redpandadata/redpanda:v24.2.7
+    command:
+      - redpanda
+      - start
+      - --mode=dev-container
+      - --smp=1
+      - --memory=1G
+      - --kafka-addr=internal://0.0.0.0:9092,external://0.0.0.0:19092
+      - --advertise-kafka-addr=internal://redpanda:9092,external://localhost:19092
+    ports: ["19092:19092"]
+    cpus: 1.0
+    mem_limit: 1536m
+
+  postgres:
+    image: postgres:16
+    environment: { POSTGRES_USER: lab, POSTGRES_PASSWORD: lab, POSTGRES_DB: lab }
+    ports: ["5432:5432"]                 # ErrorContractTest가 호스트에서 접속
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U lab -d lab"]
+      interval: 2s
+      retries: 30
+    cpus: 1.0
+    mem_limit: 1g
+
+  consumer:
+    build: ./app
+    environment:
+      LAB_BOOTSTRAP: redpanda:9092
+      LAB_GROUP: ${GROUP:-lab}
+      LAB_MODE: ${MODE:-silent}          # silent | propagate | outcome
+      LAB_TOPIC: ${TOPIC:-products-mixed}
+      LAB_FAULTS: ${FAULTS:-mixed}       # mixed | transient
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/lab
+      JAVA_TOOL_OPTIONS: -Xmx512m
+    ports: ["${APP_PORT:-18080}:8080"]   # 호스트 8080이 다른 앱과 겹치지 않게
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redpanda:
+        condition: service_started
+    cpus: 2.0
+    mem_limit: 1g

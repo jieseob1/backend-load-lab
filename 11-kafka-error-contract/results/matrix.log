@@ -1,0 +1,850 @@
+▶ silent_transient_run0 (group=g-silent_transient_run0-1792406767)
+NOTICE:  relation "product" already exists, skipping
+NOTICE:  relation "side_record" already exists, skipping
+NOTICE:  relation "delivery_log" already exists, skipping
+NOTICE:  relation "ack_log" already exists, skipping
+NOTICE:  relation "failed_record" already exists, skipping
+ Container 11-kafka-error-contract-redpanda-1 Running 
+ Container 11-kafka-error-contract-postgres-1 Running 
+ Container 11-kafka-error-contract-consumer-1 Recreate 
+ Container 11-kafka-error-contract-consumer-1 Recreated 
+ Container 11-kafka-error-contract-postgres-1 Waiting 
+ Container 11-kafka-error-contract-postgres-1 Healthy 
+ Container 11-kafka-error-contract-consumer-1 Starting 
+ Container 11-kafka-error-contract-consumer-1 Started 
+{
+  "product": 9990,
+  "side": 10000,
+  "failed": 0,
+  "acked": 10000,
+  "redelivered": 0,
+  "lostLoad": 10,
+  "lostSide": 0,
+  "name": "silent_transient_run0",
+  "elapsedSec": 51,
+  "remainingLag": 0,
+  "restarts": 0,
+  "failedMetric": 0,
+  "warnLines": 0
+}
+▶ propagate_transient_run0 (group=g-propagate_transient_run0-1792406838)
+NOTICE:  relation "product" already exists, skipping
+NOTICE:  relation "side_record" already exists, skipping
+NOTICE:  relation "delivery_log" already exists, skipping
+NOTICE:  relation "ack_log" already exists, skipping
+NOTICE:  relation "failed_record" already exists, skipping
+ Container 11-kafka-error-contract-redpanda-1 Running 
+ Container 11-kafka-error-contract-postgres-1 Running 
+ Container 11-kafka-error-contract-consumer-1 Recreate 
+ Container 11-kafka-error-contract-consumer-1 Recreated 
+ Container 11-kafka-error-contract-postgres-1 Waiting 
+ Container 11-kafka-error-contract-postgres-1 Healthy 
+ Container 11-kafka-error-contract-consumer-1 Starting 
+ Container 11-kafka-error-contract-consumer-1 Started 
+{
+  "product": 10000,
+  "side": 10000,
+  "failed": 0,
+  "acked": 10000,
+  "redelivered": 14,
+  "lostLoad": 0,
+  "lostSide": 0,
+  "name": "propagate_transient_run0",
+  "elapsedSec": 55,
+  "remainingLag": 0,
+  "restarts": 10,
+  "failedMetric": 0,
+  "warnLines": 0
+}
+▶ outcome_transient_run0 (group=g-outcome_transient_run0-1792406912)
+NOTICE:  relation "product" already exists, skipping
+NOTICE:  relation "side_record" already exists, skipping
+NOTICE:  relation "delivery_log" already exists, skipping
+NOTICE:  relation "ack_log" already exists, skipping
+NOTICE:  relation "failed_record" already exists, skipping
+ Container 11-kafka-error-contract-redpanda-1 Running 
+ Container 11-kafka-error-contract-postgres-1 Running 
+ Container 11-kafka-error-contract-consumer-1 Recreate 
+ Container 11-kafka-error-contract-consumer-1 Recreated 
+ Container 11-kafka-error-contract-postgres-1 Waiting 
+ Container 11-kafka-error-contract-postgres-1 Healthy 
+ Container 11-kafka-error-contract-consumer-1 Starting 
+ Container 11-kafka-error-contract-consumer-1 Started 
+{
+  "product": 10000,
+  "side": 10000,
+  "failed": 0,
+  "acked": 10000,
+  "redelivered": 0,
+  "lostLoad": 0,
+  "lostSide": 0,
+  "name": "outcome_transient_run0",
+  "elapsedSec": 51,
+  "remainingLag": 0,
+  "restarts": 0,
+  "failedMetric": 0,
+  "warnLines": 0
+}
+▶ silent_mixed_run1 (group=g-silent_mixed_run1-1792406983)
+NOTICE:  relation "product" already exists, skipping
+NOTICE:  relation "side_record" already exists, skipping
+NOTICE:  relation "delivery_log" already exists, skipping
+NOTICE:  relation "ack_log" already exists, skipping
+NOTICE:  relation "failed_record" already exists, skipping
+ Container 11-kafka-error-contract-postgres-1 Running 
+ Container 11-kafka-error-contract-redpanda-1 Running 
+ Container 11-kafka-error-contract-consumer-1 Recreate 
+ Container 11-kafka-error-contract-consumer-1 Recreated 
+ Container 11-kafka-error-contract-postgres-1 Waiting 
+ Container 11-kafka-error-contract-postgres-1 Healthy 
+ Container 11-kafka-error-contract-consumer-1 Starting 
+ Container 11-kafka-error-contract-consumer-1 Started 
+{
+  "product": 9880,
+  "side": 9890,
+  "failed": 0,
+  "acked": 10000,
+  "redelivered": 0,
+  "lostLoad": 120,
+  "lostSide": 110,
+  "name": "silent_mixed_run1",
+  "elapsedSec": 48,
+  "remainingLag": 0,
+  "restarts": 0,
+  "failedMetric": 0,
+  "warnLines": 110
+}
+▶ propagate_mixed_run1 (group=g-propagate_mixed_run1-1792407050)
+NOTICE:  relation "product" already exists, skipping
+NOTICE:  relation "side_record" already exists, skipping
+NOTICE:  relation "delivery_log" already exists, skipping
+NOTICE:  relation "ack_log" already exists, skipping
+NOTICE:  relation "failed_record" already exists, skipping
+ Container 11-kafka-error-contract-redpanda-1 Running 
+ Container 11-kafka-error-contract-postgres-1 Running 
+ Container 11-kafka-error-contract-consumer-1 Recreate 
+ Container 11-kafka-error-contract-consumer-1 Recreated 
+ Container 11-kafka-error-contract-postgres-1 Waiting 
+ Container 11-kafka-error-contract-postgres-1 Healthy 
+ Container 11-kafka-error-contract-consumer-1 Starting 
+ Container 11-kafka-error-contract-consumer-1 Started 
+{
+  "product": 49,
+  "side": 49,
+  "failed": 0,
+  "acked": 49,
+  "redelivered": 2,
+  "lostLoad": 0,
+  "lostSide": 0,
+  "name": "propagate_mixed_run1",
+  "elapsedSec": 181,
+  "remainingLag": 9951,
+  "restarts": 53,
+  "failedMetric": 0,
+  "warnLines": 0
+}
+▶ outcome_mixed_run1 (group=g-outcome_mixed_run1-1792407251)
+NOTICE:  relation "product" already exists, skipping
+NOTICE:  relation "side_record" already exists, skipping
+NOTICE:  relation "delivery_log" already exists, skipping
+NOTICE:  relation "ack_log" already exists, skipping
+NOTICE:  relation "failed_record" already exists, skipping
+ Container 11-kafka-error-contract-postgres-1 Running 
+ Container 11-kafka-error-contract-redpanda-1 Running 
+ Container 11-kafka-error-contract-consumer-1 Recreate 
+ Container 11-kafka-error-contract-consumer-1 Recreated 
+ Container 11-kafka-error-contract-postgres-1 Waiting 
+ Container 11-kafka-error-contract-postgres-1 Healthy 
+ Container 11-kafka-error-contract-consumer-1 Starting 
+ Container 11-kafka-error-contract-consumer-1 Started 
+{
+  "product": 9890,
+  "side": 9890,
+  "failed": 210,
+  "acked": 10000,
+  "redelivered": 0,
+  "lostLoad": 0,
+  "lostSide": 0,
+  "name": "outcome_mixed_run1",
+  "elapsedSec": 51,
+  "remainingLag": 0,
+  "restarts": 0,
+  "failedMetric": 210,
+  "warnLines": 0
+}
+▶ silent_transient_run1 (group=g-silent_transient_run1-1792407321)
+NOTICE:  relation "product" already exists, skipping
+NOTICE:  relation "side_record" already exists, skipping
+NOTICE:  relation "delivery_log" already exists, skipping
+NOTICE:  relation "ack_log" already exists, skipping
+NOTICE:  relation "failed_record" already exists, skipping
+ Container 11-kafka-error-contract-postgres-1 Running 
+ Container 11-kafka-error-contract-redpanda-1 Running 
+ Container 11-kafka-error-contract-consumer-1 Recreate 
+ Container 11-kafka-error-contract-consumer-1 Recreated 
+ Container 11-kafka-error-contract-postgres-1 Waiting 
+ Container 11-kafka-error-contract-postgres-1 Healthy 
+ Container 11-kafka-error-contract-consumer-1 Starting 
+ Container 11-kafka-error-contract-consumer-1 Started 
+{
+  "product": 9990,
+  "side": 10000,
+  "failed": 0,
+  "acked": 10000,
+  "redelivered": 0,
+  "lostLoad": 10,
+  "lostSide": 0,
+  "name": "silent_transient_run1",
+  "elapsedSec": 41,
+  "remainingLag": 0,
+  "restarts": 0,
+  "failedMetric": 0,
+  "warnLines": 0
+}
+▶ propagate_transient_run1 (group=g-propagate_transient_run1-1792407382)
+NOTICE:  relation "product" already exists, skipping
+NOTICE:  relation "side_record" already exists, skipping
+NOTICE:  relation "delivery_log" already exists, skipping
+NOTICE:  relation "ack_log" already exists, skipping
+NOTICE:  relation "failed_record" already exists, skipping
+ Container 11-kafka-error-contract-redpanda-1 Running 
+ Container 11-kafka-error-contract-postgres-1 Running 
+ Container 11-kafka-error-contract-consumer-1 Recreate 
+ Container 11-kafka-error-contract-consumer-1 Recreated 
+ Container 11-kafka-error-contract-postgres-1 Waiting 
+ Container 11-kafka-error-contract-postgres-1 Healthy 
+ Container 11-kafka-error-contract-consumer-1 Starting 
+ Container 11-kafka-error-contract-consumer-1 Started 
+{
+  "product": 10000,
+  "side": 10000,
+  "failed": 0,
+  "acked": 10000,
+  "redelivered": 12,
+  "lostLoad": 0,
+  "lostSide": 0,
+  "name": "propagate_transient_run1",
+  "elapsedSec": 51,
+  "remainingLag": 0,
+  "restarts": 10,
+  "failedMetric": 0,
+  "warnLines": 0
+}
+▶ outcome_transient_run1 (group=g-outcome_transient_run1-1792407452)
+NOTICE:  relation "product" already exists, skipping
+NOTICE:  relation "side_record" already exists, skipping
+NOTICE:  relation "delivery_log" already exists, skipping
+NOTICE:  relation "ack_log" already exists, skipping
+NOTICE:  relation "failed_record" already exists, skipping
+ Container 11-kafka-error-contract-postgres-1 Running 
+ Container 11-kafka-error-contract-redpanda-1 Running 
+ Container 11-kafka-error-contract-consumer-1 Recreate 
+ Container 11-kafka-error-contract-consumer-1 Recreated 
+ Container 11-kafka-error-contract-postgres-1 Waiting 
+ Container 11-kafka-error-contract-postgres-1 Healthy 
+ Container 11-kafka-error-contract-consumer-1 Starting 
+ Container 11-kafka-error-contract-consumer-1 Started 
+{
+  "product": 10000,
+  "side": 10000,
+  "failed": 0,
+  "acked": 10000,
+  "redelivered": 0,
+  "lostLoad": 0,
+  "lostSide": 0,
+  "name": "outcome_transient_run1",
+  "elapsedSec": 45,
+  "remainingLag": 0,
+  "restarts": 0,
+  "failedMetric": 0,
+  "warnLines": 0
+}
+▶ silent_mixed-crash_run1 (group=g-silent_mixed-crash_run1-1792407517)
+NOTICE:  relation "product" already exists, skipping
+NOTICE:  relation "side_record" already exists, skipping
+NOTICE:  relation "delivery_log" already exists, skipping
+NOTICE:  relation "ack_log" already exists, skipping
+NOTICE:  relation "failed_record" already exists, skipping
+ Container 11-kafka-error-contract-postgres-1 Running 
+ Container 11-kafka-error-contract-redpanda-1 Running 
+ Container 11-kafka-error-contract-consumer-1 Recreate 
+ Container 11-kafka-error-contract-consumer-1 Recreated 
+ Container 11-kafka-error-contract-postgres-1 Waiting 
+ Container 11-kafka-error-contract-postgres-1 Healthy 
+ Container 11-kafka-error-contract-consumer-1 Starting 
+ Container 11-kafka-error-contract-consumer-1 Started 
+  SIGKILL at ack ≥ 5000
+ Container 11-kafka-error-contract-consumer-1 Killing 
+ Container 11-kafka-error-contract-consumer-1 Killed 
+ Container 11-kafka-error-contract-postgres-1 Running 
+ Container 11-kafka-error-contract-redpanda-1 Running 
+ Container 11-kafka-error-contract-postgres-1 Waiting 
+ Container 11-kafka-error-contract-postgres-1 Healthy 
+ Container 11-kafka-error-contract-consumer-1 Starting 
+ Container 11-kafka-error-contract-consumer-1 Started 
+{
+  "product": 5053,
+  "side": 5065,
+  "failed": 0,
+  "acked": 5114,
+  "redelivered": 0,
+  "lostLoad": 61,
+  "lostSide": 50,
+  "name": "silent_mixed-crash_run1",
+  "elapsedSec": 24,
+  "remainingLag": 0,
+  "restarts": 0,
+  "failedMetric": 0,
+  "warnLines": 50
+}
+▶ outcome_mixed-crash_run1 (group=g-outcome_mixed-crash_run1-1792407561)
+NOTICE:  relation "product" already exists, skipping
+NOTICE:  relation "side_record" already exists, skipping
+NOTICE:  relation "delivery_log" already exists, skipping
+NOTICE:  relation "ack_log" already exists, skipping
+NOTICE:  relation "failed_record" already exists, skipping
+ Container 11-kafka-error-contract-postgres-1 Running 
+ Container 11-kafka-error-contract-redpanda-1 Running 
+ Container 11-kafka-error-contract-consumer-1 Recreate 
+ Container 11-kafka-error-contract-consumer-1 Recreated 
+ Container 11-kafka-error-contract-postgres-1 Waiting 
+ Container 11-kafka-error-contract-postgres-1 Healthy 
+ Container 11-kafka-error-contract-consumer-1 Starting 
+ Container 11-kafka-error-contract-consumer-1 Started 
+  SIGKILL at ack ≥ 5000
+ Container 11-kafka-error-contract-consumer-1 Killing 
+ Container 11-kafka-error-contract-consumer-1 Killed 
+ Container 11-kafka-error-contract-redpanda-1 Running 
+ Container 11-kafka-error-contract-postgres-1 Running 
+ Container 11-kafka-error-contract-postgres-1 Waiting 
+ Container 11-kafka-error-contract-postgres-1 Healthy 
+ Container 11-kafka-error-contract-consumer-1 Starting 
+ Container 11-kafka-error-contract-consumer-1 Started 
+{
+  "product": 5175,
+  "side": 5181,
+  "failed": 102,
+  "acked": 5231,
+  "redelivered": 0,
+  "lostLoad": 0,
+  "lostSide": 0,
+  "name": "outcome_mixed-crash_run1",
+  "elapsedSec": 31,
+  "remainingLag": 0,
+  "restarts": 0,
+  "failedMetric": 0,
+  "warnLines": 0
+}
+▶ silent_mixed_run2 (group=g-silent_mixed_run2-1792407611)
+NOTICE:  relation "product" already exists, skipping
+NOTICE:  relation "side_record" already exists, skipping
+NOTICE:  relation "delivery_log" already exists, skipping
+NOTICE:  relation "ack_log" already exists, skipping
+NOTICE:  relation "failed_record" already exists, skipping
+ Container 11-kafka-error-contract-postgres-1 Running 
+ Container 11-kafka-error-contract-redpanda-1 Running 
+ Container 11-kafka-error-contract-consumer-1 Recreate 
+ Container 11-kafka-error-contract-consumer-1 Recreated 
+ Container 11-kafka-error-contract-postgres-1 Waiting 
+ Container 11-kafka-error-contract-postgres-1 Healthy 
+ Container 11-kafka-error-contract-consumer-1 Starting 
+ Container 11-kafka-error-contract-consumer-1 Started 
+{
+  "product": 9880,
+  "side": 9890,
+  "failed": 0,
+  "acked": 10000,
+  "redelivered": 0,
+  "lostLoad": 120,
+  "lostSide": 110,
+  "name": "silent_mixed_run2",
+  "elapsedSec": 41,
+  "remainingLag": 0,
+  "restarts": 0,
+  "failedMetric": 0,
+  "warnLines": 110
+}
+▶ propagate_mixed_run2 (group=g-propagate_mixed_run2-1792407672)
+NOTICE:  relation "product" already exists, skipping
+NOTICE:  relation "side_record" already exists, skipping
+NOTICE:  relation "delivery_log" already exists, skipping
+NOTICE:  relation "ack_log" already exists, skipping
+NOTICE:  relation "failed_record" already exists, skipping
+ Container 11-kafka-error-contract-postgres-1 Running 
+ Container 11-kafka-error-contract-redpanda-1 Running 
+ Container 11-kafka-error-contract-consumer-1 Recreate 
+ Container 11-kafka-error-contract-consumer-1 Recreated 
+ Container 11-kafka-error-contract-postgres-1 Waiting 
+ Container 11-kafka-error-contract-postgres-1 Healthy 
+ Container 11-kafka-error-contract-consumer-1 Starting 
+ Container 11-kafka-error-contract-consumer-1 Started 
+{
+  "product": 49,
+  "side": 49,
+  "failed": 0,
+  "acked": 49,
+  "redelivered": 2,
+  "lostLoad": 0,
+  "lostSide": 0,
+  "name": "propagate_mixed_run2",
+  "elapsedSec": 180,
+  "remainingLag": 9951,
+  "restarts": 53,
+  "failedMetric": 0,
+  "warnLines": 0
+}
+▶ outcome_mixed_run2 (group=g-outcome_mixed_run2-1792407872)
+NOTICE:  relation "product" already exists, skipping
+NOTICE:  relation "side_record" already exists, skipping
+NOTICE:  relation "delivery_log" already exists, skipping
+NOTICE:  relation "ack_log" already exists, skipping
+NOTICE:  relation "failed_record" already exists, skipping
+ Container 11-kafka-error-contract-redpanda-1 Running 
+ Container 11-kafka-error-contract-postgres-1 Running 
+ Container 11-kafka-error-contract-consumer-1 Recreate 
+ Container 11-kafka-error-contract-consumer-1 Recreated 
+ Container 11-kafka-error-contract-postgres-1 Waiting 
+ Container 11-kafka-error-contract-postgres-1 Healthy 
+ Container 11-kafka-error-contract-consumer-1 Starting 
+ Container 11-kafka-error-contract-consumer-1 Started 
+{
+  "product": 9890,
+  "side": 9890,
+  "failed": 210,
+  "acked": 10000,
+  "redelivered": 0,
+  "lostLoad": 0,
+  "lostSide": 0,
+  "name": "outcome_mixed_run2",
+  "elapsedSec": 41,
+  "remainingLag": 0,
+  "restarts": 0,
+  "failedMetric": 210,
+  "warnLines": 0
+}
+▶ silent_transient_run2 (group=g-silent_transient_run2-1792407933)
+NOTICE:  relation "product" already exists, skipping
+NOTICE:  relation "side_record" already exists, skipping
+NOTICE:  relation "delivery_log" already exists, skipping
+NOTICE:  relation "ack_log" already exists, skipping
+NOTICE:  relation "failed_record" already exists, skipping
+ Container 11-kafka-error-contract-redpanda-1 Running 
+ Container 11-kafka-error-contract-postgres-1 Running 
+ Container 11-kafka-error-contract-consumer-1 Recreate 
+ Container 11-kafka-error-contract-consumer-1 Recreated 
+ Container 11-kafka-error-contract-postgres-1 Waiting 
+ Container 11-kafka-error-contract-postgres-1 Healthy 
+ Container 11-kafka-error-contract-consumer-1 Starting 
+ Container 11-kafka-error-contract-consumer-1 Started 
+{
+  "product": 9990,
+  "side": 10000,
+  "failed": 0,
+  "acked": 10000,
+  "redelivered": 0,
+  "lostLoad": 10,
+  "lostSide": 0,
+  "name": "silent_transient_run2",
+  "elapsedSec": 44,
+  "remainingLag": 0,
+  "restarts": 0,
+  "failedMetric": 0,
+  "warnLines": 0
+}
+▶ propagate_transient_run2 (group=g-propagate_transient_run2-1792407998)
+NOTICE:  relation "product" already exists, skipping
+NOTICE:  relation "side_record" already exists, skipping
+NOTICE:  relation "delivery_log" already exists, skipping
+NOTICE:  relation "ack_log" already exists, skipping
+NOTICE:  relation "failed_record" already exists, skipping
+ Container 11-kafka-error-contract-postgres-1 Running 
+ Container 11-kafka-error-contract-redpanda-1 Running 
+ Container 11-kafka-error-contract-consumer-1 Recreate 
+ Container 11-kafka-error-contract-consumer-1 Recreated 
+ Container 11-kafka-error-contract-postgres-1 Waiting 
+ Container 11-kafka-error-contract-postgres-1 Healthy 
+ Container 11-kafka-error-contract-consumer-1 Starting 
+ Container 11-kafka-error-contract-consumer-1 Started 
+{
+  "product": 10000,
+  "side": 10000,
+  "failed": 0,
+  "acked": 10000,
+  "redelivered": 12,
+  "lostLoad": 0,
+  "lostSide": 0,
+  "name": "propagate_transient_run2",
+  "elapsedSec": 51,
+  "remainingLag": 0,
+  "restarts": 10,
+  "failedMetric": 0,
+  "warnLines": 0
+}
+▶ outcome_transient_run2 (group=g-outcome_transient_run2-1792408070)
+NOTICE:  relation "product" already exists, skipping
+NOTICE:  relation "side_record" already exists, skipping
+NOTICE:  relation "delivery_log" already exists, skipping
+NOTICE:  relation "ack_log" already exists, skipping
+NOTICE:  relation "failed_record" already exists, skipping
+ Container 11-kafka-error-contract-postgres-1 Running 
+ Container 11-kafka-error-contract-redpanda-1 Running 
+ Container 11-kafka-error-contract-consumer-1 Recreate 
+ Container 11-kafka-error-contract-consumer-1 Recreated 
+ Container 11-kafka-error-contract-postgres-1 Waiting 
+ Container 11-kafka-error-contract-postgres-1 Healthy 
+ Container 11-kafka-error-contract-consumer-1 Starting 
+ Container 11-kafka-error-contract-consumer-1 Started 
+{
+  "product": 10000,
+  "side": 10000,
+  "failed": 0,
+  "acked": 10000,
+  "redelivered": 0,
+  "lostLoad": 0,
+  "lostSide": 0,
+  "name": "outcome_transient_run2",
+  "elapsedSec": 44,
+  "remainingLag": 0,
+  "restarts": 0,
+  "failedMetric": 0,
+  "warnLines": 0
+}
+▶ silent_mixed-crash_run2 (group=g-silent_mixed-crash_run2-1792408135)
+NOTICE:  relation "product" already exists, skipping
+NOTICE:  relation "side_record" already exists, skipping
+NOTICE:  relation "delivery_log" already exists, skipping
+NOTICE:  relation "ack_log" already exists, skipping
+NOTICE:  relation "failed_record" already exists, skipping
+ Container 11-kafka-error-contract-redpanda-1 Running 
+ Container 11-kafka-error-contract-postgres-1 Running 
+ Container 11-kafka-error-contract-consumer-1 Recreate 
+ Container 11-kafka-error-contract-consumer-1 Recreated 
+ Container 11-kafka-error-contract-postgres-1 Waiting 
+ Container 11-kafka-error-contract-postgres-1 Healthy 
+ Container 11-kafka-error-contract-consumer-1 Starting 
+ Container 11-kafka-error-contract-consumer-1 Started 
+  SIGKILL at ack ≥ 5000
+ Container 11-kafka-error-contract-consumer-1 Killing 
+ Container 11-kafka-error-contract-consumer-1 Killed 
+ Container 11-kafka-error-contract-redpanda-1 Running 
+ Container 11-kafka-error-contract-postgres-1 Running 
+ Container 11-kafka-error-contract-postgres-1 Waiting 
+ Container 11-kafka-error-contract-postgres-1 Healthy 
+ Container 11-kafka-error-contract-consumer-1 Starting 
+ Container 11-kafka-error-contract-consumer-1 Started 
+{
+  "product": 5305,
+  "side": 5316,
+  "failed": 0,
+  "acked": 5367,
+  "redelivered": 0,
+  "lostLoad": 63,
+  "lostSide": 52,
+  "name": "silent_mixed-crash_run2",
+  "elapsedSec": 24,
+  "remainingLag": 0,
+  "restarts": 0,
+  "failedMetric": 0,
+  "warnLines": 52
+}
+▶ outcome_mixed-crash_run2 (group=g-outcome_mixed-crash_run2-1792408178)
+NOTICE:  relation "product" already exists, skipping
+NOTICE:  relation "side_record" already exists, skipping
+NOTICE:  relation "delivery_log" already exists, skipping
+NOTICE:  relation "ack_log" already exists, skipping
+NOTICE:  relation "failed_record" already exists, skipping
+ Container 11-kafka-error-contract-redpanda-1 Running 
+ Container 11-kafka-error-contract-postgres-1 Running 
+ Container 11-kafka-error-contract-consumer-1 Recreate 
+ Container 11-kafka-error-contract-consumer-1 Recreated 
+ Container 11-kafka-error-contract-postgres-1 Waiting 
+ Container 11-kafka-error-contract-postgres-1 Healthy 
+ Container 11-kafka-error-contract-consumer-1 Starting 
+ Container 11-kafka-error-contract-consumer-1 Started 
+  SIGKILL at ack ≥ 5000
+ Container 11-kafka-error-contract-consumer-1 Killing 
+ Container 11-kafka-error-contract-consumer-1 Killed 
+ Container 11-kafka-error-contract-postgres-1 Running 
+ Container 11-kafka-error-contract-redpanda-1 Running 
+ Container 11-kafka-error-contract-postgres-1 Waiting 
+ Container 11-kafka-error-contract-postgres-1 Healthy 
+ Container 11-kafka-error-contract-consumer-1 Starting 
+ Container 11-kafka-error-contract-consumer-1 Started 
+{
+  "product": 5880,
+  "side": 5876,
+  "failed": 116,
+  "acked": 5938,
+  "redelivered": 0,
+  "lostLoad": 0,
+  "lostSide": 0,
+  "name": "outcome_mixed-crash_run2",
+  "elapsedSec": 28,
+  "remainingLag": 0,
+  "restarts": 0,
+  "failedMetric": 0,
+  "warnLines": 0
+}
+▶ silent_mixed_run3 (group=g-silent_mixed_run3-1792408225)
+NOTICE:  relation "product" already exists, skipping
+NOTICE:  relation "side_record" already exists, skipping
+NOTICE:  relation "delivery_log" already exists, skipping
+NOTICE:  relation "ack_log" already exists, skipping
+NOTICE:  relation "failed_record" already exists, skipping
+ Container 11-kafka-error-contract-postgres-1 Running 
+ Container 11-kafka-error-contract-redpanda-1 Running 
+ Container 11-kafka-error-contract-consumer-1 Recreate 
+ Container 11-kafka-error-contract-consumer-1 Recreated 
+ Container 11-kafka-error-contract-postgres-1 Waiting 
+ Container 11-kafka-error-contract-postgres-1 Healthy 
+ Container 11-kafka-error-contract-consumer-1 Starting 
+ Container 11-kafka-error-contract-consumer-1 Started 
+{
+  "product": 9880,
+  "side": 9890,
+  "failed": 0,
+  "acked": 10000,
+  "redelivered": 0,
+  "lostLoad": 120,
+  "lostSide": 110,
+  "name": "silent_mixed_run3",
+  "elapsedSec": 52,
+  "remainingLag": 0,
+  "restarts": 0,
+  "failedMetric": 0,
+  "warnLines": 110
+}
+▶ propagate_mixed_run3 (group=g-propagate_mixed_run3-1792408298)
+NOTICE:  relation "product" already exists, skipping
+NOTICE:  relation "side_record" already exists, skipping
+NOTICE:  relation "delivery_log" already exists, skipping
+NOTICE:  relation "ack_log" already exists, skipping
+NOTICE:  relation "failed_record" already exists, skipping
+ Container 11-kafka-error-contract-postgres-1 Running 
+ Container 11-kafka-error-contract-redpanda-1 Running 
+ Container 11-kafka-error-contract-consumer-1 Recreate 
+ Container 11-kafka-error-contract-consumer-1 Recreated 
+ Container 11-kafka-error-contract-postgres-1 Waiting 
+ Container 11-kafka-error-contract-postgres-1 Healthy 
+ Container 11-kafka-error-contract-consumer-1 Starting 
+ Container 11-kafka-error-contract-consumer-1 Started 
+{
+  "product": 49,
+  "side": 49,
+  "failed": 0,
+  "acked": 49,
+  "redelivered": 2,
+  "lostLoad": 0,
+  "lostSide": 0,
+  "name": "propagate_mixed_run3",
+  "elapsedSec": 183,
+  "remainingLag": 9951,
+  "restarts": 52,
+  "failedMetric": 0,
+  "warnLines": 0
+}
+▶ outcome_mixed_run3 (group=g-outcome_mixed_run3-1792408501)
+NOTICE:  relation "product" already exists, skipping
+NOTICE:  relation "side_record" already exists, skipping
+NOTICE:  relation "delivery_log" already exists, skipping
+NOTICE:  relation "ack_log" already exists, skipping
+NOTICE:  relation "failed_record" already exists, skipping
+ Container 11-kafka-error-contract-postgres-1 Running 
+ Container 11-kafka-error-contract-redpanda-1 Running 
+ Container 11-kafka-error-contract-consumer-1 Recreate 
+ Container 11-kafka-error-contract-consumer-1 Recreated 
+ Container 11-kafka-error-contract-postgres-1 Waiting 
+ Container 11-kafka-error-contract-postgres-1 Healthy 
+ Container 11-kafka-error-contract-consumer-1 Starting 
+ Container 11-kafka-error-contract-consumer-1 Started 
+{
+  "product": 9890,
+  "side": 9890,
+  "failed": 210,
+  "acked": 10000,
+  "redelivered": 0,
+  "lostLoad": 0,
+  "lostSide": 0,
+  "name": "outcome_mixed_run3",
+  "elapsedSec": 45,
+  "remainingLag": 0,
+  "restarts": 0,
+  "failedMetric": 210,
+  "warnLines": 0
+}
+▶ silent_transient_run3 (group=g-silent_transient_run3-1792408566)
+NOTICE:  relation "product" already exists, skipping
+NOTICE:  relation "side_record" already exists, skipping
+NOTICE:  relation "delivery_log" already exists, skipping
+NOTICE:  relation "ack_log" already exists, skipping
+NOTICE:  relation "failed_record" already exists, skipping
+ Container 11-kafka-error-contract-postgres-1 Running 
+ Container 11-kafka-error-contract-redpanda-1 Running 
+ Container 11-kafka-error-contract-consumer-1 Recreate 
+ Container 11-kafka-error-contract-consumer-1 Recreated 
+ Container 11-kafka-error-contract-postgres-1 Waiting 
+ Container 11-kafka-error-contract-postgres-1 Healthy 
+ Container 11-kafka-error-contract-consumer-1 Starting 
+ Container 11-kafka-error-contract-consumer-1 Started 
+{
+  "product": 9990,
+  "side": 10000,
+  "failed": 0,
+  "acked": 10000,
+  "redelivered": 0,
+  "lostLoad": 10,
+  "lostSide": 0,
+  "name": "silent_transient_run3",
+  "elapsedSec": 43,
+  "remainingLag": 0,
+  "restarts": 0,
+  "failedMetric": 0,
+  "warnLines": 0
+}
+▶ propagate_transient_run3 (group=g-propagate_transient_run3-1792408628)
+NOTICE:  relation "product" already exists, skipping
+NOTICE:  relation "side_record" already exists, skipping
+NOTICE:  relation "delivery_log" already exists, skipping
+NOTICE:  relation "ack_log" already exists, skipping
+NOTICE:  relation "failed_record" already exists, skipping
+ Container 11-kafka-error-contract-redpanda-1 Running 
+ Container 11-kafka-error-contract-postgres-1 Running 
+ Container 11-kafka-error-contract-consumer-1 Recreate 
+ Container 11-kafka-error-contract-consumer-1 Recreated 
+ Container 11-kafka-error-contract-postgres-1 Waiting 
+ Container 11-kafka-error-contract-postgres-1 Healthy 
+ Container 11-kafka-error-contract-consumer-1 Starting 
+ Container 11-kafka-error-contract-consumer-1 Started 
+{
+  "product": 10000,
+  "side": 10000,
+  "failed": 0,
+  "acked": 10000,
+  "redelivered": 12,
+  "lostLoad": 0,
+  "lostSide": 0,
+  "name": "propagate_transient_run3",
+  "elapsedSec": 55,
+  "remainingLag": 0,
+  "restarts": 10,
+  "failedMetric": 0,
+  "warnLines": 0
+}
+▶ outcome_transient_run3 (group=g-outcome_transient_run3-1792408702)
+NOTICE:  relation "product" already exists, skipping
+NOTICE:  relation "side_record" already exists, skipping
+NOTICE:  relation "delivery_log" already exists, skipping
+NOTICE:  relation "ack_log" already exists, skipping
+NOTICE:  relation "failed_record" already exists, skipping
+ Container 11-kafka-error-contract-postgres-1 Running 
+ Container 11-kafka-error-contract-redpanda-1 Running 
+ Container 11-kafka-error-contract-consumer-1 Recreate 
+ Container 11-kafka-error-contract-consumer-1 Recreated 
+ Container 11-kafka-error-contract-postgres-1 Waiting 
+ Container 11-kafka-error-contract-postgres-1 Healthy 
+ Container 11-kafka-error-contract-consumer-1 Starting 
+ Container 11-kafka-error-contract-consumer-1 Started 
+{
+  "product": 10000,
+  "side": 10000,
+  "failed": 0,
+  "acked": 10000,
+  "redelivered": 0,
+  "lostLoad": 0,
+  "lostSide": 0,
+  "name": "outcome_transient_run3",
+  "elapsedSec": 46,
+  "remainingLag": 0,
+  "restarts": 0,
+  "failedMetric": 0,
+  "warnLines": 0
+}
+▶ silent_mixed-crash_run3 (group=g-silent_mixed-crash_run3-1792408767)
+NOTICE:  relation "product" already exists, skipping
+NOTICE:  relation "side_record" already exists, skipping
+NOTICE:  relation "delivery_log" already exists, skipping
+NOTICE:  relation "ack_log" already exists, skipping
+NOTICE:  relation "failed_record" already exists, skipping
+ Container 11-kafka-error-contract-postgres-1 Running 
+ Container 11-kafka-error-contract-redpanda-1 Running 
+ Container 11-kafka-error-contract-consumer-1 Recreate 
+ Container 11-kafka-error-contract-consumer-1 Recreated 
+ Container 11-kafka-error-contract-postgres-1 Waiting 
+ Container 11-kafka-error-contract-postgres-1 Healthy 
+ Container 11-kafka-error-contract-consumer-1 Starting 
+ Container 11-kafka-error-contract-consumer-1 Started 
+  SIGKILL at ack ≥ 5000
+ Container 11-kafka-error-contract-consumer-1 Killing 
+ Container 11-kafka-error-contract-consumer-1 Killed 
+ Container 11-kafka-error-contract-postgres-1 Running 
+ Container 11-kafka-error-contract-redpanda-1 Running 
+ Container 11-kafka-error-contract-postgres-1 Waiting 
+ Container 11-kafka-error-contract-postgres-1 Healthy 
+ Container 11-kafka-error-contract-consumer-1 Starting 
+ Container 11-kafka-error-contract-consumer-1 Started 
+{
+  "product": 5037,
+  "side": 5048,
+  "failed": 0,
+  "acked": 5098,
+  "redelivered": 0,
+  "lostLoad": 61,
+  "lostSide": 50,
+  "name": "silent_mixed-crash_run3",
+  "elapsedSec": 23,
+  "remainingLag": 0,
+  "restarts": 0,
+  "failedMetric": 0,
+  "warnLines": 50
+}
+▶ outcome_mixed-crash_run3 (group=g-outcome_mixed-crash_run3-1792408810)
+NOTICE:  relation "product" already exists, skipping
+NOTICE:  relation "side_record" already exists, skipping
+NOTICE:  relation "delivery_log" already exists, skipping
+NOTICE:  relation "ack_log" already exists, skipping
+NOTICE:  relation "failed_record" already exists, skipping
+ Container 11-kafka-error-contract-redpanda-1 Running 
+ Container 11-kafka-error-contract-postgres-1 Running 
+ Container 11-kafka-error-contract-consumer-1 Recreate 
+ Container 11-kafka-error-contract-consumer-1 Recreated 
+ Container 11-kafka-error-contract-postgres-1 Waiting 
+ Container 11-kafka-error-contract-postgres-1 Healthy 
+ Container 11-kafka-error-contract-consumer-1 Starting 
+ Container 11-kafka-error-contract-consumer-1 Started 
+  SIGKILL at ack ≥ 5000
+ Container 11-kafka-error-contract-consumer-1 Killing 
+ Container 11-kafka-error-contract-consumer-1 Killed 
+ Container 11-kafka-error-contract-postgres-1 Running 
+ Container 11-kafka-error-contract-redpanda-1 Running 
+ Container 11-kafka-error-contract-postgres-1 Waiting 
+ Container 11-kafka-error-contract-postgres-1 Healthy 
+ Container 11-kafka-error-contract-consumer-1 Starting 
+ Container 11-kafka-error-contract-consumer-1 Started 
+{
+  "product": 5957,
+  "side": 5955,
+  "failed": 119,
+  "acked": 6018,
+  "redelivered": 0,
+  "lostLoad": 0,
+  "lostSide": 0,
+  "name": "outcome_mixed-crash_run3",
+  "elapsedSec": 27,
+  "remainingLag": 0,
+  "restarts": 0,
+  "failedMetric": 0,
+  "warnLines": 0
+}
+| 방식 | 조건 | 회차 | 최종 적재 행 | 부가 저장 행 | 실패 기록 행 | ACK된 id | 남은 lag | 흔적 없는 누락 최종 | 흔적 없는 누락 부가 | WARN 줄 | 실패 메트릭 | 재시작 | 2회 이상 전달 id | 소요 초(참고) |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| silent | mixed | 3 | 9880 | 9890 | 0 | 10000 | 0 | 120 | 110 | 110 | 0 | 0 | 0 | 48 (48, 41, 52) |
+| propagate | mixed | 3 | 49 | 49 | 0 | 49 | 9951 | 0 | 0 | 0 | 0 | 53 (53, 53, 52) | 2 | 181 (181, 180, 183) |
+| outcome | mixed | 3 | 9890 | 9890 | 210 | 10000 | 0 | 0 | 0 | 0 | 210 | 0 | 0 | 45 (51, 41, 45) |
+| silent | transient | 3 | 9990 | 10000 | 0 | 10000 | 0 | 10 | 0 | 0 | 0 | 0 | 0 | 43 (41, 44, 43) |
+| propagate | transient | 3 | 10000 | 10000 | 0 | 10000 | 0 | 0 | 0 | 0 | 0 | 10 | 12 | 51 (51, 51, 55) |
+| outcome | transient | 3 | 10000 | 10000 | 0 | 10000 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 45 (45, 44, 46) |
+| silent | mixed-crash | 3 | 5053 (5053, 5305, 5037) | 5065 (5065, 5316, 5048) | 0 | 5114 (5114, 5367, 5098) | 0 | 61 (61, 63, 61) | 50 (50, 52, 50) | 50 (50, 52, 50) | 0 | 0 | 0 | 24 (24, 24, 23) |
+| outcome | mixed-crash | 3 | 5880 (5175, 5880, 5957) | 5876 (5181, 5876, 5955) | 116 (102, 116, 119) | 5938 (5231, 5938, 6018) | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 28 (31, 28, 27) |
+
+칸은 회차 중앙값입니다. 회차마다 값이 다르면 괄호에 원값을 적었습니다.
+matrix exit=0

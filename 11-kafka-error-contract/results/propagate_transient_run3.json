@@ -1,0 +1,15 @@
+{
+  "product": 10000,
+  "side": 10000,
+  "failed": 0,
+  "acked": 10000,
+  "redelivered": 12,
+  "lostLoad": 0,
+  "lostSide": 0,
+  "name": "propagate_transient_run3",
+  "elapsedSec": 55,
+  "remainingLag": 0,
+  "restarts": 10,
+  "failedMetric": 0,
+  "warnLines": 0
+}

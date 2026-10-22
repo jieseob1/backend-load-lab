@@ -1,0 +1,15 @@
+{
+  "product": 9890,
+  "side": 9890,
+  "failed": 210,
+  "acked": 10000,
+  "redelivered": 0,
+  "lostLoad": 0,
+  "lostSide": 0,
+  "name": "outcome_mixed_run2",
+  "elapsedSec": 41,
+  "remainingLag": 0,
+  "restarts": 0,
+  "failedMetric": 210,
+  "warnLines": 0
+}

@@ -1,0 +1,142 @@
+consumer-1  | Picked up JAVA_TOOL_OPTIONS: -Xmx512m
+consumer-1  | 
+consumer-1  |   .   ____          _            __ _ _
+consumer-1  |  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+consumer-1  | ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+consumer-1  |  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+consumer-1  |   '  |____| .__|_| |_|_| |_\__, | / / / /
+consumer-1  |  =========|_|==============|___/=/_/_/_/
+consumer-1  | 
+consumer-1  |  :: Spring Boot ::                (v3.4.5)
+consumer-1  | 
+consumer-1  | 2026-10-19T11:15:05.881Z  INFO 1 --- [kafka-error-contract] [           main] lab.contract.LabApplicationKt            : Starting LabApplicationKt v0.0.1 using Java 21.0.12.1 with PID 1 (/app/app.jar started by root in /app)
+consumer-1  | 2026-10-19T11:15:05.883Z  INFO 1 --- [kafka-error-contract] [           main] lab.contract.LabApplicationKt            : No active profile set, falling back to 1 default profile: "default"
+consumer-1  | 2026-10-19T11:15:07.336Z  INFO 1 --- [kafka-error-contract] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+consumer-1  | 2026-10-19T11:15:07.599Z  INFO 1 --- [kafka-error-contract] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@14d25b6e
+consumer-1  | 2026-10-19T11:15:07.601Z  INFO 1 --- [kafka-error-contract] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+consumer-1  | 2026-10-19T11:15:07.911Z  INFO 1 --- [kafka-error-contract] [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoints beneath base path '/actuator'
+consumer-1  | 2026-10-19T11:15:08.224Z  INFO 1 --- [kafka-error-contract] [           main] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 8080 (http)
+consumer-1  | 2026-10-19T11:15:08.247Z  INFO 1 --- [kafka-error-contract] [           main] lab.contract.LabApplicationKt            : Started LabApplicationKt in 2.771 seconds (process running for 3.159)
+consumer-1  | 2026-10-19T11:15:08.282Z  INFO 1 --- [kafka-error-contract] [           main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+consumer-1  | 	allow.auto.create.topics = true
+consumer-1  | 	auto.commit.interval.ms = 5000
+consumer-1  | 	auto.include.jmx.reporter = true
+consumer-1  | 	auto.offset.reset = earliest
+consumer-1  | 	bootstrap.servers = [redpanda:9092]
+consumer-1  | 	check.crcs = true
+consumer-1  | 	client.dns.lookup = use_all_dns_ips
+consumer-1  | 	client.id = consumer-g-outcome_mixed_run3-1792408501-1
+consumer-1  | 	client.rack = 
+consumer-1  | 	connections.max.idle.ms = 540000
+consumer-1  | 	default.api.timeout.ms = 60000
+consumer-1  | 	enable.auto.commit = false
+consumer-1  | 	enable.metrics.push = true
+consumer-1  | 	exclude.internal.topics = true
+consumer-1  | 	fetch.max.bytes = 52428800
+consumer-1  | 	fetch.max.wait.ms = 500
+consumer-1  | 	fetch.min.bytes = 1
+consumer-1  | 	group.id = g-outcome_mixed_run3-1792408501
+consumer-1  | 	group.instance.id = null
+consumer-1  | 	group.protocol = classic
+consumer-1  | 	group.remote.assignor = null
+consumer-1  | 	heartbeat.interval.ms = 3000
+consumer-1  | 	interceptor.classes = []
+consumer-1  | 	internal.leave.group.on.close = true
+consumer-1  | 	internal.throw.on.fetch.stable.offset.unsupported = false
+consumer-1  | 	isolation.level = read_uncommitted
+consumer-1  | 	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+consumer-1  | 	max.partition.fetch.bytes = 1048576
+consumer-1  | 	max.poll.interval.ms = 300000
+consumer-1  | 	max.poll.records = 500
+consumer-1  | 	metadata.max.age.ms = 300000
+consumer-1  | 	metadata.recovery.strategy = none
+consumer-1  | 	metric.reporters = []
+consumer-1  | 	metrics.num.samples = 2
+consumer-1  | 	metrics.recording.level = INFO
+consumer-1  | 	metrics.sample.window.ms = 30000
+consumer-1  | 	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+consumer-1  | 	receive.buffer.bytes = 65536
+consumer-1  | 	reconnect.backoff.max.ms = 1000
+consumer-1  | 	reconnect.backoff.ms = 50
+consumer-1  | 	request.timeout.ms = 30000
+consumer-1  | 	retry.backoff.max.ms = 1000
+consumer-1  | 	retry.backoff.ms = 100
+consumer-1  | 	sasl.client.callback.handler.class = null
+consumer-1  | 	sasl.jaas.config = null
+consumer-1  | 	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+consumer-1  | 	sasl.kerberos.min.time.before.relogin = 60000
+consumer-1  | 	sasl.kerberos.service.name = null
+consumer-1  | 	sasl.kerberos.ticket.renew.jitter = 0.05
+consumer-1  | 	sasl.kerberos.ticket.renew.window.factor = 0.8
+consumer-1  | 	sasl.login.callback.handler.class = null
+consumer-1  | 	sasl.login.class = null
+consumer-1  | 	sasl.login.connect.timeout.ms = null
+consumer-1  | 	sasl.login.read.timeout.ms = null
+consumer-1  | 	sasl.login.refresh.buffer.seconds = 300
+consumer-1  | 	sasl.login.refresh.min.period.seconds = 60
+consumer-1  | 	sasl.login.refresh.window.factor = 0.8
+consumer-1  | 	sasl.login.refresh.window.jitter = 0.05
+consumer-1  | 	sasl.login.retry.backoff.max.ms = 10000
+consumer-1  | 	sasl.login.retry.backoff.ms = 100
+consumer-1  | 	sasl.mechanism = GSSAPI
+consumer-1  | 	sasl.oauthbearer.clock.skew.seconds = 30
+consumer-1  | 	sasl.oauthbearer.expected.audience = null
+consumer-1  | 	sasl.oauthbearer.expected.issuer = null
+consumer-1  | 	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+consumer-1  | 	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+consumer-1  | 	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+consumer-1  | 	sasl.oauthbearer.jwks.endpoint.url = null
+consumer-1  | 	sasl.oauthbearer.scope.claim.name = scope
+consumer-1  | 	sasl.oauthbearer.sub.claim.name = sub
+consumer-1  | 	sasl.oauthbearer.token.endpoint.url = null
+consumer-1  | 	security.protocol = PLAINTEXT
+consumer-1  | 	security.providers = null
+consumer-1  | 	send.buffer.bytes = 131072
+consumer-1  | 	session.timeout.ms = 45000
+consumer-1  | 	socket.connection.setup.timeout.max.ms = 30000
+consumer-1  | 	socket.connection.setup.timeout.ms = 10000
+consumer-1  | 	ssl.cipher.suites = null
+consumer-1  | 	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+consumer-1  | 	ssl.endpoint.identification.algorithm = https
+consumer-1  | 	ssl.engine.factory.class = null
+consumer-1  | 	ssl.key.password = null
+consumer-1  | 	ssl.keymanager.algorithm = SunX509
+consumer-1  | 	ssl.keystore.certificate.chain = null
+consumer-1  | 	ssl.keystore.key = null
+consumer-1  | 	ssl.keystore.location = null
+consumer-1  | 	ssl.keystore.password = null
+consumer-1  | 	ssl.keystore.type = JKS
+consumer-1  | 	ssl.protocol = TLSv1.3
+consumer-1  | 	ssl.provider = null
+consumer-1  | 	ssl.secure.random.implementation = null
+consumer-1  | 	ssl.trustmanager.algorithm = PKIX
+consumer-1  | 	ssl.truststore.certificates = null
+consumer-1  | 	ssl.truststore.location = null
+consumer-1  | 	ssl.truststore.password = null
+consumer-1  | 	ssl.truststore.type = JKS
+consumer-1  | 	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+consumer-1  | 
+consumer-1  | 2026-10-19T11:15:08.314Z  INFO 1 --- [kafka-error-contract] [           main] o.a.k.c.t.i.KafkaMetricsCollector        : initializing Kafka metrics collector
+consumer-1  | 2026-10-19T11:15:08.414Z  INFO 1 --- [kafka-error-contract] [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.8.1
+consumer-1  | 2026-10-19T11:15:08.415Z  INFO 1 --- [kafka-error-contract] [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 70d6ff42debf7e17
+consumer-1  | 2026-10-19T11:15:08.415Z  INFO 1 --- [kafka-error-contract] [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1792408508414
+consumer-1  | 2026-10-19T11:15:08.421Z  INFO 1 --- [kafka-error-contract] [n3-1792408501-1] o.a.k.c.c.internals.LegacyKafkaConsumer  : [Consumer clientId=consumer-g-outcome_mixed_run3-1792408501-1, groupId=g-outcome_mixed_run3-1792408501] Subscribed to topic(s): products-mixed
+consumer-1  | 2026-10-19T11:15:08.439Z  INFO 1 --- [kafka-error-contract] [           main] lab.contract.ConsumerPipeline            : consumer started mode=outcome topic=products-mixed group=g-outcome_mixed_run3-1792408501
+consumer-1  | 2026-10-19T11:15:08.689Z  INFO 1 --- [kafka-error-contract] [n3-1792408501-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-g-outcome_mixed_run3-1792408501-1, groupId=g-outcome_mixed_run3-1792408501] Cluster ID: redpanda.8dd8c50d-4a0f-4ffb-8bb0-af4511389295
+consumer-1  | 2026-10-19T11:15:08.691Z  INFO 1 --- [kafka-error-contract] [n3-1792408501-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-outcome_mixed_run3-1792408501-1, groupId=g-outcome_mixed_run3-1792408501] Discovered group coordinator redpanda:9092 (id: 2147483647 rack: null)
+consumer-1  | 2026-10-19T11:15:08.693Z  INFO 1 --- [kafka-error-contract] [n3-1792408501-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-outcome_mixed_run3-1792408501-1, groupId=g-outcome_mixed_run3-1792408501] (Re-)joining group
+consumer-1  | 2026-10-19T11:15:08.707Z  INFO 1 --- [kafka-error-contract] [n3-1792408501-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-outcome_mixed_run3-1792408501-1, groupId=g-outcome_mixed_run3-1792408501] Request joining group due to: need to re-join with the given member-id: consumer-g-outcome_mixed_run3-1792408501-1-990f56c6-77b9-47cb-9c68-e3758bfe5377
+consumer-1  | 2026-10-19T11:15:08.708Z  INFO 1 --- [kafka-error-contract] [n3-1792408501-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-outcome_mixed_run3-1792408501-1, groupId=g-outcome_mixed_run3-1792408501] (Re-)joining group
+consumer-1  | 2026-10-19T11:15:08.708Z  INFO 1 --- [kafka-error-contract] [n3-1792408501-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-outcome_mixed_run3-1792408501-1, groupId=g-outcome_mixed_run3-1792408501] Successfully joined group with generation Generation{generationId=1, memberId='consumer-g-outcome_mixed_run3-1792408501-1-990f56c6-77b9-47cb-9c68-e3758bfe5377', protocol='range'}
+consumer-1  | 2026-10-19T11:15:08.712Z  INFO 1 --- [kafka-error-contract] [n3-1792408501-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-outcome_mixed_run3-1792408501-1, groupId=g-outcome_mixed_run3-1792408501] Finished assignment for group at generation 1: {consumer-g-outcome_mixed_run3-1792408501-1-990f56c6-77b9-47cb-9c68-e3758bfe5377=Assignment(partitions=[products-mixed-0, products-mixed-1, products-mixed-2, products-mixed-3])}
+consumer-1  | 2026-10-19T11:15:08.715Z  INFO 1 --- [kafka-error-contract] [n3-1792408501-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-outcome_mixed_run3-1792408501-1, groupId=g-outcome_mixed_run3-1792408501] Successfully synced group in generation Generation{generationId=1, memberId='consumer-g-outcome_mixed_run3-1792408501-1-990f56c6-77b9-47cb-9c68-e3758bfe5377', protocol='range'}
+consumer-1  | 2026-10-19T11:15:08.715Z  INFO 1 --- [kafka-error-contract] [n3-1792408501-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-outcome_mixed_run3-1792408501-1, groupId=g-outcome_mixed_run3-1792408501] Notifying assignor about the new Assignment(partitions=[products-mixed-0, products-mixed-1, products-mixed-2, products-mixed-3])
+consumer-1  | 2026-10-19T11:15:08.716Z  INFO 1 --- [kafka-error-contract] [n3-1792408501-1] k.c.c.i.ConsumerRebalanceListenerInvoker : [Consumer clientId=consumer-g-outcome_mixed_run3-1792408501-1, groupId=g-outcome_mixed_run3-1792408501] Adding newly assigned partitions: products-mixed-0, products-mixed-1, products-mixed-2, products-mixed-3
+consumer-1  | 2026-10-19T11:15:08.720Z  INFO 1 --- [kafka-error-contract] [n3-1792408501-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-outcome_mixed_run3-1792408501-1, groupId=g-outcome_mixed_run3-1792408501] Found no committed offset for partition products-mixed-2
+consumer-1  | 2026-10-19T11:15:08.720Z  INFO 1 --- [kafka-error-contract] [n3-1792408501-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-outcome_mixed_run3-1792408501-1, groupId=g-outcome_mixed_run3-1792408501] Found no committed offset for partition products-mixed-3
+consumer-1  | 2026-10-19T11:15:08.720Z  INFO 1 --- [kafka-error-contract] [n3-1792408501-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-outcome_mixed_run3-1792408501-1, groupId=g-outcome_mixed_run3-1792408501] Found no committed offset for partition products-mixed-0
+consumer-1  | 2026-10-19T11:15:08.720Z  INFO 1 --- [kafka-error-contract] [n3-1792408501-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-outcome_mixed_run3-1792408501-1, groupId=g-outcome_mixed_run3-1792408501] Found no committed offset for partition products-mixed-1
+consumer-1  | 2026-10-19T11:15:08.724Z  INFO 1 --- [kafka-error-contract] [n3-1792408501-1] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-g-outcome_mixed_run3-1792408501-1, groupId=g-outcome_mixed_run3-1792408501] Resetting offset for partition products-mixed-2 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[redpanda:9092 (id: 0 rack: null)], epoch=absent}}.
+consumer-1  | 2026-10-19T11:15:08.724Z  INFO 1 --- [kafka-error-contract] [n3-1792408501-1] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-g-outcome_mixed_run3-1792408501-1, groupId=g-outcome_mixed_run3-1792408501] Resetting offset for partition products-mixed-3 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[redpanda:9092 (id: 0 rack: null)], epoch=absent}}.
+consumer-1  | 2026-10-19T11:15:08.724Z  INFO 1 --- [kafka-error-contract] [n3-1792408501-1] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-g-outcome_mixed_run3-1792408501-1, groupId=g-outcome_mixed_run3-1792408501] Resetting offset for partition products-mixed-0 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[redpanda:9092 (id: 0 rack: null)], epoch=absent}}.
+consumer-1  | 2026-10-19T11:15:08.724Z  INFO 1 --- [kafka-error-contract] [n3-1792408501-1] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-g-outcome_mixed_run3-1792408501-1, groupId=g-outcome_mixed_run3-1792408501] Resetting offset for partition products-mixed-1 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[redpanda:9092 (id: 0 rack: null)], epoch=absent}}.

@@ -1,0 +1,1447 @@
+consumer-1  | Picked up JAVA_TOOL_OPTIONS: -Xmx512m
+consumer-1  | 
+consumer-1  |   .   ____          _            __ _ _
+consumer-1  |  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+consumer-1  | ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+consumer-1  |  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+consumer-1  |   '  |____| .__|_| |_|_| |_\__, | / / / /
+consumer-1  |  =========|_|==============|___/=/_/_/_/
+consumer-1  | 
+consumer-1  |  :: Spring Boot ::                (v3.4.5)
+consumer-1  | 
+consumer-1  | 2026-10-19T11:06:42.643Z  INFO 1 --- [kafka-error-contract] [           main] lab.contract.LabApplicationKt            : Starting LabApplicationKt v0.0.1 using Java 21.0.12.1 with PID 1 (/app/app.jar started by root in /app)
+consumer-1  | 2026-10-19T11:06:42.646Z  INFO 1 --- [kafka-error-contract] [           main] lab.contract.LabApplicationKt            : No active profile set, falling back to 1 default profile: "default"
+consumer-1  | 2026-10-19T11:06:45.131Z  INFO 1 --- [kafka-error-contract] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+consumer-1  | 2026-10-19T11:06:45.287Z  INFO 1 --- [kafka-error-contract] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@51c65a43
+consumer-1  | 2026-10-19T11:06:45.288Z  INFO 1 --- [kafka-error-contract] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+consumer-1  | 2026-10-19T11:06:45.562Z  INFO 1 --- [kafka-error-contract] [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoints beneath base path '/actuator'
+consumer-1  | 2026-10-19T11:06:45.878Z  INFO 1 --- [kafka-error-contract] [           main] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 8080 (http)
+consumer-1  | 2026-10-19T11:06:45.894Z  INFO 1 --- [kafka-error-contract] [           main] lab.contract.LabApplicationKt            : Started LabApplicationKt in 3.951 seconds (process running for 4.465)
+consumer-1  | 2026-10-19T11:06:45.943Z  INFO 1 --- [kafka-error-contract] [           main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+consumer-1  | 	allow.auto.create.topics = true
+consumer-1  | 	auto.commit.interval.ms = 5000
+consumer-1  | 	auto.include.jmx.reporter = true
+consumer-1  | 	auto.offset.reset = earliest
+consumer-1  | 	bootstrap.servers = [redpanda:9092]
+consumer-1  | 	check.crcs = true
+consumer-1  | 	client.dns.lookup = use_all_dns_ips
+consumer-1  | 	client.id = consumer-g-propagate_transient_run2-1792407998-1
+consumer-1  | 	client.rack = 
+consumer-1  | 	connections.max.idle.ms = 540000
+consumer-1  | 	default.api.timeout.ms = 60000
+consumer-1  | 	enable.auto.commit = false
+consumer-1  | 	enable.metrics.push = true
+consumer-1  | 	exclude.internal.topics = true
+consumer-1  | 	fetch.max.bytes = 52428800
+consumer-1  | 	fetch.max.wait.ms = 500
+consumer-1  | 	fetch.min.bytes = 1
+consumer-1  | 	group.id = g-propagate_transient_run2-1792407998
+consumer-1  | 	group.instance.id = null
+consumer-1  | 	group.protocol = classic
+consumer-1  | 	group.remote.assignor = null
+consumer-1  | 	heartbeat.interval.ms = 3000
+consumer-1  | 	interceptor.classes = []
+consumer-1  | 	internal.leave.group.on.close = true
+consumer-1  | 	internal.throw.on.fetch.stable.offset.unsupported = false
+consumer-1  | 	isolation.level = read_uncommitted
+consumer-1  | 	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+consumer-1  | 	max.partition.fetch.bytes = 1048576
+consumer-1  | 	max.poll.interval.ms = 300000
+consumer-1  | 	max.poll.records = 500
+consumer-1  | 	metadata.max.age.ms = 300000
+consumer-1  | 	metadata.recovery.strategy = none
+consumer-1  | 	metric.reporters = []
+consumer-1  | 	metrics.num.samples = 2
+consumer-1  | 	metrics.recording.level = INFO
+consumer-1  | 	metrics.sample.window.ms = 30000
+consumer-1  | 	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+consumer-1  | 	receive.buffer.bytes = 65536
+consumer-1  | 	reconnect.backoff.max.ms = 1000
+consumer-1  | 	reconnect.backoff.ms = 50
+consumer-1  | 	request.timeout.ms = 30000
+consumer-1  | 	retry.backoff.max.ms = 1000
+consumer-1  | 	retry.backoff.ms = 100
+consumer-1  | 	sasl.client.callback.handler.class = null
+consumer-1  | 	sasl.jaas.config = null
+consumer-1  | 	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+consumer-1  | 	sasl.kerberos.min.time.before.relogin = 60000
+consumer-1  | 	sasl.kerberos.service.name = null
+consumer-1  | 	sasl.kerberos.ticket.renew.jitter = 0.05
+consumer-1  | 	sasl.kerberos.ticket.renew.window.factor = 0.8
+consumer-1  | 	sasl.login.callback.handler.class = null
+consumer-1  | 	sasl.login.class = null
+consumer-1  | 	sasl.login.connect.timeout.ms = null
+consumer-1  | 	sasl.login.read.timeout.ms = null
+consumer-1  | 	sasl.login.refresh.buffer.seconds = 300
+consumer-1  | 	sasl.login.refresh.min.period.seconds = 60
+consumer-1  | 	sasl.login.refresh.window.factor = 0.8
+consumer-1  | 	sasl.login.refresh.window.jitter = 0.05
+consumer-1  | 	sasl.login.retry.backoff.max.ms = 10000
+consumer-1  | 	sasl.login.retry.backoff.ms = 100
+consumer-1  | 	sasl.mechanism = GSSAPI
+consumer-1  | 	sasl.oauthbearer.clock.skew.seconds = 30
+consumer-1  | 	sasl.oauthbearer.expected.audience = null
+consumer-1  | 	sasl.oauthbearer.expected.issuer = null
+consumer-1  | 	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+consumer-1  | 	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+consumer-1  | 	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+consumer-1  | 	sasl.oauthbearer.jwks.endpoint.url = null
+consumer-1  | 	sasl.oauthbearer.scope.claim.name = scope
+consumer-1  | 	sasl.oauthbearer.sub.claim.name = sub
+consumer-1  | 	sasl.oauthbearer.token.endpoint.url = null
+consumer-1  | 	security.protocol = PLAINTEXT
+consumer-1  | 	security.providers = null
+consumer-1  | 	send.buffer.bytes = 131072
+consumer-1  | 	session.timeout.ms = 45000
+consumer-1  | 	socket.connection.setup.timeout.max.ms = 30000
+consumer-1  | 	socket.connection.setup.timeout.ms = 10000
+consumer-1  | 	ssl.cipher.suites = null
+consumer-1  | 	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+consumer-1  | 	ssl.endpoint.identification.algorithm = https
+consumer-1  | 	ssl.engine.factory.class = null
+consumer-1  | 	ssl.key.password = null
+consumer-1  | 	ssl.keymanager.algorithm = SunX509
+consumer-1  | 	ssl.keystore.certificate.chain = null
+consumer-1  | 	ssl.keystore.key = null
+consumer-1  | 	ssl.keystore.location = null
+consumer-1  | 	ssl.keystore.password = null
+consumer-1  | 	ssl.keystore.type = JKS
+consumer-1  | 	ssl.protocol = TLSv1.3
+consumer-1  | 	ssl.provider = null
+consumer-1  | 	ssl.secure.random.implementation = null
+consumer-1  | 	ssl.trustmanager.algorithm = PKIX
+consumer-1  | 	ssl.truststore.certificates = null
+consumer-1  | 	ssl.truststore.location = null
+consumer-1  | 	ssl.truststore.password = null
+consumer-1  | 	ssl.truststore.type = JKS
+consumer-1  | 	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+consumer-1  | 
+consumer-1  | 2026-10-19T11:06:45.976Z  INFO 1 --- [kafka-error-contract] [           main] o.a.k.c.t.i.KafkaMetricsCollector        : initializing Kafka metrics collector
+consumer-1  | 2026-10-19T11:06:46.080Z  INFO 1 --- [kafka-error-contract] [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.8.1
+consumer-1  | 2026-10-19T11:06:46.080Z  INFO 1 --- [kafka-error-contract] [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 70d6ff42debf7e17
+consumer-1  | 2026-10-19T11:06:46.080Z  INFO 1 --- [kafka-error-contract] [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1792408006079
+consumer-1  | 2026-10-19T11:06:46.091Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-1] o.a.k.c.c.internals.LegacyKafkaConsumer  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-1, groupId=g-propagate_transient_run2-1792407998] Subscribed to topic(s): products-transient
+consumer-1  | 2026-10-19T11:06:46.096Z  INFO 1 --- [kafka-error-contract] [           main] lab.contract.ConsumerPipeline            : consumer started mode=propagate topic=products-transient group=g-propagate_transient_run2-1792407998
+consumer-1  | 2026-10-19T11:06:46.320Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-1, groupId=g-propagate_transient_run2-1792407998] Cluster ID: redpanda.8dd8c50d-4a0f-4ffb-8bb0-af4511389295
+consumer-1  | 2026-10-19T11:06:46.322Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-1, groupId=g-propagate_transient_run2-1792407998] Discovered group coordinator redpanda:9092 (id: 2147483647 rack: null)
+consumer-1  | 2026-10-19T11:06:46.324Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-1, groupId=g-propagate_transient_run2-1792407998] (Re-)joining group
+consumer-1  | 2026-10-19T11:06:46.332Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-1, groupId=g-propagate_transient_run2-1792407998] Request joining group due to: need to re-join with the given member-id: consumer-g-propagate_transient_run2-1792407998-1-a536eae0-337d-4473-9cf5-e54c070c70de
+consumer-1  | 2026-10-19T11:06:46.333Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-1, groupId=g-propagate_transient_run2-1792407998] (Re-)joining group
+consumer-1  | 2026-10-19T11:06:46.334Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-1, groupId=g-propagate_transient_run2-1792407998] Successfully joined group with generation Generation{generationId=1, memberId='consumer-g-propagate_transient_run2-1792407998-1-a536eae0-337d-4473-9cf5-e54c070c70de', protocol='range'}
+consumer-1  | 2026-10-19T11:06:46.337Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-1, groupId=g-propagate_transient_run2-1792407998] Finished assignment for group at generation 1: {consumer-g-propagate_transient_run2-1792407998-1-a536eae0-337d-4473-9cf5-e54c070c70de=Assignment(partitions=[products-transient-0, products-transient-1, products-transient-2, products-transient-3])}
+consumer-1  | 2026-10-19T11:06:46.341Z  INFO 1 --- [kafka-error-contract] [run2-1792407998] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-1, groupId=g-propagate_transient_run2-1792407998] Successfully synced group in generation Generation{generationId=1, memberId='consumer-g-propagate_transient_run2-1792407998-1-a536eae0-337d-4473-9cf5-e54c070c70de', protocol='range'}
+consumer-1  | 2026-10-19T11:06:46.341Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-1, groupId=g-propagate_transient_run2-1792407998] Notifying assignor about the new Assignment(partitions=[products-transient-0, products-transient-1, products-transient-2, products-transient-3])
+consumer-1  | 2026-10-19T11:06:46.343Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-1] k.c.c.i.ConsumerRebalanceListenerInvoker : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-1, groupId=g-propagate_transient_run2-1792407998] Adding newly assigned partitions: products-transient-0, products-transient-1, products-transient-2, products-transient-3
+consumer-1  | 2026-10-19T11:06:46.346Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-1, groupId=g-propagate_transient_run2-1792407998] Found no committed offset for partition products-transient-3
+consumer-1  | 2026-10-19T11:06:46.346Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-1, groupId=g-propagate_transient_run2-1792407998] Found no committed offset for partition products-transient-2
+consumer-1  | 2026-10-19T11:06:46.346Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-1, groupId=g-propagate_transient_run2-1792407998] Found no committed offset for partition products-transient-1
+consumer-1  | 2026-10-19T11:06:46.346Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-1, groupId=g-propagate_transient_run2-1792407998] Found no committed offset for partition products-transient-0
+consumer-1  | 2026-10-19T11:06:46.350Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-1] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-1, groupId=g-propagate_transient_run2-1792407998] Resetting offset for partition products-transient-3 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[redpanda:9092 (id: 0 rack: null)], epoch=absent}}.
+consumer-1  | 2026-10-19T11:06:46.350Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-1] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-1, groupId=g-propagate_transient_run2-1792407998] Resetting offset for partition products-transient-2 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[redpanda:9092 (id: 0 rack: null)], epoch=absent}}.
+consumer-1  | 2026-10-19T11:06:46.350Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-1] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-1, groupId=g-propagate_transient_run2-1792407998] Resetting offset for partition products-transient-1 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[redpanda:9092 (id: 0 rack: null)], epoch=absent}}.
+consumer-1  | 2026-10-19T11:06:46.350Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-1] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-1, groupId=g-propagate_transient_run2-1792407998] Resetting offset for partition products-transient-0 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[redpanda:9092 (id: 0 rack: null)], epoch=absent}}.
+consumer-1  | 2026-10-19T11:06:48.710Z ERROR 1 --- [kafka-error-contract] [atcher-worker-2] lab.contract.ConsumerPipeline            : consumer restart #1: org.springframework.dao.TransientDataAccessResourceException: db blip (injected)
+consumer-1  | 2026-10-19T11:06:48.712Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-1] k.c.c.i.ConsumerRebalanceListenerInvoker : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-1, groupId=g-propagate_transient_run2-1792407998] Revoke previously assigned partitions products-transient-0, products-transient-1, products-transient-2, products-transient-3
+consumer-1  | 2026-10-19T11:06:48.712Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-1] k.c.c.i.ConsumerRebalanceListenerInvoker : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-1, groupId=g-propagate_transient_run2-1792407998] The pause flag in partitions [products-transient-3, products-transient-2, products-transient-1, products-transient-0] will be removed due to revocation.
+consumer-1  | 2026-10-19T11:06:48.712Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-1, groupId=g-propagate_transient_run2-1792407998] Member consumer-g-propagate_transient_run2-1792407998-1-a536eae0-337d-4473-9cf5-e54c070c70de sending LeaveGroup request to coordinator redpanda:9092 (id: 2147483647 rack: null) due to the consumer is being closed
+consumer-1  | 2026-10-19T11:06:48.713Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-1, groupId=g-propagate_transient_run2-1792407998] Resetting generation and member id due to: consumer pro-actively leaving the group
+consumer-1  | 2026-10-19T11:06:48.714Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-1, groupId=g-propagate_transient_run2-1792407998] Request joining group due to: consumer pro-actively leaving the group
+consumer-1  | 2026-10-19T11:06:49.219Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-1] o.apache.kafka.common.metrics.Metrics    : Metrics scheduler closed
+consumer-1  | 2026-10-19T11:06:49.220Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-1] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+consumer-1  | 2026-10-19T11:06:49.220Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-1] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter
+consumer-1  | 2026-10-19T11:06:49.220Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-1] o.apache.kafka.common.metrics.Metrics    : Metrics reporters closed
+consumer-1  | 2026-10-19T11:06:49.225Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-1] o.a.kafka.common.utils.AppInfoParser     : App info kafka.consumer for consumer-g-propagate_transient_run2-1792407998-1 unregistered
+consumer-1  | 2026-10-19T11:06:50.064Z  INFO 1 --- [kafka-error-contract] [     parallel-2] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+consumer-1  | 	allow.auto.create.topics = true
+consumer-1  | 	auto.commit.interval.ms = 5000
+consumer-1  | 	auto.include.jmx.reporter = true
+consumer-1  | 	auto.offset.reset = earliest
+consumer-1  | 	bootstrap.servers = [redpanda:9092]
+consumer-1  | 	check.crcs = true
+consumer-1  | 	client.dns.lookup = use_all_dns_ips
+consumer-1  | 	client.id = consumer-g-propagate_transient_run2-1792407998-2
+consumer-1  | 	client.rack = 
+consumer-1  | 	connections.max.idle.ms = 540000
+consumer-1  | 	default.api.timeout.ms = 60000
+consumer-1  | 	enable.auto.commit = false
+consumer-1  | 	enable.metrics.push = true
+consumer-1  | 	exclude.internal.topics = true
+consumer-1  | 	fetch.max.bytes = 52428800
+consumer-1  | 	fetch.max.wait.ms = 500
+consumer-1  | 	fetch.min.bytes = 1
+consumer-1  | 	group.id = g-propagate_transient_run2-1792407998
+consumer-1  | 	group.instance.id = null
+consumer-1  | 	group.protocol = classic
+consumer-1  | 	group.remote.assignor = null
+consumer-1  | 	heartbeat.interval.ms = 3000
+consumer-1  | 	interceptor.classes = []
+consumer-1  | 	internal.leave.group.on.close = true
+consumer-1  | 	internal.throw.on.fetch.stable.offset.unsupported = false
+consumer-1  | 	isolation.level = read_uncommitted
+consumer-1  | 	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+consumer-1  | 	max.partition.fetch.bytes = 1048576
+consumer-1  | 	max.poll.interval.ms = 300000
+consumer-1  | 	max.poll.records = 500
+consumer-1  | 	metadata.max.age.ms = 300000
+consumer-1  | 	metadata.recovery.strategy = none
+consumer-1  | 	metric.reporters = []
+consumer-1  | 	metrics.num.samples = 2
+consumer-1  | 	metrics.recording.level = INFO
+consumer-1  | 	metrics.sample.window.ms = 30000
+consumer-1  | 	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+consumer-1  | 	receive.buffer.bytes = 65536
+consumer-1  | 	reconnect.backoff.max.ms = 1000
+consumer-1  | 	reconnect.backoff.ms = 50
+consumer-1  | 	request.timeout.ms = 30000
+consumer-1  | 	retry.backoff.max.ms = 1000
+consumer-1  | 	retry.backoff.ms = 100
+consumer-1  | 	sasl.client.callback.handler.class = null
+consumer-1  | 	sasl.jaas.config = null
+consumer-1  | 	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+consumer-1  | 	sasl.kerberos.min.time.before.relogin = 60000
+consumer-1  | 	sasl.kerberos.service.name = null
+consumer-1  | 	sasl.kerberos.ticket.renew.jitter = 0.05
+consumer-1  | 	sasl.kerberos.ticket.renew.window.factor = 0.8
+consumer-1  | 	sasl.login.callback.handler.class = null
+consumer-1  | 	sasl.login.class = null
+consumer-1  | 	sasl.login.connect.timeout.ms = null
+consumer-1  | 	sasl.login.read.timeout.ms = null
+consumer-1  | 	sasl.login.refresh.buffer.seconds = 300
+consumer-1  | 	sasl.login.refresh.min.period.seconds = 60
+consumer-1  | 	sasl.login.refresh.window.factor = 0.8
+consumer-1  | 	sasl.login.refresh.window.jitter = 0.05
+consumer-1  | 	sasl.login.retry.backoff.max.ms = 10000
+consumer-1  | 	sasl.login.retry.backoff.ms = 100
+consumer-1  | 	sasl.mechanism = GSSAPI
+consumer-1  | 	sasl.oauthbearer.clock.skew.seconds = 30
+consumer-1  | 	sasl.oauthbearer.expected.audience = null
+consumer-1  | 	sasl.oauthbearer.expected.issuer = null
+consumer-1  | 	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+consumer-1  | 	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+consumer-1  | 	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+consumer-1  | 	sasl.oauthbearer.jwks.endpoint.url = null
+consumer-1  | 	sasl.oauthbearer.scope.claim.name = scope
+consumer-1  | 	sasl.oauthbearer.sub.claim.name = sub
+consumer-1  | 	sasl.oauthbearer.token.endpoint.url = null
+consumer-1  | 	security.protocol = PLAINTEXT
+consumer-1  | 	security.providers = null
+consumer-1  | 	send.buffer.bytes = 131072
+consumer-1  | 	session.timeout.ms = 45000
+consumer-1  | 	socket.connection.setup.timeout.max.ms = 30000
+consumer-1  | 	socket.connection.setup.timeout.ms = 10000
+consumer-1  | 	ssl.cipher.suites = null
+consumer-1  | 	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+consumer-1  | 	ssl.endpoint.identification.algorithm = https
+consumer-1  | 	ssl.engine.factory.class = null
+consumer-1  | 	ssl.key.password = null
+consumer-1  | 	ssl.keymanager.algorithm = SunX509
+consumer-1  | 	ssl.keystore.certificate.chain = null
+consumer-1  | 	ssl.keystore.key = null
+consumer-1  | 	ssl.keystore.location = null
+consumer-1  | 	ssl.keystore.password = null
+consumer-1  | 	ssl.keystore.type = JKS
+consumer-1  | 	ssl.protocol = TLSv1.3
+consumer-1  | 	ssl.provider = null
+consumer-1  | 	ssl.secure.random.implementation = null
+consumer-1  | 	ssl.trustmanager.algorithm = PKIX
+consumer-1  | 	ssl.truststore.certificates = null
+consumer-1  | 	ssl.truststore.location = null
+consumer-1  | 	ssl.truststore.password = null
+consumer-1  | 	ssl.truststore.type = JKS
+consumer-1  | 	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+consumer-1  | 
+consumer-1  | 2026-10-19T11:06:50.065Z  INFO 1 --- [kafka-error-contract] [     parallel-2] o.a.k.c.t.i.KafkaMetricsCollector        : initializing Kafka metrics collector
+consumer-1  | 2026-10-19T11:06:50.070Z  INFO 1 --- [kafka-error-contract] [     parallel-2] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.8.1
+consumer-1  | 2026-10-19T11:06:50.070Z  INFO 1 --- [kafka-error-contract] [     parallel-2] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 70d6ff42debf7e17
+consumer-1  | 2026-10-19T11:06:50.070Z  INFO 1 --- [kafka-error-contract] [     parallel-2] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1792408010070
+consumer-1  | 2026-10-19T11:06:50.070Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-2] o.a.k.c.c.internals.LegacyKafkaConsumer  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-2, groupId=g-propagate_transient_run2-1792407998] Subscribed to topic(s): products-transient
+consumer-1  | 2026-10-19T11:06:50.073Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-2] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-2, groupId=g-propagate_transient_run2-1792407998] Cluster ID: redpanda.8dd8c50d-4a0f-4ffb-8bb0-af4511389295
+consumer-1  | 2026-10-19T11:06:50.080Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-2] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-2, groupId=g-propagate_transient_run2-1792407998] Discovered group coordinator redpanda:9092 (id: 2147483647 rack: null)
+consumer-1  | 2026-10-19T11:06:50.081Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-2] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-2, groupId=g-propagate_transient_run2-1792407998] (Re-)joining group
+consumer-1  | 2026-10-19T11:06:50.083Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-2] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-2, groupId=g-propagate_transient_run2-1792407998] Request joining group due to: need to re-join with the given member-id: consumer-g-propagate_transient_run2-1792407998-2-eeba0d4f-dd80-49b0-a70e-38b9919d3da9
+consumer-1  | 2026-10-19T11:06:50.083Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-2] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-2, groupId=g-propagate_transient_run2-1792407998] (Re-)joining group
+consumer-1  | 2026-10-19T11:06:50.083Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-2] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-2, groupId=g-propagate_transient_run2-1792407998] Successfully joined group with generation Generation{generationId=3, memberId='consumer-g-propagate_transient_run2-1792407998-2-eeba0d4f-dd80-49b0-a70e-38b9919d3da9', protocol='range'}
+consumer-1  | 2026-10-19T11:06:50.084Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-2] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-2, groupId=g-propagate_transient_run2-1792407998] Finished assignment for group at generation 3: {consumer-g-propagate_transient_run2-1792407998-2-eeba0d4f-dd80-49b0-a70e-38b9919d3da9=Assignment(partitions=[products-transient-0, products-transient-1, products-transient-2, products-transient-3])}
+consumer-1  | 2026-10-19T11:06:50.085Z  INFO 1 --- [kafka-error-contract] [run2-1792407998] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-2, groupId=g-propagate_transient_run2-1792407998] Successfully synced group in generation Generation{generationId=3, memberId='consumer-g-propagate_transient_run2-1792407998-2-eeba0d4f-dd80-49b0-a70e-38b9919d3da9', protocol='range'}
+consumer-1  | 2026-10-19T11:06:50.085Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-2] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-2, groupId=g-propagate_transient_run2-1792407998] Notifying assignor about the new Assignment(partitions=[products-transient-0, products-transient-1, products-transient-2, products-transient-3])
+consumer-1  | 2026-10-19T11:06:50.085Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-2] k.c.c.i.ConsumerRebalanceListenerInvoker : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-2, groupId=g-propagate_transient_run2-1792407998] Adding newly assigned partitions: products-transient-0, products-transient-1, products-transient-2, products-transient-3
+consumer-1  | 2026-10-19T11:06:50.086Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-2] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-2, groupId=g-propagate_transient_run2-1792407998] Found no committed offset for partition products-transient-2
+consumer-1  | 2026-10-19T11:06:50.086Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-2] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-2, groupId=g-propagate_transient_run2-1792407998] Found no committed offset for partition products-transient-1
+consumer-1  | 2026-10-19T11:06:50.086Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-2] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-2, groupId=g-propagate_transient_run2-1792407998] Found no committed offset for partition products-transient-0
+consumer-1  | 2026-10-19T11:06:50.086Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-2] o.a.k.c.c.internals.ConsumerUtils        : Setting offset for partition products-transient-3 to the committed offset FetchPosition{offset=525, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[redpanda:9092 (id: 0 rack: null)], epoch=absent}}
+consumer-1  | 2026-10-19T11:06:50.087Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-2] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-2, groupId=g-propagate_transient_run2-1792407998] Resetting offset for partition products-transient-2 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[redpanda:9092 (id: 0 rack: null)], epoch=absent}}.
+consumer-1  | 2026-10-19T11:06:50.087Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-2] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-2, groupId=g-propagate_transient_run2-1792407998] Resetting offset for partition products-transient-1 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[redpanda:9092 (id: 0 rack: null)], epoch=absent}}.
+consumer-1  | 2026-10-19T11:06:50.088Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-2] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-2, groupId=g-propagate_transient_run2-1792407998] Resetting offset for partition products-transient-0 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[redpanda:9092 (id: 0 rack: null)], epoch=absent}}.
+consumer-1  | 2026-10-19T11:06:53.407Z ERROR 1 --- [kafka-error-contract] [atcher-worker-1] lab.contract.ConsumerPipeline            : consumer restart #2: org.springframework.dao.TransientDataAccessResourceException: db blip (injected)
+consumer-1  | 2026-10-19T11:06:53.412Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-2] k.c.c.i.ConsumerRebalanceListenerInvoker : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-2, groupId=g-propagate_transient_run2-1792407998] Revoke previously assigned partitions products-transient-0, products-transient-1, products-transient-2, products-transient-3
+consumer-1  | 2026-10-19T11:06:53.412Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-2] k.c.c.i.ConsumerRebalanceListenerInvoker : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-2, groupId=g-propagate_transient_run2-1792407998] The pause flag in partitions [products-transient-3, products-transient-2, products-transient-1, products-transient-0] will be removed due to revocation.
+consumer-1  | 2026-10-19T11:06:53.412Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-2] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-2, groupId=g-propagate_transient_run2-1792407998] Member consumer-g-propagate_transient_run2-1792407998-2-eeba0d4f-dd80-49b0-a70e-38b9919d3da9 sending LeaveGroup request to coordinator redpanda:9092 (id: 2147483647 rack: null) due to the consumer is being closed
+consumer-1  | 2026-10-19T11:06:53.412Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-2] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-2, groupId=g-propagate_transient_run2-1792407998] Resetting generation and member id due to: consumer pro-actively leaving the group
+consumer-1  | 2026-10-19T11:06:53.413Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-2] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-2, groupId=g-propagate_transient_run2-1792407998] Request joining group due to: consumer pro-actively leaving the group
+consumer-1  | 2026-10-19T11:06:53.920Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-2] o.apache.kafka.common.metrics.Metrics    : Metrics scheduler closed
+consumer-1  | 2026-10-19T11:06:53.921Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-2] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+consumer-1  | 2026-10-19T11:06:53.922Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-2] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter
+consumer-1  | 2026-10-19T11:06:53.922Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-2] o.apache.kafka.common.metrics.Metrics    : Metrics reporters closed
+consumer-1  | 2026-10-19T11:06:53.927Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-2] o.a.kafka.common.utils.AppInfoParser     : App info kafka.consumer for consumer-g-propagate_transient_run2-1792407998-2 unregistered
+consumer-1  | 2026-10-19T11:06:54.586Z  INFO 1 --- [kafka-error-contract] [     parallel-2] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+consumer-1  | 	allow.auto.create.topics = true
+consumer-1  | 	auto.commit.interval.ms = 5000
+consumer-1  | 	auto.include.jmx.reporter = true
+consumer-1  | 	auto.offset.reset = earliest
+consumer-1  | 	bootstrap.servers = [redpanda:9092]
+consumer-1  | 	check.crcs = true
+consumer-1  | 	client.dns.lookup = use_all_dns_ips
+consumer-1  | 	client.id = consumer-g-propagate_transient_run2-1792407998-3
+consumer-1  | 	client.rack = 
+consumer-1  | 	connections.max.idle.ms = 540000
+consumer-1  | 	default.api.timeout.ms = 60000
+consumer-1  | 	enable.auto.commit = false
+consumer-1  | 	enable.metrics.push = true
+consumer-1  | 	exclude.internal.topics = true
+consumer-1  | 	fetch.max.bytes = 52428800
+consumer-1  | 	fetch.max.wait.ms = 500
+consumer-1  | 	fetch.min.bytes = 1
+consumer-1  | 	group.id = g-propagate_transient_run2-1792407998
+consumer-1  | 	group.instance.id = null
+consumer-1  | 	group.protocol = classic
+consumer-1  | 	group.remote.assignor = null
+consumer-1  | 	heartbeat.interval.ms = 3000
+consumer-1  | 	interceptor.classes = []
+consumer-1  | 	internal.leave.group.on.close = true
+consumer-1  | 	internal.throw.on.fetch.stable.offset.unsupported = false
+consumer-1  | 	isolation.level = read_uncommitted
+consumer-1  | 	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+consumer-1  | 	max.partition.fetch.bytes = 1048576
+consumer-1  | 	max.poll.interval.ms = 300000
+consumer-1  | 	max.poll.records = 500
+consumer-1  | 	metadata.max.age.ms = 300000
+consumer-1  | 	metadata.recovery.strategy = none
+consumer-1  | 	metric.reporters = []
+consumer-1  | 	metrics.num.samples = 2
+consumer-1  | 	metrics.recording.level = INFO
+consumer-1  | 	metrics.sample.window.ms = 30000
+consumer-1  | 	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+consumer-1  | 	receive.buffer.bytes = 65536
+consumer-1  | 	reconnect.backoff.max.ms = 1000
+consumer-1  | 	reconnect.backoff.ms = 50
+consumer-1  | 	request.timeout.ms = 30000
+consumer-1  | 	retry.backoff.max.ms = 1000
+consumer-1  | 	retry.backoff.ms = 100
+consumer-1  | 	sasl.client.callback.handler.class = null
+consumer-1  | 	sasl.jaas.config = null
+consumer-1  | 	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+consumer-1  | 	sasl.kerberos.min.time.before.relogin = 60000
+consumer-1  | 	sasl.kerberos.service.name = null
+consumer-1  | 	sasl.kerberos.ticket.renew.jitter = 0.05
+consumer-1  | 	sasl.kerberos.ticket.renew.window.factor = 0.8
+consumer-1  | 	sasl.login.callback.handler.class = null
+consumer-1  | 	sasl.login.class = null
+consumer-1  | 	sasl.login.connect.timeout.ms = null
+consumer-1  | 	sasl.login.read.timeout.ms = null
+consumer-1  | 	sasl.login.refresh.buffer.seconds = 300
+consumer-1  | 	sasl.login.refresh.min.period.seconds = 60
+consumer-1  | 	sasl.login.refresh.window.factor = 0.8
+consumer-1  | 	sasl.login.refresh.window.jitter = 0.05
+consumer-1  | 	sasl.login.retry.backoff.max.ms = 10000
+consumer-1  | 	sasl.login.retry.backoff.ms = 100
+consumer-1  | 	sasl.mechanism = GSSAPI
+consumer-1  | 	sasl.oauthbearer.clock.skew.seconds = 30
+consumer-1  | 	sasl.oauthbearer.expected.audience = null
+consumer-1  | 	sasl.oauthbearer.expected.issuer = null
+consumer-1  | 	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+consumer-1  | 	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+consumer-1  | 	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+consumer-1  | 	sasl.oauthbearer.jwks.endpoint.url = null
+consumer-1  | 	sasl.oauthbearer.scope.claim.name = scope
+consumer-1  | 	sasl.oauthbearer.sub.claim.name = sub
+consumer-1  | 	sasl.oauthbearer.token.endpoint.url = null
+consumer-1  | 	security.protocol = PLAINTEXT
+consumer-1  | 	security.providers = null
+consumer-1  | 	send.buffer.bytes = 131072
+consumer-1  | 	session.timeout.ms = 45000
+consumer-1  | 	socket.connection.setup.timeout.max.ms = 30000
+consumer-1  | 	socket.connection.setup.timeout.ms = 10000
+consumer-1  | 	ssl.cipher.suites = null
+consumer-1  | 	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+consumer-1  | 	ssl.endpoint.identification.algorithm = https
+consumer-1  | 	ssl.engine.factory.class = null
+consumer-1  | 	ssl.key.password = null
+consumer-1  | 	ssl.keymanager.algorithm = SunX509
+consumer-1  | 	ssl.keystore.certificate.chain = null
+consumer-1  | 	ssl.keystore.key = null
+consumer-1  | 	ssl.keystore.location = null
+consumer-1  | 	ssl.keystore.password = null
+consumer-1  | 	ssl.keystore.type = JKS
+consumer-1  | 	ssl.protocol = TLSv1.3
+consumer-1  | 	ssl.provider = null
+consumer-1  | 	ssl.secure.random.implementation = null
+consumer-1  | 	ssl.trustmanager.algorithm = PKIX
+consumer-1  | 	ssl.truststore.certificates = null
+consumer-1  | 	ssl.truststore.location = null
+consumer-1  | 	ssl.truststore.password = null
+consumer-1  | 	ssl.truststore.type = JKS
+consumer-1  | 	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+consumer-1  | 
+consumer-1  | 2026-10-19T11:06:54.587Z  INFO 1 --- [kafka-error-contract] [     parallel-2] o.a.k.c.t.i.KafkaMetricsCollector        : initializing Kafka metrics collector
+consumer-1  | 2026-10-19T11:06:54.591Z  INFO 1 --- [kafka-error-contract] [     parallel-2] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.8.1
+consumer-1  | 2026-10-19T11:06:54.591Z  INFO 1 --- [kafka-error-contract] [     parallel-2] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 70d6ff42debf7e17
+consumer-1  | 2026-10-19T11:06:54.591Z  INFO 1 --- [kafka-error-contract] [     parallel-2] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1792408014591
+consumer-1  | 2026-10-19T11:06:54.591Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-3] o.a.k.c.c.internals.LegacyKafkaConsumer  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-3, groupId=g-propagate_transient_run2-1792407998] Subscribed to topic(s): products-transient
+consumer-1  | 2026-10-19T11:06:54.593Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-3] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-3, groupId=g-propagate_transient_run2-1792407998] Cluster ID: redpanda.8dd8c50d-4a0f-4ffb-8bb0-af4511389295
+consumer-1  | 2026-10-19T11:06:54.598Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-3] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-3, groupId=g-propagate_transient_run2-1792407998] Discovered group coordinator redpanda:9092 (id: 2147483647 rack: null)
+consumer-1  | 2026-10-19T11:06:54.598Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-3] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-3, groupId=g-propagate_transient_run2-1792407998] (Re-)joining group
+consumer-1  | 2026-10-19T11:06:54.600Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-3] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-3, groupId=g-propagate_transient_run2-1792407998] Request joining group due to: need to re-join with the given member-id: consumer-g-propagate_transient_run2-1792407998-3-d41893e2-9e7c-4e9b-9057-0787b2f39c4e
+consumer-1  | 2026-10-19T11:06:54.600Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-3] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-3, groupId=g-propagate_transient_run2-1792407998] (Re-)joining group
+consumer-1  | 2026-10-19T11:06:54.601Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-3] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-3, groupId=g-propagate_transient_run2-1792407998] Successfully joined group with generation Generation{generationId=5, memberId='consumer-g-propagate_transient_run2-1792407998-3-d41893e2-9e7c-4e9b-9057-0787b2f39c4e', protocol='range'}
+consumer-1  | 2026-10-19T11:06:54.601Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-3] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-3, groupId=g-propagate_transient_run2-1792407998] Finished assignment for group at generation 5: {consumer-g-propagate_transient_run2-1792407998-3-d41893e2-9e7c-4e9b-9057-0787b2f39c4e=Assignment(partitions=[products-transient-0, products-transient-1, products-transient-2, products-transient-3])}
+consumer-1  | 2026-10-19T11:06:54.602Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-3] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-3, groupId=g-propagate_transient_run2-1792407998] Successfully synced group in generation Generation{generationId=5, memberId='consumer-g-propagate_transient_run2-1792407998-3-d41893e2-9e7c-4e9b-9057-0787b2f39c4e', protocol='range'}
+consumer-1  | 2026-10-19T11:06:54.602Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-3] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-3, groupId=g-propagate_transient_run2-1792407998] Notifying assignor about the new Assignment(partitions=[products-transient-0, products-transient-1, products-transient-2, products-transient-3])
+consumer-1  | 2026-10-19T11:06:54.602Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-3] k.c.c.i.ConsumerRebalanceListenerInvoker : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-3, groupId=g-propagate_transient_run2-1792407998] Adding newly assigned partitions: products-transient-0, products-transient-1, products-transient-2, products-transient-3
+consumer-1  | 2026-10-19T11:06:54.603Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-3] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-3, groupId=g-propagate_transient_run2-1792407998] Found no committed offset for partition products-transient-2
+consumer-1  | 2026-10-19T11:06:54.603Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-3] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-3, groupId=g-propagate_transient_run2-1792407998] Found no committed offset for partition products-transient-1
+consumer-1  | 2026-10-19T11:06:54.603Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-3] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-3, groupId=g-propagate_transient_run2-1792407998] Found no committed offset for partition products-transient-0
+consumer-1  | 2026-10-19T11:06:54.603Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-3] o.a.k.c.c.internals.ConsumerUtils        : Setting offset for partition products-transient-3 to the committed offset FetchPosition{offset=1539, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[redpanda:9092 (id: 0 rack: null)], epoch=absent}}
+consumer-1  | 2026-10-19T11:06:54.604Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-3] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-3, groupId=g-propagate_transient_run2-1792407998] Resetting offset for partition products-transient-2 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[redpanda:9092 (id: 0 rack: null)], epoch=absent}}.
+consumer-1  | 2026-10-19T11:06:54.604Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-3] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-3, groupId=g-propagate_transient_run2-1792407998] Resetting offset for partition products-transient-1 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[redpanda:9092 (id: 0 rack: null)], epoch=absent}}.
+consumer-1  | 2026-10-19T11:06:54.604Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-3] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-3, groupId=g-propagate_transient_run2-1792407998] Resetting offset for partition products-transient-0 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[redpanda:9092 (id: 0 rack: null)], epoch=absent}}.
+consumer-1  | 2026-10-19T11:06:55.513Z ERROR 1 --- [kafka-error-contract] [atcher-worker-1] lab.contract.ConsumerPipeline            : consumer restart #3: org.springframework.dao.TransientDataAccessResourceException: db blip (injected)
+consumer-1  | 2026-10-19T11:06:55.519Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-3] k.c.c.i.ConsumerRebalanceListenerInvoker : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-3, groupId=g-propagate_transient_run2-1792407998] Revoke previously assigned partitions products-transient-0, products-transient-1, products-transient-2, products-transient-3
+consumer-1  | 2026-10-19T11:06:55.519Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-3] k.c.c.i.ConsumerRebalanceListenerInvoker : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-3, groupId=g-propagate_transient_run2-1792407998] The pause flag in partitions [products-transient-3, products-transient-2, products-transient-1, products-transient-0] will be removed due to revocation.
+consumer-1  | 2026-10-19T11:06:55.519Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-3] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-3, groupId=g-propagate_transient_run2-1792407998] Member consumer-g-propagate_transient_run2-1792407998-3-d41893e2-9e7c-4e9b-9057-0787b2f39c4e sending LeaveGroup request to coordinator redpanda:9092 (id: 2147483647 rack: null) due to the consumer is being closed
+consumer-1  | 2026-10-19T11:06:55.520Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-3] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-3, groupId=g-propagate_transient_run2-1792407998] Resetting generation and member id due to: consumer pro-actively leaving the group
+consumer-1  | 2026-10-19T11:06:55.520Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-3] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-3, groupId=g-propagate_transient_run2-1792407998] Request joining group due to: consumer pro-actively leaving the group
+consumer-1  | 2026-10-19T11:06:56.425Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-3] o.apache.kafka.common.metrics.Metrics    : Metrics scheduler closed
+consumer-1  | 2026-10-19T11:06:56.425Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-3] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+consumer-1  | 2026-10-19T11:06:56.425Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-3] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter
+consumer-1  | 2026-10-19T11:06:56.425Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-3] o.apache.kafka.common.metrics.Metrics    : Metrics reporters closed
+consumer-1  | 2026-10-19T11:06:56.430Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-3] o.a.kafka.common.utils.AppInfoParser     : App info kafka.consumer for consumer-g-propagate_transient_run2-1792407998-3 unregistered
+consumer-1  | 2026-10-19T11:06:56.885Z  INFO 1 --- [kafka-error-contract] [     parallel-2] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+consumer-1  | 	allow.auto.create.topics = true
+consumer-1  | 	auto.commit.interval.ms = 5000
+consumer-1  | 	auto.include.jmx.reporter = true
+consumer-1  | 	auto.offset.reset = earliest
+consumer-1  | 	bootstrap.servers = [redpanda:9092]
+consumer-1  | 	check.crcs = true
+consumer-1  | 	client.dns.lookup = use_all_dns_ips
+consumer-1  | 	client.id = consumer-g-propagate_transient_run2-1792407998-4
+consumer-1  | 	client.rack = 
+consumer-1  | 	connections.max.idle.ms = 540000
+consumer-1  | 	default.api.timeout.ms = 60000
+consumer-1  | 	enable.auto.commit = false
+consumer-1  | 	enable.metrics.push = true
+consumer-1  | 	exclude.internal.topics = true
+consumer-1  | 	fetch.max.bytes = 52428800
+consumer-1  | 	fetch.max.wait.ms = 500
+consumer-1  | 	fetch.min.bytes = 1
+consumer-1  | 	group.id = g-propagate_transient_run2-1792407998
+consumer-1  | 	group.instance.id = null
+consumer-1  | 	group.protocol = classic
+consumer-1  | 	group.remote.assignor = null
+consumer-1  | 	heartbeat.interval.ms = 3000
+consumer-1  | 	interceptor.classes = []
+consumer-1  | 	internal.leave.group.on.close = true
+consumer-1  | 	internal.throw.on.fetch.stable.offset.unsupported = false
+consumer-1  | 	isolation.level = read_uncommitted
+consumer-1  | 	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+consumer-1  | 	max.partition.fetch.bytes = 1048576
+consumer-1  | 	max.poll.interval.ms = 300000
+consumer-1  | 	max.poll.records = 500
+consumer-1  | 	metadata.max.age.ms = 300000
+consumer-1  | 	metadata.recovery.strategy = none
+consumer-1  | 	metric.reporters = []
+consumer-1  | 	metrics.num.samples = 2
+consumer-1  | 	metrics.recording.level = INFO
+consumer-1  | 	metrics.sample.window.ms = 30000
+consumer-1  | 	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+consumer-1  | 	receive.buffer.bytes = 65536
+consumer-1  | 	reconnect.backoff.max.ms = 1000
+consumer-1  | 	reconnect.backoff.ms = 50
+consumer-1  | 	request.timeout.ms = 30000
+consumer-1  | 	retry.backoff.max.ms = 1000
+consumer-1  | 	retry.backoff.ms = 100
+consumer-1  | 	sasl.client.callback.handler.class = null
+consumer-1  | 	sasl.jaas.config = null
+consumer-1  | 	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+consumer-1  | 	sasl.kerberos.min.time.before.relogin = 60000
+consumer-1  | 	sasl.kerberos.service.name = null
+consumer-1  | 	sasl.kerberos.ticket.renew.jitter = 0.05
+consumer-1  | 	sasl.kerberos.ticket.renew.window.factor = 0.8
+consumer-1  | 	sasl.login.callback.handler.class = null
+consumer-1  | 	sasl.login.class = null
+consumer-1  | 	sasl.login.connect.timeout.ms = null
+consumer-1  | 	sasl.login.read.timeout.ms = null
+consumer-1  | 	sasl.login.refresh.buffer.seconds = 300
+consumer-1  | 	sasl.login.refresh.min.period.seconds = 60
+consumer-1  | 	sasl.login.refresh.window.factor = 0.8
+consumer-1  | 	sasl.login.refresh.window.jitter = 0.05
+consumer-1  | 	sasl.login.retry.backoff.max.ms = 10000
+consumer-1  | 	sasl.login.retry.backoff.ms = 100
+consumer-1  | 	sasl.mechanism = GSSAPI
+consumer-1  | 	sasl.oauthbearer.clock.skew.seconds = 30
+consumer-1  | 	sasl.oauthbearer.expected.audience = null
+consumer-1  | 	sasl.oauthbearer.expected.issuer = null
+consumer-1  | 	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+consumer-1  | 	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+consumer-1  | 	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+consumer-1  | 	sasl.oauthbearer.jwks.endpoint.url = null
+consumer-1  | 	sasl.oauthbearer.scope.claim.name = scope
+consumer-1  | 	sasl.oauthbearer.sub.claim.name = sub
+consumer-1  | 	sasl.oauthbearer.token.endpoint.url = null
+consumer-1  | 	security.protocol = PLAINTEXT
+consumer-1  | 	security.providers = null
+consumer-1  | 	send.buffer.bytes = 131072
+consumer-1  | 	session.timeout.ms = 45000
+consumer-1  | 	socket.connection.setup.timeout.max.ms = 30000
+consumer-1  | 	socket.connection.setup.timeout.ms = 10000
+consumer-1  | 	ssl.cipher.suites = null
+consumer-1  | 	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+consumer-1  | 	ssl.endpoint.identification.algorithm = https
+consumer-1  | 	ssl.engine.factory.class = null
+consumer-1  | 	ssl.key.password = null
+consumer-1  | 	ssl.keymanager.algorithm = SunX509
+consumer-1  | 	ssl.keystore.certificate.chain = null
+consumer-1  | 	ssl.keystore.key = null
+consumer-1  | 	ssl.keystore.location = null
+consumer-1  | 	ssl.keystore.password = null
+consumer-1  | 	ssl.keystore.type = JKS
+consumer-1  | 	ssl.protocol = TLSv1.3
+consumer-1  | 	ssl.provider = null
+consumer-1  | 	ssl.secure.random.implementation = null
+consumer-1  | 	ssl.trustmanager.algorithm = PKIX
+consumer-1  | 	ssl.truststore.certificates = null
+consumer-1  | 	ssl.truststore.location = null
+consumer-1  | 	ssl.truststore.password = null
+consumer-1  | 	ssl.truststore.type = JKS
+consumer-1  | 	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+consumer-1  | 
+consumer-1  | 2026-10-19T11:06:56.887Z  INFO 1 --- [kafka-error-contract] [     parallel-2] o.a.k.c.t.i.KafkaMetricsCollector        : initializing Kafka metrics collector
+consumer-1  | 2026-10-19T11:06:56.894Z  INFO 1 --- [kafka-error-contract] [     parallel-2] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.8.1
+consumer-1  | 2026-10-19T11:06:56.896Z  INFO 1 --- [kafka-error-contract] [     parallel-2] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 70d6ff42debf7e17
+consumer-1  | 2026-10-19T11:06:56.896Z  INFO 1 --- [kafka-error-contract] [     parallel-2] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1792408016894
+consumer-1  | 2026-10-19T11:06:56.897Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-4] o.a.k.c.c.internals.LegacyKafkaConsumer  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-4, groupId=g-propagate_transient_run2-1792407998] Subscribed to topic(s): products-transient
+consumer-1  | 2026-10-19T11:06:56.900Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-4] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-4, groupId=g-propagate_transient_run2-1792407998] Cluster ID: redpanda.8dd8c50d-4a0f-4ffb-8bb0-af4511389295
+consumer-1  | 2026-10-19T11:06:56.901Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-4] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-4, groupId=g-propagate_transient_run2-1792407998] Discovered group coordinator redpanda:9092 (id: 2147483647 rack: null)
+consumer-1  | 2026-10-19T11:06:56.902Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-4] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-4, groupId=g-propagate_transient_run2-1792407998] (Re-)joining group
+consumer-1  | 2026-10-19T11:06:56.904Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-4] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-4, groupId=g-propagate_transient_run2-1792407998] Request joining group due to: need to re-join with the given member-id: consumer-g-propagate_transient_run2-1792407998-4-131e9cba-ccc9-4650-9c41-33627c753a6f
+consumer-1  | 2026-10-19T11:06:56.905Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-4] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-4, groupId=g-propagate_transient_run2-1792407998] (Re-)joining group
+consumer-1  | 2026-10-19T11:06:56.906Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-4] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-4, groupId=g-propagate_transient_run2-1792407998] Successfully joined group with generation Generation{generationId=7, memberId='consumer-g-propagate_transient_run2-1792407998-4-131e9cba-ccc9-4650-9c41-33627c753a6f', protocol='range'}
+consumer-1  | 2026-10-19T11:06:56.906Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-4] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-4, groupId=g-propagate_transient_run2-1792407998] Finished assignment for group at generation 7: {consumer-g-propagate_transient_run2-1792407998-4-131e9cba-ccc9-4650-9c41-33627c753a6f=Assignment(partitions=[products-transient-0, products-transient-1, products-transient-2, products-transient-3])}
+consumer-1  | 2026-10-19T11:06:56.907Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-4] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-4, groupId=g-propagate_transient_run2-1792407998] Successfully synced group in generation Generation{generationId=7, memberId='consumer-g-propagate_transient_run2-1792407998-4-131e9cba-ccc9-4650-9c41-33627c753a6f', protocol='range'}
+consumer-1  | 2026-10-19T11:06:56.908Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-4] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-4, groupId=g-propagate_transient_run2-1792407998] Notifying assignor about the new Assignment(partitions=[products-transient-0, products-transient-1, products-transient-2, products-transient-3])
+consumer-1  | 2026-10-19T11:06:56.908Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-4] k.c.c.i.ConsumerRebalanceListenerInvoker : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-4, groupId=g-propagate_transient_run2-1792407998] Adding newly assigned partitions: products-transient-0, products-transient-1, products-transient-2, products-transient-3
+consumer-1  | 2026-10-19T11:06:56.909Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-4] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-4, groupId=g-propagate_transient_run2-1792407998] Found no committed offset for partition products-transient-2
+consumer-1  | 2026-10-19T11:06:56.909Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-4] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-4, groupId=g-propagate_transient_run2-1792407998] Found no committed offset for partition products-transient-1
+consumer-1  | 2026-10-19T11:06:56.910Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-4] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-4, groupId=g-propagate_transient_run2-1792407998] Found no committed offset for partition products-transient-0
+consumer-1  | 2026-10-19T11:06:56.910Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-4] o.a.k.c.c.internals.ConsumerUtils        : Setting offset for partition products-transient-3 to the committed offset FetchPosition{offset=1814, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[redpanda:9092 (id: 0 rack: null)], epoch=absent}}
+consumer-1  | 2026-10-19T11:06:56.913Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-4] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-4, groupId=g-propagate_transient_run2-1792407998] Resetting offset for partition products-transient-2 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[redpanda:9092 (id: 0 rack: null)], epoch=absent}}.
+consumer-1  | 2026-10-19T11:06:56.913Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-4] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-4, groupId=g-propagate_transient_run2-1792407998] Resetting offset for partition products-transient-1 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[redpanda:9092 (id: 0 rack: null)], epoch=absent}}.
+consumer-1  | 2026-10-19T11:06:56.913Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-4] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-4, groupId=g-propagate_transient_run2-1792407998] Resetting offset for partition products-transient-0 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[redpanda:9092 (id: 0 rack: null)], epoch=absent}}.
+consumer-1  | 2026-10-19T11:06:59.955Z ERROR 1 --- [kafka-error-contract] [atcher-worker-1] lab.contract.ConsumerPipeline            : consumer restart #4: org.springframework.dao.TransientDataAccessResourceException: db blip (injected)
+consumer-1  | 2026-10-19T11:06:59.957Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-4] k.c.c.i.ConsumerRebalanceListenerInvoker : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-4, groupId=g-propagate_transient_run2-1792407998] Revoke previously assigned partitions products-transient-0, products-transient-1, products-transient-2, products-transient-3
+consumer-1  | 2026-10-19T11:06:59.958Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-4] k.c.c.i.ConsumerRebalanceListenerInvoker : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-4, groupId=g-propagate_transient_run2-1792407998] The pause flag in partitions [products-transient-3, products-transient-2, products-transient-1, products-transient-0] will be removed due to revocation.
+consumer-1  | 2026-10-19T11:06:59.958Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-4] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-4, groupId=g-propagate_transient_run2-1792407998] Member consumer-g-propagate_transient_run2-1792407998-4-131e9cba-ccc9-4650-9c41-33627c753a6f sending LeaveGroup request to coordinator redpanda:9092 (id: 2147483647 rack: null) due to the consumer is being closed
+consumer-1  | 2026-10-19T11:06:59.958Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-4] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-4, groupId=g-propagate_transient_run2-1792407998] Resetting generation and member id due to: consumer pro-actively leaving the group
+consumer-1  | 2026-10-19T11:06:59.958Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-4] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-4, groupId=g-propagate_transient_run2-1792407998] Request joining group due to: consumer pro-actively leaving the group
+consumer-1  | 2026-10-19T11:07:00.466Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-4] o.apache.kafka.common.metrics.Metrics    : Metrics scheduler closed
+consumer-1  | 2026-10-19T11:07:00.467Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-4] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+consumer-1  | 2026-10-19T11:07:00.467Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-4] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter
+consumer-1  | 2026-10-19T11:07:00.468Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-4] o.apache.kafka.common.metrics.Metrics    : Metrics reporters closed
+consumer-1  | 2026-10-19T11:07:00.471Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-4] o.a.kafka.common.utils.AppInfoParser     : App info kafka.consumer for consumer-g-propagate_transient_run2-1792407998-4 unregistered
+consumer-1  | 2026-10-19T11:07:01.381Z  INFO 1 --- [kafka-error-contract] [     parallel-2] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+consumer-1  | 	allow.auto.create.topics = true
+consumer-1  | 	auto.commit.interval.ms = 5000
+consumer-1  | 	auto.include.jmx.reporter = true
+consumer-1  | 	auto.offset.reset = earliest
+consumer-1  | 	bootstrap.servers = [redpanda:9092]
+consumer-1  | 	check.crcs = true
+consumer-1  | 	client.dns.lookup = use_all_dns_ips
+consumer-1  | 	client.id = consumer-g-propagate_transient_run2-1792407998-5
+consumer-1  | 	client.rack = 
+consumer-1  | 	connections.max.idle.ms = 540000
+consumer-1  | 	default.api.timeout.ms = 60000
+consumer-1  | 	enable.auto.commit = false
+consumer-1  | 	enable.metrics.push = true
+consumer-1  | 	exclude.internal.topics = true
+consumer-1  | 	fetch.max.bytes = 52428800
+consumer-1  | 	fetch.max.wait.ms = 500
+consumer-1  | 	fetch.min.bytes = 1
+consumer-1  | 	group.id = g-propagate_transient_run2-1792407998
+consumer-1  | 	group.instance.id = null
+consumer-1  | 	group.protocol = classic
+consumer-1  | 	group.remote.assignor = null
+consumer-1  | 	heartbeat.interval.ms = 3000
+consumer-1  | 	interceptor.classes = []
+consumer-1  | 	internal.leave.group.on.close = true
+consumer-1  | 	internal.throw.on.fetch.stable.offset.unsupported = false
+consumer-1  | 	isolation.level = read_uncommitted
+consumer-1  | 	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+consumer-1  | 	max.partition.fetch.bytes = 1048576
+consumer-1  | 	max.poll.interval.ms = 300000
+consumer-1  | 	max.poll.records = 500
+consumer-1  | 	metadata.max.age.ms = 300000
+consumer-1  | 	metadata.recovery.strategy = none
+consumer-1  | 	metric.reporters = []
+consumer-1  | 	metrics.num.samples = 2
+consumer-1  | 	metrics.recording.level = INFO
+consumer-1  | 	metrics.sample.window.ms = 30000
+consumer-1  | 	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+consumer-1  | 	receive.buffer.bytes = 65536
+consumer-1  | 	reconnect.backoff.max.ms = 1000
+consumer-1  | 	reconnect.backoff.ms = 50
+consumer-1  | 	request.timeout.ms = 30000
+consumer-1  | 	retry.backoff.max.ms = 1000
+consumer-1  | 	retry.backoff.ms = 100
+consumer-1  | 	sasl.client.callback.handler.class = null
+consumer-1  | 	sasl.jaas.config = null
+consumer-1  | 	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+consumer-1  | 	sasl.kerberos.min.time.before.relogin = 60000
+consumer-1  | 	sasl.kerberos.service.name = null
+consumer-1  | 	sasl.kerberos.ticket.renew.jitter = 0.05
+consumer-1  | 	sasl.kerberos.ticket.renew.window.factor = 0.8
+consumer-1  | 	sasl.login.callback.handler.class = null
+consumer-1  | 	sasl.login.class = null
+consumer-1  | 	sasl.login.connect.timeout.ms = null
+consumer-1  | 	sasl.login.read.timeout.ms = null
+consumer-1  | 	sasl.login.refresh.buffer.seconds = 300
+consumer-1  | 	sasl.login.refresh.min.period.seconds = 60
+consumer-1  | 	sasl.login.refresh.window.factor = 0.8
+consumer-1  | 	sasl.login.refresh.window.jitter = 0.05
+consumer-1  | 	sasl.login.retry.backoff.max.ms = 10000
+consumer-1  | 	sasl.login.retry.backoff.ms = 100
+consumer-1  | 	sasl.mechanism = GSSAPI
+consumer-1  | 	sasl.oauthbearer.clock.skew.seconds = 30
+consumer-1  | 	sasl.oauthbearer.expected.audience = null
+consumer-1  | 	sasl.oauthbearer.expected.issuer = null
+consumer-1  | 	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+consumer-1  | 	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+consumer-1  | 	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+consumer-1  | 	sasl.oauthbearer.jwks.endpoint.url = null
+consumer-1  | 	sasl.oauthbearer.scope.claim.name = scope
+consumer-1  | 	sasl.oauthbearer.sub.claim.name = sub
+consumer-1  | 	sasl.oauthbearer.token.endpoint.url = null
+consumer-1  | 	security.protocol = PLAINTEXT
+consumer-1  | 	security.providers = null
+consumer-1  | 	send.buffer.bytes = 131072
+consumer-1  | 	session.timeout.ms = 45000
+consumer-1  | 	socket.connection.setup.timeout.max.ms = 30000
+consumer-1  | 	socket.connection.setup.timeout.ms = 10000
+consumer-1  | 	ssl.cipher.suites = null
+consumer-1  | 	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+consumer-1  | 	ssl.endpoint.identification.algorithm = https
+consumer-1  | 	ssl.engine.factory.class = null
+consumer-1  | 	ssl.key.password = null
+consumer-1  | 	ssl.keymanager.algorithm = SunX509
+consumer-1  | 	ssl.keystore.certificate.chain = null
+consumer-1  | 	ssl.keystore.key = null
+consumer-1  | 	ssl.keystore.location = null
+consumer-1  | 	ssl.keystore.password = null
+consumer-1  | 	ssl.keystore.type = JKS
+consumer-1  | 	ssl.protocol = TLSv1.3
+consumer-1  | 	ssl.provider = null
+consumer-1  | 	ssl.secure.random.implementation = null
+consumer-1  | 	ssl.trustmanager.algorithm = PKIX
+consumer-1  | 	ssl.truststore.certificates = null
+consumer-1  | 	ssl.truststore.location = null
+consumer-1  | 	ssl.truststore.password = null
+consumer-1  | 	ssl.truststore.type = JKS
+consumer-1  | 	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+consumer-1  | 
+consumer-1  | 2026-10-19T11:07:01.382Z  INFO 1 --- [kafka-error-contract] [     parallel-2] o.a.k.c.t.i.KafkaMetricsCollector        : initializing Kafka metrics collector
+consumer-1  | 2026-10-19T11:07:01.387Z  INFO 1 --- [kafka-error-contract] [     parallel-2] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.8.1
+consumer-1  | 2026-10-19T11:07:01.387Z  INFO 1 --- [kafka-error-contract] [     parallel-2] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 70d6ff42debf7e17
+consumer-1  | 2026-10-19T11:07:01.388Z  INFO 1 --- [kafka-error-contract] [     parallel-2] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1792408021387
+consumer-1  | 2026-10-19T11:07:01.389Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-5] o.a.k.c.c.internals.LegacyKafkaConsumer  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-5, groupId=g-propagate_transient_run2-1792407998] Subscribed to topic(s): products-transient
+consumer-1  | 2026-10-19T11:07:01.391Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-5] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-5, groupId=g-propagate_transient_run2-1792407998] Cluster ID: redpanda.8dd8c50d-4a0f-4ffb-8bb0-af4511389295
+consumer-1  | 2026-10-19T11:07:01.392Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-5] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-5, groupId=g-propagate_transient_run2-1792407998] Discovered group coordinator redpanda:9092 (id: 2147483647 rack: null)
+consumer-1  | 2026-10-19T11:07:01.393Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-5] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-5, groupId=g-propagate_transient_run2-1792407998] (Re-)joining group
+consumer-1  | 2026-10-19T11:07:01.395Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-5] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-5, groupId=g-propagate_transient_run2-1792407998] Request joining group due to: need to re-join with the given member-id: consumer-g-propagate_transient_run2-1792407998-5-cb1e3b29-797a-49a0-917b-8e965249ab61
+consumer-1  | 2026-10-19T11:07:01.396Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-5] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-5, groupId=g-propagate_transient_run2-1792407998] (Re-)joining group
+consumer-1  | 2026-10-19T11:07:01.397Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-5] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-5, groupId=g-propagate_transient_run2-1792407998] Successfully joined group with generation Generation{generationId=9, memberId='consumer-g-propagate_transient_run2-1792407998-5-cb1e3b29-797a-49a0-917b-8e965249ab61', protocol='range'}
+consumer-1  | 2026-10-19T11:07:01.397Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-5] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-5, groupId=g-propagate_transient_run2-1792407998] Finished assignment for group at generation 9: {consumer-g-propagate_transient_run2-1792407998-5-cb1e3b29-797a-49a0-917b-8e965249ab61=Assignment(partitions=[products-transient-0, products-transient-1, products-transient-2, products-transient-3])}
+consumer-1  | 2026-10-19T11:07:01.398Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-5] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-5, groupId=g-propagate_transient_run2-1792407998] Successfully synced group in generation Generation{generationId=9, memberId='consumer-g-propagate_transient_run2-1792407998-5-cb1e3b29-797a-49a0-917b-8e965249ab61', protocol='range'}
+consumer-1  | 2026-10-19T11:07:01.398Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-5] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-5, groupId=g-propagate_transient_run2-1792407998] Notifying assignor about the new Assignment(partitions=[products-transient-0, products-transient-1, products-transient-2, products-transient-3])
+consumer-1  | 2026-10-19T11:07:01.398Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-5] k.c.c.i.ConsumerRebalanceListenerInvoker : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-5, groupId=g-propagate_transient_run2-1792407998] Adding newly assigned partitions: products-transient-0, products-transient-1, products-transient-2, products-transient-3
+consumer-1  | 2026-10-19T11:07:01.399Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-5] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-5, groupId=g-propagate_transient_run2-1792407998] Found no committed offset for partition products-transient-1
+consumer-1  | 2026-10-19T11:07:01.399Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-5] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-5, groupId=g-propagate_transient_run2-1792407998] Found no committed offset for partition products-transient-0
+consumer-1  | 2026-10-19T11:07:01.399Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-5] o.a.k.c.c.internals.ConsumerUtils        : Setting offset for partition products-transient-2 to the committed offset FetchPosition{offset=243, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[redpanda:9092 (id: 0 rack: null)], epoch=absent}}
+consumer-1  | 2026-10-19T11:07:01.399Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-5] o.a.k.c.c.internals.ConsumerUtils        : Setting offset for partition products-transient-3 to the committed offset FetchPosition{offset=2500, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[redpanda:9092 (id: 0 rack: null)], epoch=absent}}
+consumer-1  | 2026-10-19T11:07:01.400Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-5] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-5, groupId=g-propagate_transient_run2-1792407998] Resetting offset for partition products-transient-1 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[redpanda:9092 (id: 0 rack: null)], epoch=absent}}.
+consumer-1  | 2026-10-19T11:07:01.400Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-5] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-5, groupId=g-propagate_transient_run2-1792407998] Resetting offset for partition products-transient-0 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[redpanda:9092 (id: 0 rack: null)], epoch=absent}}.
+consumer-1  | 2026-10-19T11:07:03.841Z ERROR 1 --- [kafka-error-contract] [atcher-worker-3] lab.contract.ConsumerPipeline            : consumer restart #5: org.springframework.dao.TransientDataAccessResourceException: db blip (injected)
+consumer-1  | 2026-10-19T11:07:03.844Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-5] k.c.c.i.ConsumerRebalanceListenerInvoker : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-5, groupId=g-propagate_transient_run2-1792407998] Revoke previously assigned partitions products-transient-0, products-transient-1, products-transient-2, products-transient-3
+consumer-1  | 2026-10-19T11:07:03.844Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-5] k.c.c.i.ConsumerRebalanceListenerInvoker : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-5, groupId=g-propagate_transient_run2-1792407998] The pause flag in partitions [products-transient-3, products-transient-2, products-transient-1, products-transient-0] will be removed due to revocation.
+consumer-1  | 2026-10-19T11:07:03.844Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-5] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-5, groupId=g-propagate_transient_run2-1792407998] Member consumer-g-propagate_transient_run2-1792407998-5-cb1e3b29-797a-49a0-917b-8e965249ab61 sending LeaveGroup request to coordinator redpanda:9092 (id: 2147483647 rack: null) due to the consumer is being closed
+consumer-1  | 2026-10-19T11:07:03.844Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-5] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-5, groupId=g-propagate_transient_run2-1792407998] Resetting generation and member id due to: consumer pro-actively leaving the group
+consumer-1  | 2026-10-19T11:07:03.844Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-5] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-5, groupId=g-propagate_transient_run2-1792407998] Request joining group due to: consumer pro-actively leaving the group
+consumer-1  | 2026-10-19T11:07:04.786Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-5] o.apache.kafka.common.metrics.Metrics    : Metrics scheduler closed
+consumer-1  | 2026-10-19T11:07:04.787Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-5] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+consumer-1  | 2026-10-19T11:07:04.787Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-5] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter
+consumer-1  | 2026-10-19T11:07:04.787Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-5] o.apache.kafka.common.metrics.Metrics    : Metrics reporters closed
+consumer-1  | 2026-10-19T11:07:04.789Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-5] o.a.kafka.common.utils.AppInfoParser     : App info kafka.consumer for consumer-g-propagate_transient_run2-1792407998-5 unregistered
+consumer-1  | 2026-10-19T11:07:05.334Z  INFO 1 --- [kafka-error-contract] [     parallel-2] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+consumer-1  | 	allow.auto.create.topics = true
+consumer-1  | 	auto.commit.interval.ms = 5000
+consumer-1  | 	auto.include.jmx.reporter = true
+consumer-1  | 	auto.offset.reset = earliest
+consumer-1  | 	bootstrap.servers = [redpanda:9092]
+consumer-1  | 	check.crcs = true
+consumer-1  | 	client.dns.lookup = use_all_dns_ips
+consumer-1  | 	client.id = consumer-g-propagate_transient_run2-1792407998-6
+consumer-1  | 	client.rack = 
+consumer-1  | 	connections.max.idle.ms = 540000
+consumer-1  | 	default.api.timeout.ms = 60000
+consumer-1  | 	enable.auto.commit = false
+consumer-1  | 	enable.metrics.push = true
+consumer-1  | 	exclude.internal.topics = true
+consumer-1  | 	fetch.max.bytes = 52428800
+consumer-1  | 	fetch.max.wait.ms = 500
+consumer-1  | 	fetch.min.bytes = 1
+consumer-1  | 	group.id = g-propagate_transient_run2-1792407998
+consumer-1  | 	group.instance.id = null
+consumer-1  | 	group.protocol = classic
+consumer-1  | 	group.remote.assignor = null
+consumer-1  | 	heartbeat.interval.ms = 3000
+consumer-1  | 	interceptor.classes = []
+consumer-1  | 	internal.leave.group.on.close = true
+consumer-1  | 	internal.throw.on.fetch.stable.offset.unsupported = false
+consumer-1  | 	isolation.level = read_uncommitted
+consumer-1  | 	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+consumer-1  | 	max.partition.fetch.bytes = 1048576
+consumer-1  | 	max.poll.interval.ms = 300000
+consumer-1  | 	max.poll.records = 500
+consumer-1  | 	metadata.max.age.ms = 300000
+consumer-1  | 	metadata.recovery.strategy = none
+consumer-1  | 	metric.reporters = []
+consumer-1  | 	metrics.num.samples = 2
+consumer-1  | 	metrics.recording.level = INFO
+consumer-1  | 	metrics.sample.window.ms = 30000
+consumer-1  | 	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+consumer-1  | 	receive.buffer.bytes = 65536
+consumer-1  | 	reconnect.backoff.max.ms = 1000
+consumer-1  | 	reconnect.backoff.ms = 50
+consumer-1  | 	request.timeout.ms = 30000
+consumer-1  | 	retry.backoff.max.ms = 1000
+consumer-1  | 	retry.backoff.ms = 100
+consumer-1  | 	sasl.client.callback.handler.class = null
+consumer-1  | 	sasl.jaas.config = null
+consumer-1  | 	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+consumer-1  | 	sasl.kerberos.min.time.before.relogin = 60000
+consumer-1  | 	sasl.kerberos.service.name = null
+consumer-1  | 	sasl.kerberos.ticket.renew.jitter = 0.05
+consumer-1  | 	sasl.kerberos.ticket.renew.window.factor = 0.8
+consumer-1  | 	sasl.login.callback.handler.class = null
+consumer-1  | 	sasl.login.class = null
+consumer-1  | 	sasl.login.connect.timeout.ms = null
+consumer-1  | 	sasl.login.read.timeout.ms = null
+consumer-1  | 	sasl.login.refresh.buffer.seconds = 300
+consumer-1  | 	sasl.login.refresh.min.period.seconds = 60
+consumer-1  | 	sasl.login.refresh.window.factor = 0.8
+consumer-1  | 	sasl.login.refresh.window.jitter = 0.05
+consumer-1  | 	sasl.login.retry.backoff.max.ms = 10000
+consumer-1  | 	sasl.login.retry.backoff.ms = 100
+consumer-1  | 	sasl.mechanism = GSSAPI
+consumer-1  | 	sasl.oauthbearer.clock.skew.seconds = 30
+consumer-1  | 	sasl.oauthbearer.expected.audience = null
+consumer-1  | 	sasl.oauthbearer.expected.issuer = null
+consumer-1  | 	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+consumer-1  | 	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+consumer-1  | 	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+consumer-1  | 	sasl.oauthbearer.jwks.endpoint.url = null
+consumer-1  | 	sasl.oauthbearer.scope.claim.name = scope
+consumer-1  | 	sasl.oauthbearer.sub.claim.name = sub
+consumer-1  | 	sasl.oauthbearer.token.endpoint.url = null
+consumer-1  | 	security.protocol = PLAINTEXT
+consumer-1  | 	security.providers = null
+consumer-1  | 	send.buffer.bytes = 131072
+consumer-1  | 	session.timeout.ms = 45000
+consumer-1  | 	socket.connection.setup.timeout.max.ms = 30000
+consumer-1  | 	socket.connection.setup.timeout.ms = 10000
+consumer-1  | 	ssl.cipher.suites = null
+consumer-1  | 	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+consumer-1  | 	ssl.endpoint.identification.algorithm = https
+consumer-1  | 	ssl.engine.factory.class = null
+consumer-1  | 	ssl.key.password = null
+consumer-1  | 	ssl.keymanager.algorithm = SunX509
+consumer-1  | 	ssl.keystore.certificate.chain = null
+consumer-1  | 	ssl.keystore.key = null
+consumer-1  | 	ssl.keystore.location = null
+consumer-1  | 	ssl.keystore.password = null
+consumer-1  | 	ssl.keystore.type = JKS
+consumer-1  | 	ssl.protocol = TLSv1.3
+consumer-1  | 	ssl.provider = null
+consumer-1  | 	ssl.secure.random.implementation = null
+consumer-1  | 	ssl.trustmanager.algorithm = PKIX
+consumer-1  | 	ssl.truststore.certificates = null
+consumer-1  | 	ssl.truststore.location = null
+consumer-1  | 	ssl.truststore.password = null
+consumer-1  | 	ssl.truststore.type = JKS
+consumer-1  | 	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+consumer-1  | 
+consumer-1  | 2026-10-19T11:07:05.335Z  INFO 1 --- [kafka-error-contract] [     parallel-2] o.a.k.c.t.i.KafkaMetricsCollector        : initializing Kafka metrics collector
+consumer-1  | 2026-10-19T11:07:05.337Z  INFO 1 --- [kafka-error-contract] [     parallel-2] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.8.1
+consumer-1  | 2026-10-19T11:07:05.337Z  INFO 1 --- [kafka-error-contract] [     parallel-2] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 70d6ff42debf7e17
+consumer-1  | 2026-10-19T11:07:05.337Z  INFO 1 --- [kafka-error-contract] [     parallel-2] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1792408025337
+consumer-1  | 2026-10-19T11:07:05.337Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-6] o.a.k.c.c.internals.LegacyKafkaConsumer  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-6, groupId=g-propagate_transient_run2-1792407998] Subscribed to topic(s): products-transient
+consumer-1  | 2026-10-19T11:07:05.339Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-6] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-6, groupId=g-propagate_transient_run2-1792407998] Cluster ID: redpanda.8dd8c50d-4a0f-4ffb-8bb0-af4511389295
+consumer-1  | 2026-10-19T11:07:05.339Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-6] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-6, groupId=g-propagate_transient_run2-1792407998] Discovered group coordinator redpanda:9092 (id: 2147483647 rack: null)
+consumer-1  | 2026-10-19T11:07:05.339Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-6] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-6, groupId=g-propagate_transient_run2-1792407998] (Re-)joining group
+consumer-1  | 2026-10-19T11:07:05.341Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-6] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-6, groupId=g-propagate_transient_run2-1792407998] Request joining group due to: need to re-join with the given member-id: consumer-g-propagate_transient_run2-1792407998-6-c60e3e1f-6272-4e92-8fe7-0672357d41c2
+consumer-1  | 2026-10-19T11:07:05.341Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-6] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-6, groupId=g-propagate_transient_run2-1792407998] (Re-)joining group
+consumer-1  | 2026-10-19T11:07:05.344Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-6] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-6, groupId=g-propagate_transient_run2-1792407998] Successfully joined group with generation Generation{generationId=11, memberId='consumer-g-propagate_transient_run2-1792407998-6-c60e3e1f-6272-4e92-8fe7-0672357d41c2', protocol='range'}
+consumer-1  | 2026-10-19T11:07:05.345Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-6] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-6, groupId=g-propagate_transient_run2-1792407998] Finished assignment for group at generation 11: {consumer-g-propagate_transient_run2-1792407998-6-c60e3e1f-6272-4e92-8fe7-0672357d41c2=Assignment(partitions=[products-transient-0, products-transient-1, products-transient-2, products-transient-3])}
+consumer-1  | 2026-10-19T11:07:05.349Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-6] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-6, groupId=g-propagate_transient_run2-1792407998] Successfully synced group in generation Generation{generationId=11, memberId='consumer-g-propagate_transient_run2-1792407998-6-c60e3e1f-6272-4e92-8fe7-0672357d41c2', protocol='range'}
+consumer-1  | 2026-10-19T11:07:05.349Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-6] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-6, groupId=g-propagate_transient_run2-1792407998] Notifying assignor about the new Assignment(partitions=[products-transient-0, products-transient-1, products-transient-2, products-transient-3])
+consumer-1  | 2026-10-19T11:07:05.349Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-6] k.c.c.i.ConsumerRebalanceListenerInvoker : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-6, groupId=g-propagate_transient_run2-1792407998] Adding newly assigned partitions: products-transient-0, products-transient-1, products-transient-2, products-transient-3
+consumer-1  | 2026-10-19T11:07:05.350Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-6] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-6, groupId=g-propagate_transient_run2-1792407998] Found no committed offset for partition products-transient-1
+consumer-1  | 2026-10-19T11:07:05.350Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-6] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-6, groupId=g-propagate_transient_run2-1792407998] Found no committed offset for partition products-transient-0
+consumer-1  | 2026-10-19T11:07:05.350Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-6] o.a.k.c.c.internals.ConsumerUtils        : Setting offset for partition products-transient-2 to the committed offset FetchPosition{offset=1003, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[redpanda:9092 (id: 0 rack: null)], epoch=absent}}
+consumer-1  | 2026-10-19T11:07:05.350Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-6] o.a.k.c.c.internals.ConsumerUtils        : Setting offset for partition products-transient-3 to the committed offset FetchPosition{offset=2513, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[redpanda:9092 (id: 0 rack: null)], epoch=absent}}
+consumer-1  | 2026-10-19T11:07:05.352Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-6] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-6, groupId=g-propagate_transient_run2-1792407998] Resetting offset for partition products-transient-1 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[redpanda:9092 (id: 0 rack: null)], epoch=absent}}.
+consumer-1  | 2026-10-19T11:07:05.353Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-6] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-6, groupId=g-propagate_transient_run2-1792407998] Resetting offset for partition products-transient-0 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[redpanda:9092 (id: 0 rack: null)], epoch=absent}}.
+consumer-1  | 2026-10-19T11:07:06.120Z ERROR 1 --- [kafka-error-contract] [atcher-worker-5] lab.contract.ConsumerPipeline            : consumer restart #6: org.springframework.dao.TransientDataAccessResourceException: db blip (injected)
+consumer-1  | 2026-10-19T11:07:06.128Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-6] k.c.c.i.ConsumerRebalanceListenerInvoker : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-6, groupId=g-propagate_transient_run2-1792407998] Revoke previously assigned partitions products-transient-0, products-transient-1, products-transient-2, products-transient-3
+consumer-1  | 2026-10-19T11:07:06.128Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-6] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-6, groupId=g-propagate_transient_run2-1792407998] Member consumer-g-propagate_transient_run2-1792407998-6-c60e3e1f-6272-4e92-8fe7-0672357d41c2 sending LeaveGroup request to coordinator redpanda:9092 (id: 2147483647 rack: null) due to the consumer is being closed
+consumer-1  | 2026-10-19T11:07:06.128Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-6] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-6, groupId=g-propagate_transient_run2-1792407998] Resetting generation and member id due to: consumer pro-actively leaving the group
+consumer-1  | 2026-10-19T11:07:06.128Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-6] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-6, groupId=g-propagate_transient_run2-1792407998] Request joining group due to: consumer pro-actively leaving the group
+consumer-1  | 2026-10-19T11:07:07.126Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-6] o.apache.kafka.common.metrics.Metrics    : Metrics scheduler closed
+consumer-1  | 2026-10-19T11:07:07.127Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-6] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+consumer-1  | 2026-10-19T11:07:07.127Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-6] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter
+consumer-1  | 2026-10-19T11:07:07.127Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-6] o.apache.kafka.common.metrics.Metrics    : Metrics reporters closed
+consumer-1  | 2026-10-19T11:07:07.130Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-6] o.a.kafka.common.utils.AppInfoParser     : App info kafka.consumer for consumer-g-propagate_transient_run2-1792407998-6 unregistered
+consumer-1  | 2026-10-19T11:07:07.450Z  INFO 1 --- [kafka-error-contract] [     parallel-2] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+consumer-1  | 	allow.auto.create.topics = true
+consumer-1  | 	auto.commit.interval.ms = 5000
+consumer-1  | 	auto.include.jmx.reporter = true
+consumer-1  | 	auto.offset.reset = earliest
+consumer-1  | 	bootstrap.servers = [redpanda:9092]
+consumer-1  | 	check.crcs = true
+consumer-1  | 	client.dns.lookup = use_all_dns_ips
+consumer-1  | 	client.id = consumer-g-propagate_transient_run2-1792407998-7
+consumer-1  | 	client.rack = 
+consumer-1  | 	connections.max.idle.ms = 540000
+consumer-1  | 	default.api.timeout.ms = 60000
+consumer-1  | 	enable.auto.commit = false
+consumer-1  | 	enable.metrics.push = true
+consumer-1  | 	exclude.internal.topics = true
+consumer-1  | 	fetch.max.bytes = 52428800
+consumer-1  | 	fetch.max.wait.ms = 500
+consumer-1  | 	fetch.min.bytes = 1
+consumer-1  | 	group.id = g-propagate_transient_run2-1792407998
+consumer-1  | 	group.instance.id = null
+consumer-1  | 	group.protocol = classic
+consumer-1  | 	group.remote.assignor = null
+consumer-1  | 	heartbeat.interval.ms = 3000
+consumer-1  | 	interceptor.classes = []
+consumer-1  | 	internal.leave.group.on.close = true
+consumer-1  | 	internal.throw.on.fetch.stable.offset.unsupported = false
+consumer-1  | 	isolation.level = read_uncommitted
+consumer-1  | 	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+consumer-1  | 	max.partition.fetch.bytes = 1048576
+consumer-1  | 	max.poll.interval.ms = 300000
+consumer-1  | 	max.poll.records = 500
+consumer-1  | 	metadata.max.age.ms = 300000
+consumer-1  | 	metadata.recovery.strategy = none
+consumer-1  | 	metric.reporters = []
+consumer-1  | 	metrics.num.samples = 2
+consumer-1  | 	metrics.recording.level = INFO
+consumer-1  | 	metrics.sample.window.ms = 30000
+consumer-1  | 	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+consumer-1  | 	receive.buffer.bytes = 65536
+consumer-1  | 	reconnect.backoff.max.ms = 1000
+consumer-1  | 	reconnect.backoff.ms = 50
+consumer-1  | 	request.timeout.ms = 30000
+consumer-1  | 	retry.backoff.max.ms = 1000
+consumer-1  | 	retry.backoff.ms = 100
+consumer-1  | 	sasl.client.callback.handler.class = null
+consumer-1  | 	sasl.jaas.config = null
+consumer-1  | 	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+consumer-1  | 	sasl.kerberos.min.time.before.relogin = 60000
+consumer-1  | 	sasl.kerberos.service.name = null
+consumer-1  | 	sasl.kerberos.ticket.renew.jitter = 0.05
+consumer-1  | 	sasl.kerberos.ticket.renew.window.factor = 0.8
+consumer-1  | 	sasl.login.callback.handler.class = null
+consumer-1  | 	sasl.login.class = null
+consumer-1  | 	sasl.login.connect.timeout.ms = null
+consumer-1  | 	sasl.login.read.timeout.ms = null
+consumer-1  | 	sasl.login.refresh.buffer.seconds = 300
+consumer-1  | 	sasl.login.refresh.min.period.seconds = 60
+consumer-1  | 	sasl.login.refresh.window.factor = 0.8
+consumer-1  | 	sasl.login.refresh.window.jitter = 0.05
+consumer-1  | 	sasl.login.retry.backoff.max.ms = 10000
+consumer-1  | 	sasl.login.retry.backoff.ms = 100
+consumer-1  | 	sasl.mechanism = GSSAPI
+consumer-1  | 	sasl.oauthbearer.clock.skew.seconds = 30
+consumer-1  | 	sasl.oauthbearer.expected.audience = null
+consumer-1  | 	sasl.oauthbearer.expected.issuer = null
+consumer-1  | 	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+consumer-1  | 	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+consumer-1  | 	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+consumer-1  | 	sasl.oauthbearer.jwks.endpoint.url = null
+consumer-1  | 	sasl.oauthbearer.scope.claim.name = scope
+consumer-1  | 	sasl.oauthbearer.sub.claim.name = sub
+consumer-1  | 	sasl.oauthbearer.token.endpoint.url = null
+consumer-1  | 	security.protocol = PLAINTEXT
+consumer-1  | 	security.providers = null
+consumer-1  | 	send.buffer.bytes = 131072
+consumer-1  | 	session.timeout.ms = 45000
+consumer-1  | 	socket.connection.setup.timeout.max.ms = 30000
+consumer-1  | 	socket.connection.setup.timeout.ms = 10000
+consumer-1  | 	ssl.cipher.suites = null
+consumer-1  | 	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+consumer-1  | 	ssl.endpoint.identification.algorithm = https
+consumer-1  | 	ssl.engine.factory.class = null
+consumer-1  | 	ssl.key.password = null
+consumer-1  | 	ssl.keymanager.algorithm = SunX509
+consumer-1  | 	ssl.keystore.certificate.chain = null
+consumer-1  | 	ssl.keystore.key = null
+consumer-1  | 	ssl.keystore.location = null
+consumer-1  | 	ssl.keystore.password = null
+consumer-1  | 	ssl.keystore.type = JKS
+consumer-1  | 	ssl.protocol = TLSv1.3
+consumer-1  | 	ssl.provider = null
+consumer-1  | 	ssl.secure.random.implementation = null
+consumer-1  | 	ssl.trustmanager.algorithm = PKIX
+consumer-1  | 	ssl.truststore.certificates = null
+consumer-1  | 	ssl.truststore.location = null
+consumer-1  | 	ssl.truststore.password = null
+consumer-1  | 	ssl.truststore.type = JKS
+consumer-1  | 	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+consumer-1  | 
+consumer-1  | 2026-10-19T11:07:07.454Z  INFO 1 --- [kafka-error-contract] [     parallel-2] o.a.k.c.t.i.KafkaMetricsCollector        : initializing Kafka metrics collector
+consumer-1  | 2026-10-19T11:07:07.458Z  INFO 1 --- [kafka-error-contract] [     parallel-2] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.8.1
+consumer-1  | 2026-10-19T11:07:07.458Z  INFO 1 --- [kafka-error-contract] [     parallel-2] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 70d6ff42debf7e17
+consumer-1  | 2026-10-19T11:07:07.458Z  INFO 1 --- [kafka-error-contract] [     parallel-2] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1792408027458
+consumer-1  | 2026-10-19T11:07:07.459Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-7] o.a.k.c.c.internals.LegacyKafkaConsumer  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-7, groupId=g-propagate_transient_run2-1792407998] Subscribed to topic(s): products-transient
+consumer-1  | 2026-10-19T11:07:07.465Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-7] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-7, groupId=g-propagate_transient_run2-1792407998] Cluster ID: redpanda.8dd8c50d-4a0f-4ffb-8bb0-af4511389295
+consumer-1  | 2026-10-19T11:07:07.466Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-7] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-7, groupId=g-propagate_transient_run2-1792407998] Discovered group coordinator redpanda:9092 (id: 2147483647 rack: null)
+consumer-1  | 2026-10-19T11:07:07.466Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-7] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-7, groupId=g-propagate_transient_run2-1792407998] (Re-)joining group
+consumer-1  | 2026-10-19T11:07:07.469Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-7] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-7, groupId=g-propagate_transient_run2-1792407998] Request joining group due to: need to re-join with the given member-id: consumer-g-propagate_transient_run2-1792407998-7-892f9952-71aa-44a5-8402-0da76925a525
+consumer-1  | 2026-10-19T11:07:07.469Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-7] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-7, groupId=g-propagate_transient_run2-1792407998] (Re-)joining group
+consumer-1  | 2026-10-19T11:07:07.470Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-7] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-7, groupId=g-propagate_transient_run2-1792407998] Successfully joined group with generation Generation{generationId=13, memberId='consumer-g-propagate_transient_run2-1792407998-7-892f9952-71aa-44a5-8402-0da76925a525', protocol='range'}
+consumer-1  | 2026-10-19T11:07:07.470Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-7] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-7, groupId=g-propagate_transient_run2-1792407998] Finished assignment for group at generation 13: {consumer-g-propagate_transient_run2-1792407998-7-892f9952-71aa-44a5-8402-0da76925a525=Assignment(partitions=[products-transient-0, products-transient-1, products-transient-2, products-transient-3])}
+consumer-1  | 2026-10-19T11:07:07.472Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-7] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-7, groupId=g-propagate_transient_run2-1792407998] Successfully synced group in generation Generation{generationId=13, memberId='consumer-g-propagate_transient_run2-1792407998-7-892f9952-71aa-44a5-8402-0da76925a525', protocol='range'}
+consumer-1  | 2026-10-19T11:07:07.473Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-7] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-7, groupId=g-propagate_transient_run2-1792407998] Notifying assignor about the new Assignment(partitions=[products-transient-0, products-transient-1, products-transient-2, products-transient-3])
+consumer-1  | 2026-10-19T11:07:07.473Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-7] k.c.c.i.ConsumerRebalanceListenerInvoker : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-7, groupId=g-propagate_transient_run2-1792407998] Adding newly assigned partitions: products-transient-0, products-transient-1, products-transient-2, products-transient-3
+consumer-1  | 2026-10-19T11:07:07.474Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-7] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-7, groupId=g-propagate_transient_run2-1792407998] Found no committed offset for partition products-transient-1
+consumer-1  | 2026-10-19T11:07:07.474Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-7] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-7, groupId=g-propagate_transient_run2-1792407998] Found no committed offset for partition products-transient-0
+consumer-1  | 2026-10-19T11:07:07.474Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-7] o.a.k.c.c.internals.ConsumerUtils        : Setting offset for partition products-transient-2 to the committed offset FetchPosition{offset=1242, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[redpanda:9092 (id: 0 rack: null)], epoch=absent}}
+consumer-1  | 2026-10-19T11:07:07.474Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-7] o.a.k.c.c.internals.ConsumerUtils        : Setting offset for partition products-transient-3 to the committed offset FetchPosition{offset=2513, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[redpanda:9092 (id: 0 rack: null)], epoch=absent}}
+consumer-1  | 2026-10-19T11:07:07.476Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-7] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-7, groupId=g-propagate_transient_run2-1792407998] Resetting offset for partition products-transient-1 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[redpanda:9092 (id: 0 rack: null)], epoch=absent}}.
+consumer-1  | 2026-10-19T11:07:07.476Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-7] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-7, groupId=g-propagate_transient_run2-1792407998] Resetting offset for partition products-transient-0 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[redpanda:9092 (id: 0 rack: null)], epoch=absent}}.
+consumer-1  | 2026-10-19T11:07:10.882Z ERROR 1 --- [kafka-error-contract] [atcher-worker-4] lab.contract.ConsumerPipeline            : consumer restart #7: org.springframework.dao.TransientDataAccessResourceException: db blip (injected)
+consumer-1  | 2026-10-19T11:07:10.888Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-7] k.c.c.i.ConsumerRebalanceListenerInvoker : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-7, groupId=g-propagate_transient_run2-1792407998] Revoke previously assigned partitions products-transient-0, products-transient-1, products-transient-2, products-transient-3
+consumer-1  | 2026-10-19T11:07:10.888Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-7] k.c.c.i.ConsumerRebalanceListenerInvoker : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-7, groupId=g-propagate_transient_run2-1792407998] The pause flag in partitions [products-transient-3, products-transient-2, products-transient-1, products-transient-0] will be removed due to revocation.
+consumer-1  | 2026-10-19T11:07:10.888Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-7] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-7, groupId=g-propagate_transient_run2-1792407998] Member consumer-g-propagate_transient_run2-1792407998-7-892f9952-71aa-44a5-8402-0da76925a525 sending LeaveGroup request to coordinator redpanda:9092 (id: 2147483647 rack: null) due to the consumer is being closed
+consumer-1  | 2026-10-19T11:07:10.888Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-7] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-7, groupId=g-propagate_transient_run2-1792407998] Resetting generation and member id due to: consumer pro-actively leaving the group
+consumer-1  | 2026-10-19T11:07:10.889Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-7] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-7, groupId=g-propagate_transient_run2-1792407998] Request joining group due to: consumer pro-actively leaving the group
+consumer-1  | 2026-10-19T11:07:11.390Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-7] o.apache.kafka.common.metrics.Metrics    : Metrics scheduler closed
+consumer-1  | 2026-10-19T11:07:11.390Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-7] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+consumer-1  | 2026-10-19T11:07:11.390Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-7] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter
+consumer-1  | 2026-10-19T11:07:11.390Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-7] o.apache.kafka.common.metrics.Metrics    : Metrics reporters closed
+consumer-1  | 2026-10-19T11:07:11.391Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-7] o.a.kafka.common.utils.AppInfoParser     : App info kafka.consumer for consumer-g-propagate_transient_run2-1792407998-7 unregistered
+consumer-1  | 2026-10-19T11:07:11.903Z  INFO 1 --- [kafka-error-contract] [     parallel-2] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+consumer-1  | 	allow.auto.create.topics = true
+consumer-1  | 	auto.commit.interval.ms = 5000
+consumer-1  | 	auto.include.jmx.reporter = true
+consumer-1  | 	auto.offset.reset = earliest
+consumer-1  | 	bootstrap.servers = [redpanda:9092]
+consumer-1  | 	check.crcs = true
+consumer-1  | 	client.dns.lookup = use_all_dns_ips
+consumer-1  | 	client.id = consumer-g-propagate_transient_run2-1792407998-8
+consumer-1  | 	client.rack = 
+consumer-1  | 	connections.max.idle.ms = 540000
+consumer-1  | 	default.api.timeout.ms = 60000
+consumer-1  | 	enable.auto.commit = false
+consumer-1  | 	enable.metrics.push = true
+consumer-1  | 	exclude.internal.topics = true
+consumer-1  | 	fetch.max.bytes = 52428800
+consumer-1  | 	fetch.max.wait.ms = 500
+consumer-1  | 	fetch.min.bytes = 1
+consumer-1  | 	group.id = g-propagate_transient_run2-1792407998
+consumer-1  | 	group.instance.id = null
+consumer-1  | 	group.protocol = classic
+consumer-1  | 	group.remote.assignor = null
+consumer-1  | 	heartbeat.interval.ms = 3000
+consumer-1  | 	interceptor.classes = []
+consumer-1  | 	internal.leave.group.on.close = true
+consumer-1  | 	internal.throw.on.fetch.stable.offset.unsupported = false
+consumer-1  | 	isolation.level = read_uncommitted
+consumer-1  | 	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+consumer-1  | 	max.partition.fetch.bytes = 1048576
+consumer-1  | 	max.poll.interval.ms = 300000
+consumer-1  | 	max.poll.records = 500
+consumer-1  | 	metadata.max.age.ms = 300000
+consumer-1  | 	metadata.recovery.strategy = none
+consumer-1  | 	metric.reporters = []
+consumer-1  | 	metrics.num.samples = 2
+consumer-1  | 	metrics.recording.level = INFO
+consumer-1  | 	metrics.sample.window.ms = 30000
+consumer-1  | 	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+consumer-1  | 	receive.buffer.bytes = 65536
+consumer-1  | 	reconnect.backoff.max.ms = 1000
+consumer-1  | 	reconnect.backoff.ms = 50
+consumer-1  | 	request.timeout.ms = 30000
+consumer-1  | 	retry.backoff.max.ms = 1000
+consumer-1  | 	retry.backoff.ms = 100
+consumer-1  | 	sasl.client.callback.handler.class = null
+consumer-1  | 	sasl.jaas.config = null
+consumer-1  | 	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+consumer-1  | 	sasl.kerberos.min.time.before.relogin = 60000
+consumer-1  | 	sasl.kerberos.service.name = null
+consumer-1  | 	sasl.kerberos.ticket.renew.jitter = 0.05
+consumer-1  | 	sasl.kerberos.ticket.renew.window.factor = 0.8
+consumer-1  | 	sasl.login.callback.handler.class = null
+consumer-1  | 	sasl.login.class = null
+consumer-1  | 	sasl.login.connect.timeout.ms = null
+consumer-1  | 	sasl.login.read.timeout.ms = null
+consumer-1  | 	sasl.login.refresh.buffer.seconds = 300
+consumer-1  | 	sasl.login.refresh.min.period.seconds = 60
+consumer-1  | 	sasl.login.refresh.window.factor = 0.8
+consumer-1  | 	sasl.login.refresh.window.jitter = 0.05
+consumer-1  | 	sasl.login.retry.backoff.max.ms = 10000
+consumer-1  | 	sasl.login.retry.backoff.ms = 100
+consumer-1  | 	sasl.mechanism = GSSAPI
+consumer-1  | 	sasl.oauthbearer.clock.skew.seconds = 30
+consumer-1  | 	sasl.oauthbearer.expected.audience = null
+consumer-1  | 	sasl.oauthbearer.expected.issuer = null
+consumer-1  | 	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+consumer-1  | 	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+consumer-1  | 	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+consumer-1  | 	sasl.oauthbearer.jwks.endpoint.url = null
+consumer-1  | 	sasl.oauthbearer.scope.claim.name = scope
+consumer-1  | 	sasl.oauthbearer.sub.claim.name = sub
+consumer-1  | 	sasl.oauthbearer.token.endpoint.url = null
+consumer-1  | 	security.protocol = PLAINTEXT
+consumer-1  | 	security.providers = null
+consumer-1  | 	send.buffer.bytes = 131072
+consumer-1  | 	session.timeout.ms = 45000
+consumer-1  | 	socket.connection.setup.timeout.max.ms = 30000
+consumer-1  | 	socket.connection.setup.timeout.ms = 10000
+consumer-1  | 	ssl.cipher.suites = null
+consumer-1  | 	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+consumer-1  | 	ssl.endpoint.identification.algorithm = https
+consumer-1  | 	ssl.engine.factory.class = null
+consumer-1  | 	ssl.key.password = null
+consumer-1  | 	ssl.keymanager.algorithm = SunX509
+consumer-1  | 	ssl.keystore.certificate.chain = null
+consumer-1  | 	ssl.keystore.key = null
+consumer-1  | 	ssl.keystore.location = null
+consumer-1  | 	ssl.keystore.password = null
+consumer-1  | 	ssl.keystore.type = JKS
+consumer-1  | 	ssl.protocol = TLSv1.3
+consumer-1  | 	ssl.provider = null
+consumer-1  | 	ssl.secure.random.implementation = null
+consumer-1  | 	ssl.trustmanager.algorithm = PKIX
+consumer-1  | 	ssl.truststore.certificates = null
+consumer-1  | 	ssl.truststore.location = null
+consumer-1  | 	ssl.truststore.password = null
+consumer-1  | 	ssl.truststore.type = JKS
+consumer-1  | 	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+consumer-1  | 
+consumer-1  | 2026-10-19T11:07:11.904Z  INFO 1 --- [kafka-error-contract] [     parallel-2] o.a.k.c.t.i.KafkaMetricsCollector        : initializing Kafka metrics collector
+consumer-1  | 2026-10-19T11:07:11.906Z  INFO 1 --- [kafka-error-contract] [     parallel-2] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.8.1
+consumer-1  | 2026-10-19T11:07:11.906Z  INFO 1 --- [kafka-error-contract] [     parallel-2] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 70d6ff42debf7e17
+consumer-1  | 2026-10-19T11:07:11.906Z  INFO 1 --- [kafka-error-contract] [     parallel-2] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1792408031906
+consumer-1  | 2026-10-19T11:07:11.907Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-8] o.a.k.c.c.internals.LegacyKafkaConsumer  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-8, groupId=g-propagate_transient_run2-1792407998] Subscribed to topic(s): products-transient
+consumer-1  | 2026-10-19T11:07:11.910Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-8] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-8, groupId=g-propagate_transient_run2-1792407998] Cluster ID: redpanda.8dd8c50d-4a0f-4ffb-8bb0-af4511389295
+consumer-1  | 2026-10-19T11:07:11.910Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-8] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-8, groupId=g-propagate_transient_run2-1792407998] Discovered group coordinator redpanda:9092 (id: 2147483647 rack: null)
+consumer-1  | 2026-10-19T11:07:11.911Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-8] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-8, groupId=g-propagate_transient_run2-1792407998] (Re-)joining group
+consumer-1  | 2026-10-19T11:07:11.913Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-8] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-8, groupId=g-propagate_transient_run2-1792407998] Request joining group due to: need to re-join with the given member-id: consumer-g-propagate_transient_run2-1792407998-8-f94dc387-77d4-4920-8c03-0a5b25c744db
+consumer-1  | 2026-10-19T11:07:11.913Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-8] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-8, groupId=g-propagate_transient_run2-1792407998] (Re-)joining group
+consumer-1  | 2026-10-19T11:07:11.913Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-8] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-8, groupId=g-propagate_transient_run2-1792407998] Successfully joined group with generation Generation{generationId=15, memberId='consumer-g-propagate_transient_run2-1792407998-8-f94dc387-77d4-4920-8c03-0a5b25c744db', protocol='range'}
+consumer-1  | 2026-10-19T11:07:11.914Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-8] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-8, groupId=g-propagate_transient_run2-1792407998] Finished assignment for group at generation 15: {consumer-g-propagate_transient_run2-1792407998-8-f94dc387-77d4-4920-8c03-0a5b25c744db=Assignment(partitions=[products-transient-0, products-transient-1, products-transient-2, products-transient-3])}
+consumer-1  | 2026-10-19T11:07:11.915Z  INFO 1 --- [kafka-error-contract] [run2-1792407998] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-8, groupId=g-propagate_transient_run2-1792407998] Successfully synced group in generation Generation{generationId=15, memberId='consumer-g-propagate_transient_run2-1792407998-8-f94dc387-77d4-4920-8c03-0a5b25c744db', protocol='range'}
+consumer-1  | 2026-10-19T11:07:11.915Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-8] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-8, groupId=g-propagate_transient_run2-1792407998] Notifying assignor about the new Assignment(partitions=[products-transient-0, products-transient-1, products-transient-2, products-transient-3])
+consumer-1  | 2026-10-19T11:07:11.915Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-8] k.c.c.i.ConsumerRebalanceListenerInvoker : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-8, groupId=g-propagate_transient_run2-1792407998] Adding newly assigned partitions: products-transient-0, products-transient-1, products-transient-2, products-transient-3
+consumer-1  | 2026-10-19T11:07:11.916Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-8] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-8, groupId=g-propagate_transient_run2-1792407998] Found no committed offset for partition products-transient-0
+consumer-1  | 2026-10-19T11:07:11.916Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-8] o.a.k.c.c.internals.ConsumerUtils        : Setting offset for partition products-transient-2 to the committed offset FetchPosition{offset=2283, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[redpanda:9092 (id: 0 rack: null)], epoch=absent}}
+consumer-1  | 2026-10-19T11:07:11.916Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-8] o.a.k.c.c.internals.ConsumerUtils        : Setting offset for partition products-transient-1 to the committed offset FetchPosition{offset=4, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[redpanda:9092 (id: 0 rack: null)], epoch=absent}}
+consumer-1  | 2026-10-19T11:07:11.916Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-8] o.a.k.c.c.internals.ConsumerUtils        : Setting offset for partition products-transient-3 to the committed offset FetchPosition{offset=2513, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[redpanda:9092 (id: 0 rack: null)], epoch=absent}}
+consumer-1  | 2026-10-19T11:07:11.917Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-8] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-8, groupId=g-propagate_transient_run2-1792407998] Resetting offset for partition products-transient-0 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[redpanda:9092 (id: 0 rack: null)], epoch=absent}}.
+consumer-1  | 2026-10-19T11:07:14.599Z ERROR 1 --- [kafka-error-contract] [atcher-worker-5] lab.contract.ConsumerPipeline            : consumer restart #8: org.springframework.dao.TransientDataAccessResourceException: db blip (injected)
+consumer-1  | 2026-10-19T11:07:14.603Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-8] k.c.c.i.ConsumerRebalanceListenerInvoker : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-8, groupId=g-propagate_transient_run2-1792407998] Revoke previously assigned partitions products-transient-0, products-transient-1, products-transient-2, products-transient-3
+consumer-1  | 2026-10-19T11:07:14.603Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-8] k.c.c.i.ConsumerRebalanceListenerInvoker : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-8, groupId=g-propagate_transient_run2-1792407998] The pause flag in partitions [products-transient-3, products-transient-2, products-transient-1, products-transient-0] will be removed due to revocation.
+consumer-1  | 2026-10-19T11:07:14.603Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-8] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-8, groupId=g-propagate_transient_run2-1792407998] Member consumer-g-propagate_transient_run2-1792407998-8-f94dc387-77d4-4920-8c03-0a5b25c744db sending LeaveGroup request to coordinator redpanda:9092 (id: 2147483647 rack: null) due to the consumer is being closed
+consumer-1  | 2026-10-19T11:07:14.603Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-8] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-8, groupId=g-propagate_transient_run2-1792407998] Resetting generation and member id due to: consumer pro-actively leaving the group
+consumer-1  | 2026-10-19T11:07:14.603Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-8] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-8, groupId=g-propagate_transient_run2-1792407998] Request joining group due to: consumer pro-actively leaving the group
+consumer-1  | 2026-10-19T11:07:15.106Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-8] o.apache.kafka.common.metrics.Metrics    : Metrics scheduler closed
+consumer-1  | 2026-10-19T11:07:15.106Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-8] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+consumer-1  | 2026-10-19T11:07:15.106Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-8] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter
+consumer-1  | 2026-10-19T11:07:15.106Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-8] o.apache.kafka.common.metrics.Metrics    : Metrics reporters closed
+consumer-1  | 2026-10-19T11:07:15.109Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-8] o.a.kafka.common.utils.AppInfoParser     : App info kafka.consumer for consumer-g-propagate_transient_run2-1792407998-8 unregistered
+consumer-1  | 2026-10-19T11:07:16.075Z  INFO 1 --- [kafka-error-contract] [     parallel-2] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+consumer-1  | 	allow.auto.create.topics = true
+consumer-1  | 	auto.commit.interval.ms = 5000
+consumer-1  | 	auto.include.jmx.reporter = true
+consumer-1  | 	auto.offset.reset = earliest
+consumer-1  | 	bootstrap.servers = [redpanda:9092]
+consumer-1  | 	check.crcs = true
+consumer-1  | 	client.dns.lookup = use_all_dns_ips
+consumer-1  | 	client.id = consumer-g-propagate_transient_run2-1792407998-9
+consumer-1  | 	client.rack = 
+consumer-1  | 	connections.max.idle.ms = 540000
+consumer-1  | 	default.api.timeout.ms = 60000
+consumer-1  | 	enable.auto.commit = false
+consumer-1  | 	enable.metrics.push = true
+consumer-1  | 	exclude.internal.topics = true
+consumer-1  | 	fetch.max.bytes = 52428800
+consumer-1  | 	fetch.max.wait.ms = 500
+consumer-1  | 	fetch.min.bytes = 1
+consumer-1  | 	group.id = g-propagate_transient_run2-1792407998
+consumer-1  | 	group.instance.id = null
+consumer-1  | 	group.protocol = classic
+consumer-1  | 	group.remote.assignor = null
+consumer-1  | 	heartbeat.interval.ms = 3000
+consumer-1  | 	interceptor.classes = []
+consumer-1  | 	internal.leave.group.on.close = true
+consumer-1  | 	internal.throw.on.fetch.stable.offset.unsupported = false
+consumer-1  | 	isolation.level = read_uncommitted
+consumer-1  | 	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+consumer-1  | 	max.partition.fetch.bytes = 1048576
+consumer-1  | 	max.poll.interval.ms = 300000
+consumer-1  | 	max.poll.records = 500
+consumer-1  | 	metadata.max.age.ms = 300000
+consumer-1  | 	metadata.recovery.strategy = none
+consumer-1  | 	metric.reporters = []
+consumer-1  | 	metrics.num.samples = 2
+consumer-1  | 	metrics.recording.level = INFO
+consumer-1  | 	metrics.sample.window.ms = 30000
+consumer-1  | 	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+consumer-1  | 	receive.buffer.bytes = 65536
+consumer-1  | 	reconnect.backoff.max.ms = 1000
+consumer-1  | 	reconnect.backoff.ms = 50
+consumer-1  | 	request.timeout.ms = 30000
+consumer-1  | 	retry.backoff.max.ms = 1000
+consumer-1  | 	retry.backoff.ms = 100
+consumer-1  | 	sasl.client.callback.handler.class = null
+consumer-1  | 	sasl.jaas.config = null
+consumer-1  | 	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+consumer-1  | 	sasl.kerberos.min.time.before.relogin = 60000
+consumer-1  | 	sasl.kerberos.service.name = null
+consumer-1  | 	sasl.kerberos.ticket.renew.jitter = 0.05
+consumer-1  | 	sasl.kerberos.ticket.renew.window.factor = 0.8
+consumer-1  | 	sasl.login.callback.handler.class = null
+consumer-1  | 	sasl.login.class = null
+consumer-1  | 	sasl.login.connect.timeout.ms = null
+consumer-1  | 	sasl.login.read.timeout.ms = null
+consumer-1  | 	sasl.login.refresh.buffer.seconds = 300
+consumer-1  | 	sasl.login.refresh.min.period.seconds = 60
+consumer-1  | 	sasl.login.refresh.window.factor = 0.8
+consumer-1  | 	sasl.login.refresh.window.jitter = 0.05
+consumer-1  | 	sasl.login.retry.backoff.max.ms = 10000
+consumer-1  | 	sasl.login.retry.backoff.ms = 100
+consumer-1  | 	sasl.mechanism = GSSAPI
+consumer-1  | 	sasl.oauthbearer.clock.skew.seconds = 30
+consumer-1  | 	sasl.oauthbearer.expected.audience = null
+consumer-1  | 	sasl.oauthbearer.expected.issuer = null
+consumer-1  | 	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+consumer-1  | 	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+consumer-1  | 	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+consumer-1  | 	sasl.oauthbearer.jwks.endpoint.url = null
+consumer-1  | 	sasl.oauthbearer.scope.claim.name = scope
+consumer-1  | 	sasl.oauthbearer.sub.claim.name = sub
+consumer-1  | 	sasl.oauthbearer.token.endpoint.url = null
+consumer-1  | 	security.protocol = PLAINTEXT
+consumer-1  | 	security.providers = null
+consumer-1  | 	send.buffer.bytes = 131072
+consumer-1  | 	session.timeout.ms = 45000
+consumer-1  | 	socket.connection.setup.timeout.max.ms = 30000
+consumer-1  | 	socket.connection.setup.timeout.ms = 10000
+consumer-1  | 	ssl.cipher.suites = null
+consumer-1  | 	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+consumer-1  | 	ssl.endpoint.identification.algorithm = https
+consumer-1  | 	ssl.engine.factory.class = null
+consumer-1  | 	ssl.key.password = null
+consumer-1  | 	ssl.keymanager.algorithm = SunX509
+consumer-1  | 	ssl.keystore.certificate.chain = null
+consumer-1  | 	ssl.keystore.key = null
+consumer-1  | 	ssl.keystore.location = null
+consumer-1  | 	ssl.keystore.password = null
+consumer-1  | 	ssl.keystore.type = JKS
+consumer-1  | 	ssl.protocol = TLSv1.3
+consumer-1  | 	ssl.provider = null
+consumer-1  | 	ssl.secure.random.implementation = null
+consumer-1  | 	ssl.trustmanager.algorithm = PKIX
+consumer-1  | 	ssl.truststore.certificates = null
+consumer-1  | 	ssl.truststore.location = null
+consumer-1  | 	ssl.truststore.password = null
+consumer-1  | 	ssl.truststore.type = JKS
+consumer-1  | 	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+consumer-1  | 
+consumer-1  | 2026-10-19T11:07:16.077Z  INFO 1 --- [kafka-error-contract] [     parallel-2] o.a.k.c.t.i.KafkaMetricsCollector        : initializing Kafka metrics collector
+consumer-1  | 2026-10-19T11:07:16.082Z  INFO 1 --- [kafka-error-contract] [     parallel-2] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.8.1
+consumer-1  | 2026-10-19T11:07:16.082Z  INFO 1 --- [kafka-error-contract] [     parallel-2] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 70d6ff42debf7e17
+consumer-1  | 2026-10-19T11:07:16.082Z  INFO 1 --- [kafka-error-contract] [     parallel-2] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1792408036082
+consumer-1  | 2026-10-19T11:07:16.083Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-9] o.a.k.c.c.internals.LegacyKafkaConsumer  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-9, groupId=g-propagate_transient_run2-1792407998] Subscribed to topic(s): products-transient
+consumer-1  | 2026-10-19T11:07:16.087Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-9] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-9, groupId=g-propagate_transient_run2-1792407998] Cluster ID: redpanda.8dd8c50d-4a0f-4ffb-8bb0-af4511389295
+consumer-1  | 2026-10-19T11:07:16.088Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-9] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-9, groupId=g-propagate_transient_run2-1792407998] Discovered group coordinator redpanda:9092 (id: 2147483647 rack: null)
+consumer-1  | 2026-10-19T11:07:16.089Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-9] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-9, groupId=g-propagate_transient_run2-1792407998] (Re-)joining group
+consumer-1  | 2026-10-19T11:07:16.090Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-9] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-9, groupId=g-propagate_transient_run2-1792407998] Request joining group due to: need to re-join with the given member-id: consumer-g-propagate_transient_run2-1792407998-9-849d3ca1-8ad0-47c0-b0ae-f83c8ba53ba7
+consumer-1  | 2026-10-19T11:07:16.090Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-9] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-9, groupId=g-propagate_transient_run2-1792407998] (Re-)joining group
+consumer-1  | 2026-10-19T11:07:16.091Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-9] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-9, groupId=g-propagate_transient_run2-1792407998] Successfully joined group with generation Generation{generationId=17, memberId='consumer-g-propagate_transient_run2-1792407998-9-849d3ca1-8ad0-47c0-b0ae-f83c8ba53ba7', protocol='range'}
+consumer-1  | 2026-10-19T11:07:16.091Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-9] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-9, groupId=g-propagate_transient_run2-1792407998] Finished assignment for group at generation 17: {consumer-g-propagate_transient_run2-1792407998-9-849d3ca1-8ad0-47c0-b0ae-f83c8ba53ba7=Assignment(partitions=[products-transient-0, products-transient-1, products-transient-2, products-transient-3])}
+consumer-1  | 2026-10-19T11:07:16.092Z  INFO 1 --- [kafka-error-contract] [run2-1792407998] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-9, groupId=g-propagate_transient_run2-1792407998] Successfully synced group in generation Generation{generationId=17, memberId='consumer-g-propagate_transient_run2-1792407998-9-849d3ca1-8ad0-47c0-b0ae-f83c8ba53ba7', protocol='range'}
+consumer-1  | 2026-10-19T11:07:16.092Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-9] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-9, groupId=g-propagate_transient_run2-1792407998] Notifying assignor about the new Assignment(partitions=[products-transient-0, products-transient-1, products-transient-2, products-transient-3])
+consumer-1  | 2026-10-19T11:07:16.093Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-9] k.c.c.i.ConsumerRebalanceListenerInvoker : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-9, groupId=g-propagate_transient_run2-1792407998] Adding newly assigned partitions: products-transient-0, products-transient-1, products-transient-2, products-transient-3
+consumer-1  | 2026-10-19T11:07:16.093Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-9] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-9, groupId=g-propagate_transient_run2-1792407998] Found no committed offset for partition products-transient-0
+consumer-1  | 2026-10-19T11:07:16.093Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-9] o.a.k.c.c.internals.ConsumerUtils        : Setting offset for partition products-transient-2 to the committed offset FetchPosition{offset=2535, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[redpanda:9092 (id: 0 rack: null)], epoch=absent}}
+consumer-1  | 2026-10-19T11:07:16.093Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-9] o.a.k.c.c.internals.ConsumerUtils        : Setting offset for partition products-transient-1 to the committed offset FetchPosition{offset=705, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[redpanda:9092 (id: 0 rack: null)], epoch=absent}}
+consumer-1  | 2026-10-19T11:07:16.093Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-9] o.a.k.c.c.internals.ConsumerUtils        : Setting offset for partition products-transient-3 to the committed offset FetchPosition{offset=2513, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[redpanda:9092 (id: 0 rack: null)], epoch=absent}}
+consumer-1  | 2026-10-19T11:07:16.095Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-9] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-9, groupId=g-propagate_transient_run2-1792407998] Resetting offset for partition products-transient-0 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[redpanda:9092 (id: 0 rack: null)], epoch=absent}}.
+consumer-1  | 2026-10-19T11:07:20.091Z ERROR 1 --- [kafka-error-contract] [atcher-worker-3] lab.contract.ConsumerPipeline            : consumer restart #9: org.springframework.dao.TransientDataAccessResourceException: db blip (injected)
+consumer-1  | 2026-10-19T11:07:20.099Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-9] k.c.c.i.ConsumerRebalanceListenerInvoker : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-9, groupId=g-propagate_transient_run2-1792407998] Revoke previously assigned partitions products-transient-0, products-transient-1, products-transient-2, products-transient-3
+consumer-1  | 2026-10-19T11:07:20.100Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-9] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-9, groupId=g-propagate_transient_run2-1792407998] Member consumer-g-propagate_transient_run2-1792407998-9-849d3ca1-8ad0-47c0-b0ae-f83c8ba53ba7 sending LeaveGroup request to coordinator redpanda:9092 (id: 2147483647 rack: null) due to the consumer is being closed
+consumer-1  | 2026-10-19T11:07:20.100Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-9] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-9, groupId=g-propagate_transient_run2-1792407998] Resetting generation and member id due to: consumer pro-actively leaving the group
+consumer-1  | 2026-10-19T11:07:20.100Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-9] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-9, groupId=g-propagate_transient_run2-1792407998] Request joining group due to: consumer pro-actively leaving the group
+consumer-1  | 2026-10-19T11:07:21.099Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-9] o.apache.kafka.common.metrics.Metrics    : Metrics scheduler closed
+consumer-1  | 2026-10-19T11:07:21.100Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-9] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+consumer-1  | 2026-10-19T11:07:21.100Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-9] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter
+consumer-1  | 2026-10-19T11:07:21.100Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-9] o.apache.kafka.common.metrics.Metrics    : Metrics reporters closed
+consumer-1  | 2026-10-19T11:07:21.102Z  INFO 1 --- [kafka-error-contract] [n2-1792407998-9] o.a.kafka.common.utils.AppInfoParser     : App info kafka.consumer for consumer-g-propagate_transient_run2-1792407998-9 unregistered
+consumer-1  | 2026-10-19T11:07:21.233Z  INFO 1 --- [kafka-error-contract] [     parallel-2] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+consumer-1  | 	allow.auto.create.topics = true
+consumer-1  | 	auto.commit.interval.ms = 5000
+consumer-1  | 	auto.include.jmx.reporter = true
+consumer-1  | 	auto.offset.reset = earliest
+consumer-1  | 	bootstrap.servers = [redpanda:9092]
+consumer-1  | 	check.crcs = true
+consumer-1  | 	client.dns.lookup = use_all_dns_ips
+consumer-1  | 	client.id = consumer-g-propagate_transient_run2-1792407998-10
+consumer-1  | 	client.rack = 
+consumer-1  | 	connections.max.idle.ms = 540000
+consumer-1  | 	default.api.timeout.ms = 60000
+consumer-1  | 	enable.auto.commit = false
+consumer-1  | 	enable.metrics.push = true
+consumer-1  | 	exclude.internal.topics = true
+consumer-1  | 	fetch.max.bytes = 52428800
+consumer-1  | 	fetch.max.wait.ms = 500
+consumer-1  | 	fetch.min.bytes = 1
+consumer-1  | 	group.id = g-propagate_transient_run2-1792407998
+consumer-1  | 	group.instance.id = null
+consumer-1  | 	group.protocol = classic
+consumer-1  | 	group.remote.assignor = null
+consumer-1  | 	heartbeat.interval.ms = 3000
+consumer-1  | 	interceptor.classes = []
+consumer-1  | 	internal.leave.group.on.close = true
+consumer-1  | 	internal.throw.on.fetch.stable.offset.unsupported = false
+consumer-1  | 	isolation.level = read_uncommitted
+consumer-1  | 	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+consumer-1  | 	max.partition.fetch.bytes = 1048576
+consumer-1  | 	max.poll.interval.ms = 300000
+consumer-1  | 	max.poll.records = 500
+consumer-1  | 	metadata.max.age.ms = 300000
+consumer-1  | 	metadata.recovery.strategy = none
+consumer-1  | 	metric.reporters = []
+consumer-1  | 	metrics.num.samples = 2
+consumer-1  | 	metrics.recording.level = INFO
+consumer-1  | 	metrics.sample.window.ms = 30000
+consumer-1  | 	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+consumer-1  | 	receive.buffer.bytes = 65536
+consumer-1  | 	reconnect.backoff.max.ms = 1000
+consumer-1  | 	reconnect.backoff.ms = 50
+consumer-1  | 	request.timeout.ms = 30000
+consumer-1  | 	retry.backoff.max.ms = 1000
+consumer-1  | 	retry.backoff.ms = 100
+consumer-1  | 	sasl.client.callback.handler.class = null
+consumer-1  | 	sasl.jaas.config = null
+consumer-1  | 	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+consumer-1  | 	sasl.kerberos.min.time.before.relogin = 60000
+consumer-1  | 	sasl.kerberos.service.name = null
+consumer-1  | 	sasl.kerberos.ticket.renew.jitter = 0.05
+consumer-1  | 	sasl.kerberos.ticket.renew.window.factor = 0.8
+consumer-1  | 	sasl.login.callback.handler.class = null
+consumer-1  | 	sasl.login.class = null
+consumer-1  | 	sasl.login.connect.timeout.ms = null
+consumer-1  | 	sasl.login.read.timeout.ms = null
+consumer-1  | 	sasl.login.refresh.buffer.seconds = 300
+consumer-1  | 	sasl.login.refresh.min.period.seconds = 60
+consumer-1  | 	sasl.login.refresh.window.factor = 0.8
+consumer-1  | 	sasl.login.refresh.window.jitter = 0.05
+consumer-1  | 	sasl.login.retry.backoff.max.ms = 10000
+consumer-1  | 	sasl.login.retry.backoff.ms = 100
+consumer-1  | 	sasl.mechanism = GSSAPI
+consumer-1  | 	sasl.oauthbearer.clock.skew.seconds = 30
+consumer-1  | 	sasl.oauthbearer.expected.audience = null
+consumer-1  | 	sasl.oauthbearer.expected.issuer = null
+consumer-1  | 	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+consumer-1  | 	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+consumer-1  | 	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+consumer-1  | 	sasl.oauthbearer.jwks.endpoint.url = null
+consumer-1  | 	sasl.oauthbearer.scope.claim.name = scope
+consumer-1  | 	sasl.oauthbearer.sub.claim.name = sub
+consumer-1  | 	sasl.oauthbearer.token.endpoint.url = null
+consumer-1  | 	security.protocol = PLAINTEXT
+consumer-1  | 	security.providers = null
+consumer-1  | 	send.buffer.bytes = 131072
+consumer-1  | 	session.timeout.ms = 45000
+consumer-1  | 	socket.connection.setup.timeout.max.ms = 30000
+consumer-1  | 	socket.connection.setup.timeout.ms = 10000
+consumer-1  | 	ssl.cipher.suites = null
+consumer-1  | 	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+consumer-1  | 	ssl.endpoint.identification.algorithm = https
+consumer-1  | 	ssl.engine.factory.class = null
+consumer-1  | 	ssl.key.password = null
+consumer-1  | 	ssl.keymanager.algorithm = SunX509
+consumer-1  | 	ssl.keystore.certificate.chain = null
+consumer-1  | 	ssl.keystore.key = null
+consumer-1  | 	ssl.keystore.location = null
+consumer-1  | 	ssl.keystore.password = null
+consumer-1  | 	ssl.keystore.type = JKS
+consumer-1  | 	ssl.protocol = TLSv1.3
+consumer-1  | 	ssl.provider = null
+consumer-1  | 	ssl.secure.random.implementation = null
+consumer-1  | 	ssl.trustmanager.algorithm = PKIX
+consumer-1  | 	ssl.truststore.certificates = null
+consumer-1  | 	ssl.truststore.location = null
+consumer-1  | 	ssl.truststore.password = null
+consumer-1  | 	ssl.truststore.type = JKS
+consumer-1  | 	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+consumer-1  | 
+consumer-1  | 2026-10-19T11:07:21.236Z  INFO 1 --- [kafka-error-contract] [     parallel-2] o.a.k.c.t.i.KafkaMetricsCollector        : initializing Kafka metrics collector
+consumer-1  | 2026-10-19T11:07:21.239Z  INFO 1 --- [kafka-error-contract] [     parallel-2] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.8.1
+consumer-1  | 2026-10-19T11:07:21.240Z  INFO 1 --- [kafka-error-contract] [     parallel-2] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 70d6ff42debf7e17
+consumer-1  | 2026-10-19T11:07:21.240Z  INFO 1 --- [kafka-error-contract] [     parallel-2] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1792408041239
+consumer-1  | 2026-10-19T11:07:21.241Z  INFO 1 --- [kafka-error-contract] [2-1792407998-10] o.a.k.c.c.internals.LegacyKafkaConsumer  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-10, groupId=g-propagate_transient_run2-1792407998] Subscribed to topic(s): products-transient
+consumer-1  | 2026-10-19T11:07:21.245Z  INFO 1 --- [kafka-error-contract] [2-1792407998-10] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-10, groupId=g-propagate_transient_run2-1792407998] Cluster ID: redpanda.8dd8c50d-4a0f-4ffb-8bb0-af4511389295
+consumer-1  | 2026-10-19T11:07:21.247Z  INFO 1 --- [kafka-error-contract] [2-1792407998-10] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-10, groupId=g-propagate_transient_run2-1792407998] Discovered group coordinator redpanda:9092 (id: 2147483647 rack: null)
+consumer-1  | 2026-10-19T11:07:21.248Z  INFO 1 --- [kafka-error-contract] [2-1792407998-10] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-10, groupId=g-propagate_transient_run2-1792407998] (Re-)joining group
+consumer-1  | 2026-10-19T11:07:21.251Z  INFO 1 --- [kafka-error-contract] [2-1792407998-10] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-10, groupId=g-propagate_transient_run2-1792407998] Request joining group due to: need to re-join with the given member-id: consumer-g-propagate_transient_run2-1792407998-10-f7511c7e-ee29-402b-a410-fa8f986058ef
+consumer-1  | 2026-10-19T11:07:21.251Z  INFO 1 --- [kafka-error-contract] [2-1792407998-10] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-10, groupId=g-propagate_transient_run2-1792407998] (Re-)joining group
+consumer-1  | 2026-10-19T11:07:21.252Z  INFO 1 --- [kafka-error-contract] [2-1792407998-10] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-10, groupId=g-propagate_transient_run2-1792407998] Successfully joined group with generation Generation{generationId=19, memberId='consumer-g-propagate_transient_run2-1792407998-10-f7511c7e-ee29-402b-a410-fa8f986058ef', protocol='range'}
+consumer-1  | 2026-10-19T11:07:21.252Z  INFO 1 --- [kafka-error-contract] [2-1792407998-10] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-10, groupId=g-propagate_transient_run2-1792407998] Finished assignment for group at generation 19: {consumer-g-propagate_transient_run2-1792407998-10-f7511c7e-ee29-402b-a410-fa8f986058ef=Assignment(partitions=[products-transient-0, products-transient-1, products-transient-2, products-transient-3])}
+consumer-1  | 2026-10-19T11:07:21.254Z  INFO 1 --- [kafka-error-contract] [2-1792407998-10] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-10, groupId=g-propagate_transient_run2-1792407998] Successfully synced group in generation Generation{generationId=19, memberId='consumer-g-propagate_transient_run2-1792407998-10-f7511c7e-ee29-402b-a410-fa8f986058ef', protocol='range'}
+consumer-1  | 2026-10-19T11:07:21.254Z  INFO 1 --- [kafka-error-contract] [2-1792407998-10] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-10, groupId=g-propagate_transient_run2-1792407998] Notifying assignor about the new Assignment(partitions=[products-transient-0, products-transient-1, products-transient-2, products-transient-3])
+consumer-1  | 2026-10-19T11:07:21.254Z  INFO 1 --- [kafka-error-contract] [2-1792407998-10] k.c.c.i.ConsumerRebalanceListenerInvoker : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-10, groupId=g-propagate_transient_run2-1792407998] Adding newly assigned partitions: products-transient-0, products-transient-1, products-transient-2, products-transient-3
+consumer-1  | 2026-10-19T11:07:21.255Z  INFO 1 --- [kafka-error-contract] [2-1792407998-10] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-10, groupId=g-propagate_transient_run2-1792407998] Found no committed offset for partition products-transient-0
+consumer-1  | 2026-10-19T11:07:21.255Z  INFO 1 --- [kafka-error-contract] [2-1792407998-10] o.a.k.c.c.internals.ConsumerUtils        : Setting offset for partition products-transient-2 to the committed offset FetchPosition{offset=2535, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[redpanda:9092 (id: 0 rack: null)], epoch=absent}}
+consumer-1  | 2026-10-19T11:07:21.255Z  INFO 1 --- [kafka-error-contract] [2-1792407998-10] o.a.k.c.c.internals.ConsumerUtils        : Setting offset for partition products-transient-1 to the committed offset FetchPosition{offset=1902, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[redpanda:9092 (id: 0 rack: null)], epoch=absent}}
+consumer-1  | 2026-10-19T11:07:21.255Z  INFO 1 --- [kafka-error-contract] [2-1792407998-10] o.a.k.c.c.internals.ConsumerUtils        : Setting offset for partition products-transient-3 to the committed offset FetchPosition{offset=2513, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[redpanda:9092 (id: 0 rack: null)], epoch=absent}}
+consumer-1  | 2026-10-19T11:07:21.257Z  INFO 1 --- [kafka-error-contract] [2-1792407998-10] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-10, groupId=g-propagate_transient_run2-1792407998] Resetting offset for partition products-transient-0 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[redpanda:9092 (id: 0 rack: null)], epoch=absent}}.
+consumer-1  | 2026-10-19T11:07:30.133Z ERROR 1 --- [kafka-error-contract] [atcher-worker-1] lab.contract.ConsumerPipeline            : consumer restart #10: org.springframework.dao.TransientDataAccessResourceException: db blip (injected)
+consumer-1  | 2026-10-19T11:07:30.135Z  INFO 1 --- [kafka-error-contract] [2-1792407998-10] k.c.c.i.ConsumerRebalanceListenerInvoker : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-10, groupId=g-propagate_transient_run2-1792407998] Revoke previously assigned partitions products-transient-0, products-transient-1, products-transient-2, products-transient-3
+consumer-1  | 2026-10-19T11:07:30.135Z  INFO 1 --- [kafka-error-contract] [2-1792407998-10] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-10, groupId=g-propagate_transient_run2-1792407998] Member consumer-g-propagate_transient_run2-1792407998-10-f7511c7e-ee29-402b-a410-fa8f986058ef sending LeaveGroup request to coordinator redpanda:9092 (id: 2147483647 rack: null) due to the consumer is being closed
+consumer-1  | 2026-10-19T11:07:30.135Z  INFO 1 --- [kafka-error-contract] [2-1792407998-10] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-10, groupId=g-propagate_transient_run2-1792407998] Resetting generation and member id due to: consumer pro-actively leaving the group
+consumer-1  | 2026-10-19T11:07:30.135Z  INFO 1 --- [kafka-error-contract] [2-1792407998-10] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-10, groupId=g-propagate_transient_run2-1792407998] Request joining group due to: consumer pro-actively leaving the group
+consumer-1  | 2026-10-19T11:07:30.996Z  INFO 1 --- [kafka-error-contract] [2-1792407998-10] o.apache.kafka.common.metrics.Metrics    : Metrics scheduler closed
+consumer-1  | 2026-10-19T11:07:30.996Z  INFO 1 --- [kafka-error-contract] [2-1792407998-10] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+consumer-1  | 2026-10-19T11:07:30.996Z  INFO 1 --- [kafka-error-contract] [2-1792407998-10] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter
+consumer-1  | 2026-10-19T11:07:30.996Z  INFO 1 --- [kafka-error-contract] [2-1792407998-10] o.apache.kafka.common.metrics.Metrics    : Metrics reporters closed
+consumer-1  | 2026-10-19T11:07:30.997Z  INFO 1 --- [kafka-error-contract] [2-1792407998-10] o.a.kafka.common.utils.AppInfoParser     : App info kafka.consumer for consumer-g-propagate_transient_run2-1792407998-10 unregistered
+consumer-1  | 2026-10-19T11:07:31.308Z  INFO 1 --- [kafka-error-contract] [     parallel-2] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+consumer-1  | 	allow.auto.create.topics = true
+consumer-1  | 	auto.commit.interval.ms = 5000
+consumer-1  | 	auto.include.jmx.reporter = true
+consumer-1  | 	auto.offset.reset = earliest
+consumer-1  | 	bootstrap.servers = [redpanda:9092]
+consumer-1  | 	check.crcs = true
+consumer-1  | 	client.dns.lookup = use_all_dns_ips
+consumer-1  | 	client.id = consumer-g-propagate_transient_run2-1792407998-11
+consumer-1  | 	client.rack = 
+consumer-1  | 	connections.max.idle.ms = 540000
+consumer-1  | 	default.api.timeout.ms = 60000
+consumer-1  | 	enable.auto.commit = false
+consumer-1  | 	enable.metrics.push = true
+consumer-1  | 	exclude.internal.topics = true
+consumer-1  | 	fetch.max.bytes = 52428800
+consumer-1  | 	fetch.max.wait.ms = 500
+consumer-1  | 	fetch.min.bytes = 1
+consumer-1  | 	group.id = g-propagate_transient_run2-1792407998
+consumer-1  | 	group.instance.id = null
+consumer-1  | 	group.protocol = classic
+consumer-1  | 	group.remote.assignor = null
+consumer-1  | 	heartbeat.interval.ms = 3000
+consumer-1  | 	interceptor.classes = []
+consumer-1  | 	internal.leave.group.on.close = true
+consumer-1  | 	internal.throw.on.fetch.stable.offset.unsupported = false
+consumer-1  | 	isolation.level = read_uncommitted
+consumer-1  | 	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+consumer-1  | 	max.partition.fetch.bytes = 1048576
+consumer-1  | 	max.poll.interval.ms = 300000
+consumer-1  | 	max.poll.records = 500
+consumer-1  | 	metadata.max.age.ms = 300000
+consumer-1  | 	metadata.recovery.strategy = none
+consumer-1  | 	metric.reporters = []
+consumer-1  | 	metrics.num.samples = 2
+consumer-1  | 	metrics.recording.level = INFO
+consumer-1  | 	metrics.sample.window.ms = 30000
+consumer-1  | 	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+consumer-1  | 	receive.buffer.bytes = 65536
+consumer-1  | 	reconnect.backoff.max.ms = 1000
+consumer-1  | 	reconnect.backoff.ms = 50
+consumer-1  | 	request.timeout.ms = 30000
+consumer-1  | 	retry.backoff.max.ms = 1000
+consumer-1  | 	retry.backoff.ms = 100
+consumer-1  | 	sasl.client.callback.handler.class = null
+consumer-1  | 	sasl.jaas.config = null
+consumer-1  | 	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+consumer-1  | 	sasl.kerberos.min.time.before.relogin = 60000
+consumer-1  | 	sasl.kerberos.service.name = null
+consumer-1  | 	sasl.kerberos.ticket.renew.jitter = 0.05
+consumer-1  | 	sasl.kerberos.ticket.renew.window.factor = 0.8
+consumer-1  | 	sasl.login.callback.handler.class = null
+consumer-1  | 	sasl.login.class = null
+consumer-1  | 	sasl.login.connect.timeout.ms = null
+consumer-1  | 	sasl.login.read.timeout.ms = null
+consumer-1  | 	sasl.login.refresh.buffer.seconds = 300
+consumer-1  | 	sasl.login.refresh.min.period.seconds = 60
+consumer-1  | 	sasl.login.refresh.window.factor = 0.8
+consumer-1  | 	sasl.login.refresh.window.jitter = 0.05
+consumer-1  | 	sasl.login.retry.backoff.max.ms = 10000
+consumer-1  | 	sasl.login.retry.backoff.ms = 100
+consumer-1  | 	sasl.mechanism = GSSAPI
+consumer-1  | 	sasl.oauthbearer.clock.skew.seconds = 30
+consumer-1  | 	sasl.oauthbearer.expected.audience = null
+consumer-1  | 	sasl.oauthbearer.expected.issuer = null
+consumer-1  | 	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+consumer-1  | 	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+consumer-1  | 	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+consumer-1  | 	sasl.oauthbearer.jwks.endpoint.url = null
+consumer-1  | 	sasl.oauthbearer.scope.claim.name = scope
+consumer-1  | 	sasl.oauthbearer.sub.claim.name = sub
+consumer-1  | 	sasl.oauthbearer.token.endpoint.url = null
+consumer-1  | 	security.protocol = PLAINTEXT
+consumer-1  | 	security.providers = null
+consumer-1  | 	send.buffer.bytes = 131072
+consumer-1  | 	session.timeout.ms = 45000
+consumer-1  | 	socket.connection.setup.timeout.max.ms = 30000
+consumer-1  | 	socket.connection.setup.timeout.ms = 10000
+consumer-1  | 	ssl.cipher.suites = null
+consumer-1  | 	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+consumer-1  | 	ssl.endpoint.identification.algorithm = https
+consumer-1  | 	ssl.engine.factory.class = null
+consumer-1  | 	ssl.key.password = null
+consumer-1  | 	ssl.keymanager.algorithm = SunX509
+consumer-1  | 	ssl.keystore.certificate.chain = null
+consumer-1  | 	ssl.keystore.key = null
+consumer-1  | 	ssl.keystore.location = null
+consumer-1  | 	ssl.keystore.password = null
+consumer-1  | 	ssl.keystore.type = JKS
+consumer-1  | 	ssl.protocol = TLSv1.3
+consumer-1  | 	ssl.provider = null
+consumer-1  | 	ssl.secure.random.implementation = null
+consumer-1  | 	ssl.trustmanager.algorithm = PKIX
+consumer-1  | 	ssl.truststore.certificates = null
+consumer-1  | 	ssl.truststore.location = null
+consumer-1  | 	ssl.truststore.password = null
+consumer-1  | 	ssl.truststore.type = JKS
+consumer-1  | 	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+consumer-1  | 
+consumer-1  | 2026-10-19T11:07:31.309Z  INFO 1 --- [kafka-error-contract] [     parallel-2] o.a.k.c.t.i.KafkaMetricsCollector        : initializing Kafka metrics collector
+consumer-1  | 2026-10-19T11:07:31.310Z  INFO 1 --- [kafka-error-contract] [     parallel-2] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.8.1
+consumer-1  | 2026-10-19T11:07:31.310Z  INFO 1 --- [kafka-error-contract] [     parallel-2] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 70d6ff42debf7e17
+consumer-1  | 2026-10-19T11:07:31.310Z  INFO 1 --- [kafka-error-contract] [     parallel-2] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1792408051310
+consumer-1  | 2026-10-19T11:07:31.312Z  INFO 1 --- [kafka-error-contract] [2-1792407998-11] o.a.k.c.c.internals.LegacyKafkaConsumer  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-11, groupId=g-propagate_transient_run2-1792407998] Subscribed to topic(s): products-transient
+consumer-1  | 2026-10-19T11:07:31.314Z  INFO 1 --- [kafka-error-contract] [2-1792407998-11] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-11, groupId=g-propagate_transient_run2-1792407998] Cluster ID: redpanda.8dd8c50d-4a0f-4ffb-8bb0-af4511389295
+consumer-1  | 2026-10-19T11:07:31.314Z  INFO 1 --- [kafka-error-contract] [2-1792407998-11] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-11, groupId=g-propagate_transient_run2-1792407998] Discovered group coordinator redpanda:9092 (id: 2147483647 rack: null)
+consumer-1  | 2026-10-19T11:07:31.315Z  INFO 1 --- [kafka-error-contract] [2-1792407998-11] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-11, groupId=g-propagate_transient_run2-1792407998] (Re-)joining group
+consumer-1  | 2026-10-19T11:07:31.317Z  INFO 1 --- [kafka-error-contract] [2-1792407998-11] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-11, groupId=g-propagate_transient_run2-1792407998] Request joining group due to: need to re-join with the given member-id: consumer-g-propagate_transient_run2-1792407998-11-f0474583-4d7a-4d4b-82b0-5bbad962d705
+consumer-1  | 2026-10-19T11:07:31.318Z  INFO 1 --- [kafka-error-contract] [2-1792407998-11] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-11, groupId=g-propagate_transient_run2-1792407998] (Re-)joining group
+consumer-1  | 2026-10-19T11:07:31.318Z  INFO 1 --- [kafka-error-contract] [2-1792407998-11] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-11, groupId=g-propagate_transient_run2-1792407998] Successfully joined group with generation Generation{generationId=21, memberId='consumer-g-propagate_transient_run2-1792407998-11-f0474583-4d7a-4d4b-82b0-5bbad962d705', protocol='range'}
+consumer-1  | 2026-10-19T11:07:31.319Z  INFO 1 --- [kafka-error-contract] [2-1792407998-11] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-11, groupId=g-propagate_transient_run2-1792407998] Finished assignment for group at generation 21: {consumer-g-propagate_transient_run2-1792407998-11-f0474583-4d7a-4d4b-82b0-5bbad962d705=Assignment(partitions=[products-transient-0, products-transient-1, products-transient-2, products-transient-3])}
+consumer-1  | 2026-10-19T11:07:31.321Z  INFO 1 --- [kafka-error-contract] [2-1792407998-11] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-11, groupId=g-propagate_transient_run2-1792407998] Successfully synced group in generation Generation{generationId=21, memberId='consumer-g-propagate_transient_run2-1792407998-11-f0474583-4d7a-4d4b-82b0-5bbad962d705', protocol='range'}
+consumer-1  | 2026-10-19T11:07:31.321Z  INFO 1 --- [kafka-error-contract] [2-1792407998-11] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-11, groupId=g-propagate_transient_run2-1792407998] Notifying assignor about the new Assignment(partitions=[products-transient-0, products-transient-1, products-transient-2, products-transient-3])
+consumer-1  | 2026-10-19T11:07:31.321Z  INFO 1 --- [kafka-error-contract] [2-1792407998-11] k.c.c.i.ConsumerRebalanceListenerInvoker : [Consumer clientId=consumer-g-propagate_transient_run2-1792407998-11, groupId=g-propagate_transient_run2-1792407998] Adding newly assigned partitions: products-transient-0, products-transient-1, products-transient-2, products-transient-3
+consumer-1  | 2026-10-19T11:07:31.321Z  INFO 1 --- [kafka-error-contract] [2-1792407998-11] o.a.k.c.c.internals.ConsumerUtils        : Setting offset for partition products-transient-2 to the committed offset FetchPosition{offset=2535, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[redpanda:9092 (id: 0 rack: null)], epoch=absent}}
+consumer-1  | 2026-10-19T11:07:31.321Z  INFO 1 --- [kafka-error-contract] [2-1792407998-11] o.a.k.c.c.internals.ConsumerUtils        : Setting offset for partition products-transient-1 to the committed offset FetchPosition{offset=2426, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[redpanda:9092 (id: 0 rack: null)], epoch=absent}}
+consumer-1  | 2026-10-19T11:07:31.321Z  INFO 1 --- [kafka-error-contract] [2-1792407998-11] o.a.k.c.c.internals.ConsumerUtils        : Setting offset for partition products-transient-0 to the committed offset FetchPosition{offset=2292, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[redpanda:9092 (id: 0 rack: null)], epoch=absent}}
+consumer-1  | 2026-10-19T11:07:31.321Z  INFO 1 --- [kafka-error-contract] [2-1792407998-11] o.a.k.c.c.internals.ConsumerUtils        : Setting offset for partition products-transient-3 to the committed offset FetchPosition{offset=2513, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[redpanda:9092 (id: 0 rack: null)], epoch=absent}}

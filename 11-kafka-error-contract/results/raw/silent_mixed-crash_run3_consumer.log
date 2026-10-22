@@ -1,0 +1,394 @@
+consumer-1  | Picked up JAVA_TOOL_OPTIONS: -Xmx512m
+consumer-1  | 
+consumer-1  |   .   ____          _            __ _ _
+consumer-1  |  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+consumer-1  | ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+consumer-1  |  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+consumer-1  |   '  |____| .__|_| |_|_| |_\__, | / / / /
+consumer-1  |  =========|_|==============|___/=/_/_/_/
+consumer-1  | 
+consumer-1  |  :: Spring Boot ::                (v3.4.5)
+consumer-1  | 
+consumer-1  | 2026-10-19T11:29:24.635Z  INFO 1 --- [kafka-error-contract] [           main] lab.contract.LabApplicationKt            : Starting LabApplicationKt v0.0.1 using Java 21.0.12.1 with PID 1 (/app/app.jar started by root in /app)
+consumer-1  | 2026-10-19T11:29:24.639Z  INFO 1 --- [kafka-error-contract] [           main] lab.contract.LabApplicationKt            : No active profile set, falling back to 1 default profile: "default"
+consumer-1  | 2026-10-19T11:29:26.192Z  INFO 1 --- [kafka-error-contract] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+consumer-1  | 2026-10-19T11:29:26.391Z  INFO 1 --- [kafka-error-contract] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@481b2f10
+consumer-1  | 2026-10-19T11:29:26.393Z  INFO 1 --- [kafka-error-contract] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+consumer-1  | 2026-10-19T11:29:26.949Z  INFO 1 --- [kafka-error-contract] [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoints beneath base path '/actuator'
+consumer-1  | 2026-10-19T11:29:27.321Z  INFO 1 --- [kafka-error-contract] [           main] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 8080 (http)
+consumer-1  | 2026-10-19T11:29:27.340Z  INFO 1 --- [kafka-error-contract] [           main] lab.contract.LabApplicationKt            : Started LabApplicationKt in 3.24 seconds (process running for 3.79)
+consumer-1  | 2026-10-19T11:29:27.385Z  INFO 1 --- [kafka-error-contract] [           main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+consumer-1  | 	allow.auto.create.topics = true
+consumer-1  | 	auto.commit.interval.ms = 5000
+consumer-1  | 	auto.include.jmx.reporter = true
+consumer-1  | 	auto.offset.reset = earliest
+consumer-1  | 	bootstrap.servers = [redpanda:9092]
+consumer-1  | 	check.crcs = true
+consumer-1  | 	client.dns.lookup = use_all_dns_ips
+consumer-1  | 	client.id = consumer-g-silent_mixed-crash_run3-1792409358-1
+consumer-1  | 	client.rack = 
+consumer-1  | 	connections.max.idle.ms = 540000
+consumer-1  | 	default.api.timeout.ms = 60000
+consumer-1  | 	enable.auto.commit = false
+consumer-1  | 	enable.metrics.push = true
+consumer-1  | 	exclude.internal.topics = true
+consumer-1  | 	fetch.max.bytes = 52428800
+consumer-1  | 	fetch.max.wait.ms = 500
+consumer-1  | 	fetch.min.bytes = 1
+consumer-1  | 	group.id = g-silent_mixed-crash_run3-1792409358
+consumer-1  | 	group.instance.id = null
+consumer-1  | 	group.protocol = classic
+consumer-1  | 	group.remote.assignor = null
+consumer-1  | 	heartbeat.interval.ms = 3000
+consumer-1  | 	interceptor.classes = []
+consumer-1  | 	internal.leave.group.on.close = true
+consumer-1  | 	internal.throw.on.fetch.stable.offset.unsupported = false
+consumer-1  | 	isolation.level = read_uncommitted
+consumer-1  | 	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+consumer-1  | 	max.partition.fetch.bytes = 1048576
+consumer-1  | 	max.poll.interval.ms = 300000
+consumer-1  | 	max.poll.records = 500
+consumer-1  | 	metadata.max.age.ms = 300000
+consumer-1  | 	metadata.recovery.strategy = none
+consumer-1  | 	metric.reporters = []
+consumer-1  | 	metrics.num.samples = 2
+consumer-1  | 	metrics.recording.level = INFO
+consumer-1  | 	metrics.sample.window.ms = 30000
+consumer-1  | 	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+consumer-1  | 	receive.buffer.bytes = 65536
+consumer-1  | 	reconnect.backoff.max.ms = 1000
+consumer-1  | 	reconnect.backoff.ms = 50
+consumer-1  | 	request.timeout.ms = 30000
+consumer-1  | 	retry.backoff.max.ms = 1000
+consumer-1  | 	retry.backoff.ms = 100
+consumer-1  | 	sasl.client.callback.handler.class = null
+consumer-1  | 	sasl.jaas.config = null
+consumer-1  | 	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+consumer-1  | 	sasl.kerberos.min.time.before.relogin = 60000
+consumer-1  | 	sasl.kerberos.service.name = null
+consumer-1  | 	sasl.kerberos.ticket.renew.jitter = 0.05
+consumer-1  | 	sasl.kerberos.ticket.renew.window.factor = 0.8
+consumer-1  | 	sasl.login.callback.handler.class = null
+consumer-1  | 	sasl.login.class = null
+consumer-1  | 	sasl.login.connect.timeout.ms = null
+consumer-1  | 	sasl.login.read.timeout.ms = null
+consumer-1  | 	sasl.login.refresh.buffer.seconds = 300
+consumer-1  | 	sasl.login.refresh.min.period.seconds = 60
+consumer-1  | 	sasl.login.refresh.window.factor = 0.8
+consumer-1  | 	sasl.login.refresh.window.jitter = 0.05
+consumer-1  | 	sasl.login.retry.backoff.max.ms = 10000
+consumer-1  | 	sasl.login.retry.backoff.ms = 100
+consumer-1  | 	sasl.mechanism = GSSAPI
+consumer-1  | 	sasl.oauthbearer.clock.skew.seconds = 30
+consumer-1  | 	sasl.oauthbearer.expected.audience = null
+consumer-1  | 	sasl.oauthbearer.expected.issuer = null
+consumer-1  | 	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+consumer-1  | 	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+consumer-1  | 	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+consumer-1  | 	sasl.oauthbearer.jwks.endpoint.url = null
+consumer-1  | 	sasl.oauthbearer.scope.claim.name = scope
+consumer-1  | 	sasl.oauthbearer.sub.claim.name = sub
+consumer-1  | 	sasl.oauthbearer.token.endpoint.url = null
+consumer-1  | 	security.protocol = PLAINTEXT
+consumer-1  | 	security.providers = null
+consumer-1  | 	send.buffer.bytes = 131072
+consumer-1  | 	session.timeout.ms = 45000
+consumer-1  | 	socket.connection.setup.timeout.max.ms = 30000
+consumer-1  | 	socket.connection.setup.timeout.ms = 10000
+consumer-1  | 	ssl.cipher.suites = null
+consumer-1  | 	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+consumer-1  | 	ssl.endpoint.identification.algorithm = https
+consumer-1  | 	ssl.engine.factory.class = null
+consumer-1  | 	ssl.key.password = null
+consumer-1  | 	ssl.keymanager.algorithm = SunX509
+consumer-1  | 	ssl.keystore.certificate.chain = null
+consumer-1  | 	ssl.keystore.key = null
+consumer-1  | 	ssl.keystore.location = null
+consumer-1  | 	ssl.keystore.password = null
+consumer-1  | 	ssl.keystore.type = JKS
+consumer-1  | 	ssl.protocol = TLSv1.3
+consumer-1  | 	ssl.provider = null
+consumer-1  | 	ssl.secure.random.implementation = null
+consumer-1  | 	ssl.trustmanager.algorithm = PKIX
+consumer-1  | 	ssl.truststore.certificates = null
+consumer-1  | 	ssl.truststore.location = null
+consumer-1  | 	ssl.truststore.password = null
+consumer-1  | 	ssl.truststore.type = JKS
+consumer-1  | 	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+consumer-1  | 
+consumer-1  | 2026-10-19T11:29:27.428Z  INFO 1 --- [kafka-error-contract] [           main] o.a.k.c.t.i.KafkaMetricsCollector        : initializing Kafka metrics collector
+consumer-1  | 2026-10-19T11:29:27.549Z  INFO 1 --- [kafka-error-contract] [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.8.1
+consumer-1  | 2026-10-19T11:29:27.549Z  INFO 1 --- [kafka-error-contract] [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 70d6ff42debf7e17
+consumer-1  | 2026-10-19T11:29:27.549Z  INFO 1 --- [kafka-error-contract] [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1792409367548
+consumer-1  | 2026-10-19T11:29:27.561Z  INFO 1 --- [kafka-error-contract] [n3-1792409358-1] o.a.k.c.c.internals.LegacyKafkaConsumer  : [Consumer clientId=consumer-g-silent_mixed-crash_run3-1792409358-1, groupId=g-silent_mixed-crash_run3-1792409358] Subscribed to topic(s): products-mixed
+consumer-1  | 2026-10-19T11:29:27.567Z  INFO 1 --- [kafka-error-contract] [           main] lab.contract.ConsumerPipeline            : consumer started mode=silent topic=products-mixed group=g-silent_mixed-crash_run3-1792409358
+consumer-1  | 2026-10-19T11:29:27.868Z  INFO 1 --- [kafka-error-contract] [n3-1792409358-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-g-silent_mixed-crash_run3-1792409358-1, groupId=g-silent_mixed-crash_run3-1792409358] Cluster ID: redpanda.8dd8c50d-4a0f-4ffb-8bb0-af4511389295
+consumer-1  | 2026-10-19T11:29:27.870Z  INFO 1 --- [kafka-error-contract] [n3-1792409358-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-silent_mixed-crash_run3-1792409358-1, groupId=g-silent_mixed-crash_run3-1792409358] Discovered group coordinator redpanda:9092 (id: 2147483647 rack: null)
+consumer-1  | 2026-10-19T11:29:27.874Z  INFO 1 --- [kafka-error-contract] [n3-1792409358-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-silent_mixed-crash_run3-1792409358-1, groupId=g-silent_mixed-crash_run3-1792409358] (Re-)joining group
+consumer-1  | 2026-10-19T11:29:27.923Z  INFO 1 --- [kafka-error-contract] [n3-1792409358-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-silent_mixed-crash_run3-1792409358-1, groupId=g-silent_mixed-crash_run3-1792409358] Request joining group due to: need to re-join with the given member-id: consumer-g-silent_mixed-crash_run3-1792409358-1-8054541f-86fd-4015-82b6-f52ec5b39e95
+consumer-1  | 2026-10-19T11:29:27.923Z  INFO 1 --- [kafka-error-contract] [n3-1792409358-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-silent_mixed-crash_run3-1792409358-1, groupId=g-silent_mixed-crash_run3-1792409358] (Re-)joining group
+consumer-1  | 2026-10-19T11:29:27.926Z  INFO 1 --- [kafka-error-contract] [n3-1792409358-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-silent_mixed-crash_run3-1792409358-1, groupId=g-silent_mixed-crash_run3-1792409358] Successfully joined group with generation Generation{generationId=1, memberId='consumer-g-silent_mixed-crash_run3-1792409358-1-8054541f-86fd-4015-82b6-f52ec5b39e95', protocol='range'}
+consumer-1  | 2026-10-19T11:29:27.930Z  INFO 1 --- [kafka-error-contract] [n3-1792409358-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-silent_mixed-crash_run3-1792409358-1, groupId=g-silent_mixed-crash_run3-1792409358] Finished assignment for group at generation 1: {consumer-g-silent_mixed-crash_run3-1792409358-1-8054541f-86fd-4015-82b6-f52ec5b39e95=Assignment(partitions=[products-mixed-0, products-mixed-1, products-mixed-2, products-mixed-3])}
+consumer-1  | 2026-10-19T11:29:27.935Z  INFO 1 --- [kafka-error-contract] [run3-1792409358] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-silent_mixed-crash_run3-1792409358-1, groupId=g-silent_mixed-crash_run3-1792409358] Successfully synced group in generation Generation{generationId=1, memberId='consumer-g-silent_mixed-crash_run3-1792409358-1-8054541f-86fd-4015-82b6-f52ec5b39e95', protocol='range'}
+consumer-1  | 2026-10-19T11:29:27.937Z  INFO 1 --- [kafka-error-contract] [n3-1792409358-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-silent_mixed-crash_run3-1792409358-1, groupId=g-silent_mixed-crash_run3-1792409358] Notifying assignor about the new Assignment(partitions=[products-mixed-0, products-mixed-1, products-mixed-2, products-mixed-3])
+consumer-1  | 2026-10-19T11:29:27.940Z  INFO 1 --- [kafka-error-contract] [n3-1792409358-1] k.c.c.i.ConsumerRebalanceListenerInvoker : [Consumer clientId=consumer-g-silent_mixed-crash_run3-1792409358-1, groupId=g-silent_mixed-crash_run3-1792409358] Adding newly assigned partitions: products-mixed-0, products-mixed-1, products-mixed-2, products-mixed-3
+consumer-1  | 2026-10-19T11:29:27.945Z  INFO 1 --- [kafka-error-contract] [n3-1792409358-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-silent_mixed-crash_run3-1792409358-1, groupId=g-silent_mixed-crash_run3-1792409358] Found no committed offset for partition products-mixed-2
+consumer-1  | 2026-10-19T11:29:27.945Z  INFO 1 --- [kafka-error-contract] [n3-1792409358-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-silent_mixed-crash_run3-1792409358-1, groupId=g-silent_mixed-crash_run3-1792409358] Found no committed offset for partition products-mixed-3
+consumer-1  | 2026-10-19T11:29:27.945Z  INFO 1 --- [kafka-error-contract] [n3-1792409358-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-silent_mixed-crash_run3-1792409358-1, groupId=g-silent_mixed-crash_run3-1792409358] Found no committed offset for partition products-mixed-0
+consumer-1  | 2026-10-19T11:29:27.946Z  INFO 1 --- [kafka-error-contract] [n3-1792409358-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-silent_mixed-crash_run3-1792409358-1, groupId=g-silent_mixed-crash_run3-1792409358] Found no committed offset for partition products-mixed-1
+consumer-1  | 2026-10-19T11:29:27.956Z  INFO 1 --- [kafka-error-contract] [n3-1792409358-1] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-g-silent_mixed-crash_run3-1792409358-1, groupId=g-silent_mixed-crash_run3-1792409358] Resetting offset for partition products-mixed-2 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[redpanda:9092 (id: 0 rack: null)], epoch=absent}}.
+consumer-1  | 2026-10-19T11:29:27.957Z  INFO 1 --- [kafka-error-contract] [n3-1792409358-1] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-g-silent_mixed-crash_run3-1792409358-1, groupId=g-silent_mixed-crash_run3-1792409358] Resetting offset for partition products-mixed-3 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[redpanda:9092 (id: 0 rack: null)], epoch=absent}}.
+consumer-1  | 2026-10-19T11:29:27.957Z  INFO 1 --- [kafka-error-contract] [n3-1792409358-1] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-g-silent_mixed-crash_run3-1792409358-1, groupId=g-silent_mixed-crash_run3-1792409358] Resetting offset for partition products-mixed-0 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[redpanda:9092 (id: 0 rack: null)], epoch=absent}}.
+consumer-1  | 2026-10-19T11:29:27.957Z  INFO 1 --- [kafka-error-contract] [n3-1792409358-1] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-g-silent_mixed-crash_run3-1792409358-1, groupId=g-silent_mixed-crash_run3-1792409358] Resetting offset for partition products-mixed-1 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[redpanda:9092 (id: 0 rack: null)], epoch=absent}}.
+consumer-1  | 2026-10-19T11:29:28.500Z  WARN 1 --- [kafka-error-contract] [atcher-worker-1] lab.contract.SilentProcessor             : side failed id=207
+consumer-1  | 2026-10-19T11:29:29.092Z  WARN 1 --- [kafka-error-contract] [atcher-worker-2] lab.contract.SilentProcessor             : side failed id=807
+consumer-1  | 2026-10-19T11:29:29.592Z  WARN 1 --- [kafka-error-contract] [atcher-worker-1] lab.contract.SilentProcessor             : side failed id=1307
+consumer-1  | 2026-10-19T11:29:30.221Z  WARN 1 --- [kafka-error-contract] [atcher-worker-1] lab.contract.SilentProcessor             : side failed id=1907
+consumer-1  | 2026-10-19T11:29:31.156Z  WARN 1 --- [kafka-error-contract] [atcher-worker-3] lab.contract.SilentProcessor             : side failed id=2707
+consumer-1  | 2026-10-19T11:29:32.353Z  WARN 1 --- [kafka-error-contract] [atcher-worker-2] lab.contract.SilentProcessor             : side failed id=3607
+consumer-1  | 2026-10-19T11:29:32.781Z  WARN 1 --- [kafka-error-contract] [atcher-worker-3] lab.contract.SilentProcessor             : side failed id=3907
+consumer-1  | 2026-10-19T11:29:33.153Z  WARN 1 --- [kafka-error-contract] [atcher-worker-1] lab.contract.SilentProcessor             : side failed id=4207
+consumer-1  | 2026-10-19T11:29:33.425Z  WARN 1 --- [kafka-error-contract] [atcher-worker-1] lab.contract.SilentProcessor             : side failed id=4407
+consumer-1  | 2026-10-19T11:29:33.833Z  WARN 1 --- [kafka-error-contract] [atcher-worker-3] lab.contract.SilentProcessor             : side failed id=4607
+consumer-1  | 2026-10-19T11:29:34.133Z  WARN 1 --- [kafka-error-contract] [atcher-worker-4] lab.contract.SilentProcessor             : side failed id=4807
+consumer-1  | 2026-10-19T11:29:34.240Z  WARN 1 --- [kafka-error-contract] [atcher-worker-4] lab.contract.SilentProcessor             : side failed id=4907
+consumer-1  | 2026-10-19T11:29:34.331Z  WARN 1 --- [kafka-error-contract] [atcher-worker-4] lab.contract.SilentProcessor             : side failed id=5007
+consumer-1  | 2026-10-19T11:29:34.467Z  WARN 1 --- [kafka-error-contract] [atcher-worker-1] lab.contract.SilentProcessor             : side failed id=5107
+consumer-1  | 2026-10-19T11:29:34.942Z  WARN 1 --- [kafka-error-contract] [atcher-worker-1] lab.contract.SilentProcessor             : skip unparsable key=5500 offset=1365
+consumer-1  | 2026-10-19T11:29:35.678Z  WARN 1 --- [kafka-error-contract] [atcher-worker-2] lab.contract.SilentProcessor             : side failed id=6107
+consumer-1  | 2026-10-19T11:29:36.191Z  WARN 1 --- [kafka-error-contract] [atcher-worker-1] lab.contract.SilentProcessor             : side failed id=6407
+consumer-1  | 2026-10-19T11:29:37.431Z  WARN 1 --- [kafka-error-contract] [atcher-worker-2] lab.contract.SilentProcessor             : side failed id=7307
+consumer-1  | 2026-10-19T11:29:37.955Z  WARN 1 --- [kafka-error-contract] [atcher-worker-3] lab.contract.SilentProcessor             : side failed id=7707
+consumer-1  | 2026-10-19T11:29:38.658Z  WARN 1 --- [kafka-error-contract] [atcher-worker-4] lab.contract.SilentProcessor             : side failed id=8307
+consumer-1  | 2026-10-19T11:29:38.775Z  WARN 1 --- [kafka-error-contract] [atcher-worker-4] lab.contract.SilentProcessor             : side failed id=8407
+consumer-1  | 2026-10-19T11:29:38.875Z  WARN 1 --- [kafka-error-contract] [atcher-worker-3] lab.contract.SilentProcessor             : skip unparsable key=8500 offset=2146
+consumer-1  | 2026-10-19T11:29:39.316Z  WARN 1 --- [kafka-error-contract] [atcher-worker-2] lab.contract.SilentProcessor             : side failed id=8907
+consumer-1  | 2026-10-19T11:29:39.524Z  WARN 1 --- [kafka-error-contract] [atcher-worker-2] lab.contract.SilentProcessor             : side failed id=7
+consumer-1  | 2026-10-19T11:29:40.603Z  WARN 1 --- [kafka-error-contract] [atcher-worker-1] lab.contract.SilentProcessor             : side failed id=9407
+consumer-1  | 2026-10-19T11:29:40.820Z  WARN 1 --- [kafka-error-contract] [atcher-worker-5] lab.contract.SilentProcessor             : skip unparsable key=9500 offset=2407
+consumer-1  | 2026-10-19T11:29:40.837Z  WARN 1 --- [kafka-error-contract] [atcher-worker-3] lab.contract.SilentProcessor             : side failed id=9507
+consumer-1  | 2026-10-19T11:29:40.859Z  WARN 1 --- [kafka-error-contract] [atcher-worker-2] lab.contract.SilentProcessor             : side failed id=507
+consumer-1  | 2026-10-19T11:29:41.328Z  WARN 1 --- [kafka-error-contract] [atcher-worker-2] lab.contract.SilentProcessor             : side failed id=9707
+consumer-1  | 2026-10-19T11:29:42.148Z  WARN 1 --- [kafka-error-contract] [atcher-worker-1] lab.contract.SilentProcessor             : side failed id=1107
+consumer-1  | 2026-10-19T11:29:42.603Z  WARN 1 --- [kafka-error-contract] [atcher-worker-3] lab.contract.SilentProcessor             : skip unparsable key=1500 offset=391
+consumer-1  | 2026-10-19T11:29:42.736Z  WARN 1 --- [kafka-error-contract] [atcher-worker-1] lab.contract.SilentProcessor             : side failed id=1607
+consumer-1  | 2026-10-19T11:29:42.963Z  WARN 1 --- [kafka-error-contract] [atcher-worker-5] lab.contract.SilentProcessor             : side failed id=1807
+consumer-1  | 2026-10-19T11:29:43.287Z  WARN 1 --- [kafka-error-contract] [atcher-worker-4] lab.contract.SilentProcessor             : side failed id=2107
+consumer-1  | 2026-10-19T11:29:43.640Z  WARN 1 --- [kafka-error-contract] [atcher-worker-4] lab.contract.SilentProcessor             : side failed id=2407
+consumer-1  | 2026-10-19T11:29:43.758Z  WARN 1 --- [kafka-error-contract] [atcher-worker-4] lab.contract.SilentProcessor             : skip unparsable key=2500 offset=644
+consumer-1  | 2026-10-19T11:29:45.291Z  WARN 1 --- [kafka-error-contract] [atcher-worker-2] lab.contract.SilentProcessor             : side failed id=3807
+consumer-1  | 2026-10-19T11:29:45.527Z  WARN 1 --- [kafka-error-contract] [atcher-worker-2] lab.contract.SilentProcessor             : side failed id=4007
+consumer-1  | 2026-10-19T11:29:45.653Z  WARN 1 --- [kafka-error-contract] [atcher-worker-2] lab.contract.SilentProcessor             : side failed id=4107
+consumer-1  | 2026-10-19T11:29:46.108Z  WARN 1 --- [kafka-error-contract] [atcher-worker-1] lab.contract.SilentProcessor             : side failed id=4507
+consumer-1  | 2026-10-19T11:29:46.346Z  WARN 1 --- [kafka-error-contract] [atcher-worker-5] lab.contract.SilentProcessor             : side failed id=4707
+consumer-1  | 2026-10-19T11:29:47.660Z  WARN 1 --- [kafka-error-contract] [atcher-worker-5] lab.contract.SilentProcessor             : side failed id=5907
+consumer-1  | 2026-10-19T11:29:48.460Z  WARN 1 --- [kafka-error-contract] [atcher-worker-1] lab.contract.SilentProcessor             : side failed id=6507
+consumer-1  | 2026-10-19T11:29:48.597Z  WARN 1 --- [kafka-error-contract] [atcher-worker-1] lab.contract.SilentProcessor             : side failed id=6607
+consumer-1  | 2026-10-19T11:29:49.140Z  WARN 1 --- [kafka-error-contract] [atcher-worker-1] lab.contract.SilentProcessor             : side failed id=7007
+consumer-1  | 2026-10-19T11:29:49.963Z  WARN 1 --- [kafka-error-contract] [atcher-worker-1] lab.contract.SilentProcessor             : side failed id=7607
+consumer-1  | 2026-10-19T11:29:50.954Z  WARN 1 --- [kafka-error-contract] [atcher-worker-2] lab.contract.SilentProcessor             : side failed id=8607
+consumer-1  | 2026-10-19T11:29:51.499Z  WARN 1 --- [kafka-error-contract] [atcher-worker-2] lab.contract.SilentProcessor             : side failed id=9007
+consumer-1  | 2026-10-19T11:29:51.990Z  WARN 1 --- [kafka-error-contract] [atcher-worker-2] lab.contract.SilentProcessor             : side failed id=9207
+consumer-1  | 2026-10-19T11:29:53.595Z  WARN 1 --- [kafka-error-contract] [atcher-worker-3] lab.contract.SilentProcessor             : skip unparsable key=500 offset=132
+consumer-1  | 2026-10-19T11:29:53.803Z  WARN 1 --- [kafka-error-contract] [atcher-worker-3] lab.contract.SilentProcessor             : side failed id=607
+consumer-1  | 2026-10-19T11:29:54.236Z  WARN 1 --- [kafka-error-contract] [atcher-worker-1] lab.contract.SilentProcessor             : side failed id=9907
+consumer-1  | Picked up JAVA_TOOL_OPTIONS: -Xmx512m
+consumer-1  | 
+consumer-1  |   .   ____          _            __ _ _
+consumer-1  |  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+consumer-1  | ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+consumer-1  |  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+consumer-1  |   '  |____| .__|_| |_|_| |_\__, | / / / /
+consumer-1  |  =========|_|==============|___/=/_/_/_/
+consumer-1  | 
+consumer-1  |  :: Spring Boot ::                (v3.4.5)
+consumer-1  | 
+consumer-1  | 2026-10-19T11:29:56.279Z  INFO 1 --- [kafka-error-contract] [           main] lab.contract.LabApplicationKt            : Starting LabApplicationKt v0.0.1 using Java 21.0.12.1 with PID 1 (/app/app.jar started by root in /app)
+consumer-1  | 2026-10-19T11:29:56.281Z  INFO 1 --- [kafka-error-contract] [           main] lab.contract.LabApplicationKt            : No active profile set, falling back to 1 default profile: "default"
+consumer-1  | 2026-10-19T11:29:57.628Z  INFO 1 --- [kafka-error-contract] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+consumer-1  | 2026-10-19T11:29:57.781Z  INFO 1 --- [kafka-error-contract] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7459a21e
+consumer-1  | 2026-10-19T11:29:57.782Z  INFO 1 --- [kafka-error-contract] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+consumer-1  | 2026-10-19T11:29:58.043Z  INFO 1 --- [kafka-error-contract] [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoints beneath base path '/actuator'
+consumer-1  | 2026-10-19T11:29:58.327Z  INFO 1 --- [kafka-error-contract] [           main] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 8080 (http)
+consumer-1  | 2026-10-19T11:29:58.343Z  INFO 1 --- [kafka-error-contract] [           main] lab.contract.LabApplicationKt            : Started LabApplicationKt in 2.468 seconds (process running for 2.883)
+consumer-1  | 2026-10-19T11:29:58.380Z  INFO 1 --- [kafka-error-contract] [           main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+consumer-1  | 	allow.auto.create.topics = true
+consumer-1  | 	auto.commit.interval.ms = 5000
+consumer-1  | 	auto.include.jmx.reporter = true
+consumer-1  | 	auto.offset.reset = earliest
+consumer-1  | 	bootstrap.servers = [redpanda:9092]
+consumer-1  | 	check.crcs = true
+consumer-1  | 	client.dns.lookup = use_all_dns_ips
+consumer-1  | 	client.id = consumer-g-silent_mixed-crash_run3-1792409358-1
+consumer-1  | 	client.rack = 
+consumer-1  | 	connections.max.idle.ms = 540000
+consumer-1  | 	default.api.timeout.ms = 60000
+consumer-1  | 	enable.auto.commit = false
+consumer-1  | 	enable.metrics.push = true
+consumer-1  | 	exclude.internal.topics = true
+consumer-1  | 	fetch.max.bytes = 52428800
+consumer-1  | 	fetch.max.wait.ms = 500
+consumer-1  | 	fetch.min.bytes = 1
+consumer-1  | 	group.id = g-silent_mixed-crash_run3-1792409358
+consumer-1  | 	group.instance.id = null
+consumer-1  | 	group.protocol = classic
+consumer-1  | 	group.remote.assignor = null
+consumer-1  | 	heartbeat.interval.ms = 3000
+consumer-1  | 	interceptor.classes = []
+consumer-1  | 	internal.leave.group.on.close = true
+consumer-1  | 	internal.throw.on.fetch.stable.offset.unsupported = false
+consumer-1  | 	isolation.level = read_uncommitted
+consumer-1  | 	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+consumer-1  | 	max.partition.fetch.bytes = 1048576
+consumer-1  | 	max.poll.interval.ms = 300000
+consumer-1  | 	max.poll.records = 500
+consumer-1  | 	metadata.max.age.ms = 300000
+consumer-1  | 	metadata.recovery.strategy = none
+consumer-1  | 	metric.reporters = []
+consumer-1  | 	metrics.num.samples = 2
+consumer-1  | 	metrics.recording.level = INFO
+consumer-1  | 	metrics.sample.window.ms = 30000
+consumer-1  | 	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+consumer-1  | 	receive.buffer.bytes = 65536
+consumer-1  | 	reconnect.backoff.max.ms = 1000
+consumer-1  | 	reconnect.backoff.ms = 50
+consumer-1  | 	request.timeout.ms = 30000
+consumer-1  | 	retry.backoff.max.ms = 1000
+consumer-1  | 	retry.backoff.ms = 100
+consumer-1  | 	sasl.client.callback.handler.class = null
+consumer-1  | 	sasl.jaas.config = null
+consumer-1  | 	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+consumer-1  | 	sasl.kerberos.min.time.before.relogin = 60000
+consumer-1  | 	sasl.kerberos.service.name = null
+consumer-1  | 	sasl.kerberos.ticket.renew.jitter = 0.05
+consumer-1  | 	sasl.kerberos.ticket.renew.window.factor = 0.8
+consumer-1  | 	sasl.login.callback.handler.class = null
+consumer-1  | 	sasl.login.class = null
+consumer-1  | 	sasl.login.connect.timeout.ms = null
+consumer-1  | 	sasl.login.read.timeout.ms = null
+consumer-1  | 	sasl.login.refresh.buffer.seconds = 300
+consumer-1  | 	sasl.login.refresh.min.period.seconds = 60
+consumer-1  | 	sasl.login.refresh.window.factor = 0.8
+consumer-1  | 	sasl.login.refresh.window.jitter = 0.05
+consumer-1  | 	sasl.login.retry.backoff.max.ms = 10000
+consumer-1  | 	sasl.login.retry.backoff.ms = 100
+consumer-1  | 	sasl.mechanism = GSSAPI
+consumer-1  | 	sasl.oauthbearer.clock.skew.seconds = 30
+consumer-1  | 	sasl.oauthbearer.expected.audience = null
+consumer-1  | 	sasl.oauthbearer.expected.issuer = null
+consumer-1  | 	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+consumer-1  | 	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+consumer-1  | 	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+consumer-1  | 	sasl.oauthbearer.jwks.endpoint.url = null
+consumer-1  | 	sasl.oauthbearer.scope.claim.name = scope
+consumer-1  | 	sasl.oauthbearer.sub.claim.name = sub
+consumer-1  | 	sasl.oauthbearer.token.endpoint.url = null
+consumer-1  | 	security.protocol = PLAINTEXT
+consumer-1  | 	security.providers = null
+consumer-1  | 	send.buffer.bytes = 131072
+consumer-1  | 	session.timeout.ms = 45000
+consumer-1  | 	socket.connection.setup.timeout.max.ms = 30000
+consumer-1  | 	socket.connection.setup.timeout.ms = 10000
+consumer-1  | 	ssl.cipher.suites = null
+consumer-1  | 	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+consumer-1  | 	ssl.endpoint.identification.algorithm = https
+consumer-1  | 	ssl.engine.factory.class = null
+consumer-1  | 	ssl.key.password = null
+consumer-1  | 	ssl.keymanager.algorithm = SunX509
+consumer-1  | 	ssl.keystore.certificate.chain = null
+consumer-1  | 	ssl.keystore.key = null
+consumer-1  | 	ssl.keystore.location = null
+consumer-1  | 	ssl.keystore.password = null
+consumer-1  | 	ssl.keystore.type = JKS
+consumer-1  | 	ssl.protocol = TLSv1.3
+consumer-1  | 	ssl.provider = null
+consumer-1  | 	ssl.secure.random.implementation = null
+consumer-1  | 	ssl.trustmanager.algorithm = PKIX
+consumer-1  | 	ssl.truststore.certificates = null
+consumer-1  | 	ssl.truststore.location = null
+consumer-1  | 	ssl.truststore.password = null
+consumer-1  | 	ssl.truststore.type = JKS
+consumer-1  | 	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+consumer-1  | 
+consumer-1  | 2026-10-19T11:29:58.443Z  INFO 1 --- [kafka-error-contract] [           main] o.a.k.c.t.i.KafkaMetricsCollector        : initializing Kafka metrics collector
+consumer-1  | 2026-10-19T11:29:58.567Z  INFO 1 --- [kafka-error-contract] [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.8.1
+consumer-1  | 2026-10-19T11:29:58.567Z  INFO 1 --- [kafka-error-contract] [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 70d6ff42debf7e17
+consumer-1  | 2026-10-19T11:29:58.567Z  INFO 1 --- [kafka-error-contract] [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1792409398566
+consumer-1  | 2026-10-19T11:29:58.574Z  INFO 1 --- [kafka-error-contract] [n3-1792409358-1] o.a.k.c.c.internals.LegacyKafkaConsumer  : [Consumer clientId=consumer-g-silent_mixed-crash_run3-1792409358-1, groupId=g-silent_mixed-crash_run3-1792409358] Subscribed to topic(s): products-mixed
+consumer-1  | 2026-10-19T11:29:58.581Z  INFO 1 --- [kafka-error-contract] [           main] lab.contract.ConsumerPipeline            : consumer started mode=silent topic=products-mixed group=g-silent_mixed-crash_run3-1792409358
+consumer-1  | 2026-10-19T11:29:58.982Z  INFO 1 --- [kafka-error-contract] [n3-1792409358-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-g-silent_mixed-crash_run3-1792409358-1, groupId=g-silent_mixed-crash_run3-1792409358] Cluster ID: redpanda.8dd8c50d-4a0f-4ffb-8bb0-af4511389295
+consumer-1  | 2026-10-19T11:29:58.984Z  INFO 1 --- [kafka-error-contract] [n3-1792409358-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-silent_mixed-crash_run3-1792409358-1, groupId=g-silent_mixed-crash_run3-1792409358] Discovered group coordinator redpanda:9092 (id: 2147483647 rack: null)
+consumer-1  | 2026-10-19T11:29:58.986Z  INFO 1 --- [kafka-error-contract] [n3-1792409358-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-silent_mixed-crash_run3-1792409358-1, groupId=g-silent_mixed-crash_run3-1792409358] (Re-)joining group
+consumer-1  | 2026-10-19T11:29:59.035Z  INFO 1 --- [kafka-error-contract] [n3-1792409358-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-silent_mixed-crash_run3-1792409358-1, groupId=g-silent_mixed-crash_run3-1792409358] Request joining group due to: need to re-join with the given member-id: consumer-g-silent_mixed-crash_run3-1792409358-1-a580459a-631e-4226-b3f3-ae3e689c22df
+consumer-1  | 2026-10-19T11:29:59.035Z  INFO 1 --- [kafka-error-contract] [n3-1792409358-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-silent_mixed-crash_run3-1792409358-1, groupId=g-silent_mixed-crash_run3-1792409358] (Re-)joining group
+consumer-1  | 2026-10-19T11:30:37.675Z  INFO 1 --- [kafka-error-contract] [n3-1792409358-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-silent_mixed-crash_run3-1792409358-1, groupId=g-silent_mixed-crash_run3-1792409358] Successfully joined group with generation Generation{generationId=2, memberId='consumer-g-silent_mixed-crash_run3-1792409358-1-a580459a-631e-4226-b3f3-ae3e689c22df', protocol='range'}
+consumer-1  | 2026-10-19T11:30:37.693Z  INFO 1 --- [kafka-error-contract] [n3-1792409358-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-silent_mixed-crash_run3-1792409358-1, groupId=g-silent_mixed-crash_run3-1792409358] Finished assignment for group at generation 2: {consumer-g-silent_mixed-crash_run3-1792409358-1-a580459a-631e-4226-b3f3-ae3e689c22df=Assignment(partitions=[products-mixed-0, products-mixed-1, products-mixed-2, products-mixed-3])}
+consumer-1  | 2026-10-19T11:30:37.708Z  INFO 1 --- [kafka-error-contract] [n3-1792409358-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-silent_mixed-crash_run3-1792409358-1, groupId=g-silent_mixed-crash_run3-1792409358] Successfully synced group in generation Generation{generationId=2, memberId='consumer-g-silent_mixed-crash_run3-1792409358-1-a580459a-631e-4226-b3f3-ae3e689c22df', protocol='range'}
+consumer-1  | 2026-10-19T11:30:37.710Z  INFO 1 --- [kafka-error-contract] [n3-1792409358-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-silent_mixed-crash_run3-1792409358-1, groupId=g-silent_mixed-crash_run3-1792409358] Notifying assignor about the new Assignment(partitions=[products-mixed-0, products-mixed-1, products-mixed-2, products-mixed-3])
+consumer-1  | 2026-10-19T11:30:37.713Z  INFO 1 --- [kafka-error-contract] [n3-1792409358-1] k.c.c.i.ConsumerRebalanceListenerInvoker : [Consumer clientId=consumer-g-silent_mixed-crash_run3-1792409358-1, groupId=g-silent_mixed-crash_run3-1792409358] Adding newly assigned partitions: products-mixed-0, products-mixed-1, products-mixed-2, products-mixed-3
+consumer-1  | 2026-10-19T11:30:37.722Z  INFO 1 --- [kafka-error-contract] [n3-1792409358-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-g-silent_mixed-crash_run3-1792409358-1, groupId=g-silent_mixed-crash_run3-1792409358] Found no committed offset for partition products-mixed-1
+consumer-1  | 2026-10-19T11:30:37.723Z  INFO 1 --- [kafka-error-contract] [n3-1792409358-1] o.a.k.c.c.internals.ConsumerUtils        : Setting offset for partition products-mixed-2 to the committed offset FetchPosition{offset=2535, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[redpanda:9092 (id: 0 rack: null)], epoch=absent}}
+consumer-1  | 2026-10-19T11:30:37.723Z  INFO 1 --- [kafka-error-contract] [n3-1792409358-1] o.a.k.c.c.internals.ConsumerUtils        : Setting offset for partition products-mixed-3 to the committed offset FetchPosition{offset=2325, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[redpanda:9092 (id: 0 rack: null)], epoch=absent}}
+consumer-1  | 2026-10-19T11:30:37.723Z  INFO 1 --- [kafka-error-contract] [n3-1792409358-1] o.a.k.c.c.internals.ConsumerUtils        : Setting offset for partition products-mixed-0 to the committed offset FetchPosition{offset=67, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[redpanda:9092 (id: 0 rack: null)], epoch=absent}}
+consumer-1  | 2026-10-19T11:30:37.734Z  INFO 1 --- [kafka-error-contract] [n3-1792409358-1] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-g-silent_mixed-crash_run3-1792409358-1, groupId=g-silent_mixed-crash_run3-1792409358] Resetting offset for partition products-mixed-1 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[redpanda:9092 (id: 0 rack: null)], epoch=absent}}.
+consumer-1  | 2026-10-19T11:30:38.616Z  WARN 1 --- [kafka-error-contract] [atcher-worker-1] lab.contract.SilentProcessor             : skip unparsable key=500 offset=132
+consumer-1  | 2026-10-19T11:30:38.827Z  WARN 1 --- [kafka-error-contract] [atcher-worker-2] lab.contract.SilentProcessor             : side failed id=607
+consumer-1  | 2026-10-19T11:30:39.370Z  WARN 1 --- [kafka-error-contract] [atcher-worker-4] lab.contract.SilentProcessor             : side failed id=9907
+consumer-1  | 2026-10-19T11:30:39.899Z  WARN 1 --- [kafka-error-contract] [atcher-worker-2] lab.contract.SilentProcessor             : side failed id=1207
+consumer-1  | 2026-10-19T11:30:40.119Z  WARN 1 --- [kafka-error-contract] [atcher-worker-4] lab.contract.SilentProcessor             : side failed id=1407
+consumer-1  | 2026-10-19T11:30:40.191Z  WARN 1 --- [kafka-error-contract] [atcher-worker-3] lab.contract.SilentProcessor             : side failed id=1507
+consumer-1  | 2026-10-19T11:30:40.709Z  WARN 1 --- [kafka-error-contract] [atcher-worker-2] lab.contract.SilentProcessor             : side failed id=2007
+consumer-1  | 2026-10-19T11:30:40.951Z  WARN 1 --- [kafka-error-contract] [atcher-worker-4] lab.contract.SilentProcessor             : side failed id=2207
+consumer-1  | 2026-10-19T11:30:41.015Z  WARN 1 --- [kafka-error-contract] [atcher-worker-4] lab.contract.SilentProcessor             : side failed id=2307
+consumer-1  | 2026-10-19T11:30:41.342Z  WARN 1 --- [kafka-error-contract] [atcher-worker-3] lab.contract.SilentProcessor             : side failed id=2607
+consumer-1  | 2026-10-19T11:30:41.690Z  WARN 1 --- [kafka-error-contract] [atcher-worker-3] lab.contract.SilentProcessor             : side failed id=2907
+consumer-1  | 2026-10-19T11:30:41.902Z  WARN 1 --- [kafka-error-contract] [atcher-worker-5] lab.contract.SilentProcessor             : side failed id=3107
+consumer-1  | 2026-10-19T11:30:41.978Z  WARN 1 --- [kafka-error-contract] [atcher-worker-1] lab.contract.SilentProcessor             : side failed id=3207
+consumer-1  | 2026-10-19T11:30:42.233Z  WARN 1 --- [kafka-error-contract] [atcher-worker-1] lab.contract.SilentProcessor             : side failed id=3407
+consumer-1  | 2026-10-19T11:30:42.359Z  WARN 1 --- [kafka-error-contract] [atcher-worker-1] lab.contract.SilentProcessor             : side failed id=3507
+consumer-1  | 2026-10-19T11:30:43.486Z  WARN 1 --- [kafka-error-contract] [atcher-worker-3] lab.contract.SilentProcessor             : side failed id=4307
+consumer-1  | 2026-10-19T11:30:43.699Z  WARN 1 --- [kafka-error-contract] [atcher-worker-3] lab.contract.SilentProcessor             : skip unparsable key=4500 offset=1152
+consumer-1  | 2026-10-19T11:30:45.127Z  WARN 1 --- [kafka-error-contract] [atcher-worker-4] lab.contract.SilentProcessor             : side failed id=5707
+consumer-1  | 2026-10-19T11:30:45.491Z  WARN 1 --- [kafka-error-contract] [atcher-worker-2] lab.contract.SilentProcessor             : side failed id=6007
+consumer-1  | 2026-10-19T11:30:45.837Z  WARN 1 --- [kafka-error-contract] [atcher-worker-4] lab.contract.SilentProcessor             : side failed id=6307
+consumer-1  | 2026-10-19T11:30:46.255Z  WARN 1 --- [kafka-error-contract] [atcher-worker-2] lab.contract.SilentProcessor             : side failed id=6707
+consumer-1  | 2026-10-19T11:30:46.782Z  WARN 1 --- [kafka-error-contract] [atcher-worker-2] lab.contract.SilentProcessor             : side failed id=7207
+consumer-1  | 2026-10-19T11:30:47.342Z  WARN 1 --- [kafka-error-contract] [atcher-worker-2] lab.contract.SilentProcessor             : side failed id=7807
+consumer-1  | 2026-10-19T11:30:47.654Z  WARN 1 --- [kafka-error-contract] [atcher-worker-4] lab.contract.SilentProcessor             : side failed id=8107
+consumer-1  | 2026-10-19T11:30:48.117Z  WARN 1 --- [kafka-error-contract] [atcher-worker-2] lab.contract.SilentProcessor             : side failed id=8507
+consumer-1  | 2026-10-19T11:30:48.469Z  WARN 1 --- [kafka-error-contract] [atcher-worker-2] lab.contract.SilentProcessor             : side failed id=8807
+consumer-1  | 2026-10-19T11:30:48.740Z  WARN 1 --- [kafka-error-contract] [atcher-worker-2] lab.contract.SilentProcessor             : side failed id=107
+consumer-1  | 2026-10-19T11:30:49.139Z  WARN 1 --- [kafka-error-contract] [atcher-worker-3] lab.contract.SilentProcessor             : side failed id=307
+consumer-1  | 2026-10-19T11:30:49.360Z  WARN 1 --- [kafka-error-contract] [atcher-worker-1] lab.contract.SilentProcessor             : side failed id=9307
+consumer-1  | 2026-10-19T11:30:49.370Z  WARN 1 --- [kafka-error-contract] [atcher-worker-3] lab.contract.SilentProcessor             : side failed id=407
+consumer-1  | 2026-10-19T11:30:49.876Z  WARN 1 --- [kafka-error-contract] [atcher-worker-1] lab.contract.SilentProcessor             : side failed id=707
+consumer-1  | 2026-10-19T11:30:50.217Z  WARN 1 --- [kafka-error-contract] [atcher-worker-3] lab.contract.SilentProcessor             : side failed id=907
+consumer-1  | 2026-10-19T11:30:50.398Z  WARN 1 --- [kafka-error-contract] [atcher-worker-5] lab.contract.SilentProcessor             : side failed id=1007
+consumer-1  | 2026-10-19T11:30:51.194Z  WARN 1 --- [kafka-error-contract] [atcher-worker-2] lab.contract.SilentProcessor             : side failed id=1707
+consumer-1  | 2026-10-19T11:30:52.156Z  WARN 1 --- [kafka-error-contract] [atcher-worker-4] lab.contract.SilentProcessor             : side failed id=2507
+consumer-1  | 2026-10-19T11:30:52.491Z  WARN 1 --- [kafka-error-contract] [atcher-worker-4] lab.contract.SilentProcessor             : side failed id=2807
+consumer-1  | 2026-10-19T11:30:52.697Z  WARN 1 --- [kafka-error-contract] [atcher-worker-5] lab.contract.SilentProcessor             : side failed id=3007
+consumer-1  | 2026-10-19T11:30:53.013Z  WARN 1 --- [kafka-error-contract] [atcher-worker-5] lab.contract.SilentProcessor             : side failed id=3307
+consumer-1  | 2026-10-19T11:30:53.212Z  WARN 1 --- [kafka-error-contract] [atcher-worker-4] lab.contract.SilentProcessor             : skip unparsable key=3500 offset=824
+consumer-1  | 2026-10-19T11:30:53.443Z  WARN 1 --- [kafka-error-contract] [atcher-worker-4] lab.contract.SilentProcessor             : side failed id=3707
+consumer-1  | 2026-10-19T11:30:56.125Z  WARN 1 --- [kafka-error-contract] [atcher-worker-3] lab.contract.SilentProcessor             : side failed id=5207
+consumer-1  | 2026-10-19T11:30:56.197Z  WARN 1 --- [kafka-error-contract] [atcher-worker-4] lab.contract.SilentProcessor             : side failed id=5307
+consumer-1  | 2026-10-19T11:30:56.278Z  WARN 1 --- [kafka-error-contract] [atcher-worker-4] lab.contract.SilentProcessor             : side failed id=5407
+consumer-1  | 2026-10-19T11:30:56.364Z  WARN 1 --- [kafka-error-contract] [atcher-worker-4] lab.contract.SilentProcessor             : side failed id=5507
+consumer-1  | 2026-10-19T11:30:56.441Z  WARN 1 --- [kafka-error-contract] [atcher-worker-3] lab.contract.SilentProcessor             : side failed id=5607
+consumer-1  | 2026-10-19T11:30:56.605Z  WARN 1 --- [kafka-error-contract] [atcher-worker-3] lab.contract.SilentProcessor             : side failed id=5807
+consumer-1  | 2026-10-19T11:30:56.867Z  WARN 1 --- [kafka-error-contract] [atcher-worker-3] lab.contract.SilentProcessor             : side failed id=6207
+consumer-1  | 2026-10-19T11:30:57.079Z  WARN 1 --- [kafka-error-contract] [atcher-worker-3] lab.contract.SilentProcessor             : skip unparsable key=6500 offset=1547
+consumer-1  | 2026-10-19T11:30:57.290Z  WARN 1 --- [kafka-error-contract] [atcher-worker-3] lab.contract.SilentProcessor             : side failed id=6807
+consumer-1  | 2026-10-19T11:30:57.406Z  WARN 1 --- [kafka-error-contract] [atcher-worker-3] lab.contract.SilentProcessor             : side failed id=6907
+consumer-1  | 2026-10-19T11:30:57.597Z  WARN 1 --- [kafka-error-contract] [atcher-worker-3] lab.contract.SilentProcessor             : side failed id=7107
+consumer-1  | 2026-10-19T11:30:57.944Z  WARN 1 --- [kafka-error-contract] [atcher-worker-5] lab.contract.SilentProcessor             : side failed id=7407
+consumer-1  | 2026-10-19T11:30:58.052Z  WARN 1 --- [kafka-error-contract] [atcher-worker-5] lab.contract.SilentProcessor             : skip unparsable key=7500 offset=1787
+consumer-1  | 2026-10-19T11:30:58.054Z  WARN 1 --- [kafka-error-contract] [atcher-worker-5] lab.contract.SilentProcessor             : side failed id=7507
+consumer-1  | 2026-10-19T11:30:58.475Z  WARN 1 --- [kafka-error-contract] [atcher-worker-3] lab.contract.SilentProcessor             : side failed id=7907
+consumer-1  | 2026-10-19T11:30:58.555Z  WARN 1 --- [kafka-error-contract] [atcher-worker-4] lab.contract.SilentProcessor             : side failed id=8007
+consumer-1  | 2026-10-19T11:30:58.772Z  WARN 1 --- [kafka-error-contract] [atcher-worker-2] lab.contract.SilentProcessor             : side failed id=8207
+consumer-1  | 2026-10-19T11:30:59.453Z  WARN 1 --- [kafka-error-contract] [atcher-worker-3] lab.contract.SilentProcessor             : side failed id=8707
+consumer-1  | 2026-10-19T11:31:07.852Z  WARN 1 --- [kafka-error-contract] [atcher-worker-4] lab.contract.SilentProcessor             : side failed id=9107
+consumer-1  | 2026-10-19T11:31:08.543Z  WARN 1 --- [kafka-error-contract] [atcher-worker-3] lab.contract.SilentProcessor             : side failed id=9607
+consumer-1  | 2026-10-19T11:31:08.754Z  WARN 1 --- [kafka-error-contract] [atcher-worker-3] lab.contract.SilentProcessor             : side failed id=9807

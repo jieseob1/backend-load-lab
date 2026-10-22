@@ -1,0 +1,36 @@
+spring:
+  application:
+    name: kafka-error-contract
+  datasource:
+    url: ${SPRING_DATASOURCE_URL:jdbc:postgresql://localhost:5432/lab}
+    username: lab
+    password: lab
+  sql:
+    init:
+      mode: always
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,prometheus
+
+lab:
+  bootstrap: ${LAB_BOOTSTRAP:localhost:19092}
+  group: ${LAB_GROUP:lab}
+  mode: ${LAB_MODE:silent}          # silent | propagate | outcome
+  topic: ${LAB_TOPIC:products-mixed}
+  faults: ${LAB_FAULTS:mixed}       # mixed | transient
+  consumer:
+    enabled: true                   # 테스트에서 false
+
+---
+spring:
+  config:
+    activate:
+      on-profile: producer
+  main:
+    web-application-type: none
+  sql:
+    init:
+      mode: never
